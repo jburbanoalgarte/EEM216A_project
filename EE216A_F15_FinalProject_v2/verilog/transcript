@@ -1,0 +1,3667 @@
+# //  ModelSim SE-64 10.1c Jul 27 2012 Linux 2.6.18-406.el5
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading project blocks
+# Compile of blocksTestbench.v failed with 1 errors.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of smc_float_to_fp.v was successful.
+# Compile of SynLib.v was successful.
+# 6 compiles, 1 failed with 1 error. 
+# Compile of blocksTestbench.v failed with 1 errors.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of smc_float_to_fp.v was successful.
+# Compile of SynLib.v was successful.
+# 6 compiles, 1 failed with 1 error. 
+# Compile of blocksTestbench.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of smc_float_to_fp.v was successful.
+# Compile of SynLib.v was successful.
+# 6 compiles, 0 failed with no errors. 
+vsim -novopt work.blocksTestbench
+# vsim -novopt work.blocksTestbench 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.blocksTestbench
+# Loading work.blocksTestbench
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_to_fp
+# Loading work.smc_float_to_fp
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.x_i
+# Loading work.x_i
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_to_Fixed
+# Loading work.FP_to_Fixed
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synBusSatRnd
+# Loading work.synBusSatRnd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synBusAdapter
+# Loading work.synBusAdapter
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synDelayWithEnable
+# Loading work.synDelayWithEnable
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synNegate
+# Loading work.synNegate
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synShifterR
+# Loading work.synShifterR
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.singleDelayWithEnableGeneric
+# Loading work.singleDelayWithEnableGeneric
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synDelayWithEnableGeneric
+# Loading work.synDelayWithEnableGeneric
+add wave  \
+sim:/blocksTestbench/Clock \
+sim:/blocksTestbench/Cycle \
+sim:/blocksTestbench/GlobalReset \
+sim:/blocksTestbench/HalfCycle \
+sim:/blocksTestbench/ResetValue \
+sim:/blocksTestbench/numErrors \
+sim:/blocksTestbench/srdyi_i \
+sim:/blocksTestbench/srdyo_o \
+sim:/blocksTestbench/testcase \
+sim:/blocksTestbench/x_i_porty \
+sim:/blocksTestbench/y_o
+restart; run -all
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 0
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 0
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 0
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 1
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 1
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 1
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 0
+# Break in Module blocksTestbench at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v line 87
+# Compile of blocksTestbench.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of smc_float_to_fp.v was successful.
+# Compile of SynLib.v was successful.
+# 6 compiles, 0 failed with no errors. 
+vsim -novopt work.blocksTestbench
+# vsim -novopt work.blocksTestbench 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.blocksTestbench
+# Loading work.blocksTestbench
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_to_fp
+# Loading work.smc_float_to_fp
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.x_i
+# Loading work.x_i
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_to_Fixed
+# Loading work.FP_to_Fixed
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synBusSatRnd
+# Loading work.synBusSatRnd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synBusAdapter
+# Loading work.synBusAdapter
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synDelayWithEnable
+# Loading work.synDelayWithEnable
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synNegate
+# Loading work.synNegate
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synShifterR
+# Loading work.synShifterR
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.singleDelayWithEnableGeneric
+# Loading work.singleDelayWithEnableGeneric
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synDelayWithEnableGeneric
+# Loading work.synDelayWithEnableGeneric
+add wave  \
+sim:/blocksTestbench/Clock \
+sim:/blocksTestbench/Cycle \
+sim:/blocksTestbench/GlobalReset \
+sim:/blocksTestbench/HalfCycle \
+sim:/blocksTestbench/ResetValue \
+sim:/blocksTestbench/numErrors \
+sim:/blocksTestbench/srdyi_i \
+sim:/blocksTestbench/srdyo_o \
+sim:/blocksTestbench/testcase \
+sim:/blocksTestbench/x_i_porty \
+sim:/blocksTestbench/y_o; restart; run -all
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 0
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 0
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 0
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 1
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 1
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 1
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 0
+# Break in Module blocksTestbench at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v line 87
+# Compile of blocksTestbench.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of smc_float_to_fp.v was successful.
+# Compile of SynLib.v was successful.
+# 6 compiles, 0 failed with no errors. 
+vsim -novopt work.blocksTestbench
+# vsim -novopt work.blocksTestbench 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.blocksTestbench
+# Loading work.blocksTestbench
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_to_fp
+# Loading work.smc_float_to_fp
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.x_i
+# Loading work.x_i
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_to_Fixed
+# Loading work.FP_to_Fixed
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synBusSatRnd
+# Loading work.synBusSatRnd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synBusAdapter
+# Loading work.synBusAdapter
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synDelayWithEnable
+# Loading work.synDelayWithEnable
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synNegate
+# Loading work.synNegate
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synShifterR
+# Loading work.synShifterR
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.singleDelayWithEnableGeneric
+# Loading work.singleDelayWithEnableGeneric
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synDelayWithEnableGeneric
+# Loading work.synDelayWithEnableGeneric
+add wave  \
+sim:/blocksTestbench/Clock \
+sim:/blocksTestbench/Cycle \
+sim:/blocksTestbench/GlobalReset \
+sim:/blocksTestbench/HalfCycle \
+sim:/blocksTestbench/ResetValue \
+sim:/blocksTestbench/numErrors \
+sim:/blocksTestbench/srdyi_i \
+sim:/blocksTestbench/srdyo_o \
+sim:/blocksTestbench/testcase \
+sim:/blocksTestbench/x_i_porty \
+sim:/blocksTestbench/y_o; restart; run -all
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 0
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 0
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 0
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 1
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 1
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 1
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 0
+# Break in Module blocksTestbench at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v line 87
+# Compile of blocksTestbench.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of smc_float_to_fp.v was successful.
+# Compile of SynLib.v was successful.
+# 6 compiles, 0 failed with no errors. 
+vsim -novopt work.blocksTestbench
+# vsim -novopt work.blocksTestbench 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.blocksTestbench
+# Loading work.blocksTestbench
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_to_fp
+# Loading work.smc_float_to_fp
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.x_i
+# Loading work.x_i
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_to_Fixed
+# Loading work.FP_to_Fixed
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synBusSatRnd
+# Loading work.synBusSatRnd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synBusAdapter
+# Loading work.synBusAdapter
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synDelayWithEnable
+# Loading work.synDelayWithEnable
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synNegate
+# Loading work.synNegate
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synShifterR
+# Loading work.synShifterR
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.singleDelayWithEnableGeneric
+# Loading work.singleDelayWithEnableGeneric
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synDelayWithEnableGeneric
+# Loading work.synDelayWithEnableGeneric
+add wave  \
+sim:/blocksTestbench/Clock \
+sim:/blocksTestbench/Cycle \
+sim:/blocksTestbench/GlobalReset \
+sim:/blocksTestbench/HalfCycle \
+sim:/blocksTestbench/ResetValue \
+sim:/blocksTestbench/numErrors \
+sim:/blocksTestbench/srdyi_i \
+sim:/blocksTestbench/srdyo_o \
+sim:/blocksTestbench/testcase \
+sim:/blocksTestbench/x_i_porty \
+sim:/blocksTestbench/y_o; restart; run -all
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 0
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 0
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 0
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 1
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 0
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 0
+# *************
+# y_o: 000000000000000000000
+# srdyo_o: 0
+# Break in Module blocksTestbench at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v line 87
+quit -sim
+# reading /w/apps3/Mentor/ModelsimSE/v10.1c/modeltech/linux_x86_64/../modelsim.ini
+# Loading project centerScale
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# 4 compiles, 0 failed with no errors. 
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v failed with 1 errors.
+# 5 compiles, 1 failed with 1 error. 
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v failed with 1 errors.
+# 5 compiles, 1 failed with 1 error. 
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v failed with 1 errors.
+# 5 compiles, 1 failed with 1 error. 
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v failed with 1 errors.
+# 5 compiles, 1 failed with 1 error. 
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# 5 compiles, 0 failed with no errors. 
+vsim -novopt work.blocksTestbench
+# vsim -novopt work.blocksTestbench 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.blocksTestbench
+# Loading work.blocksTestbench
+# ** Error: (vsim-3037) /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v(41): Missing instance name in instantiation of 'centerScale'.
+#         Region: /blocksTestbench
+# Error loading design
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# 5 compiles, 0 failed with no errors. 
+vsim -novopt work.blocksTestbench
+# vsim -novopt work.blocksTestbench 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.blocksTestbench
+# Loading work.blocksTestbench
+# ** Error: (vsim-3037) /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v(41): Missing instance name in instantiation of 'centerScale'.
+#         Region: /blocksTestbench
+# Error loading design
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# 5 compiles, 0 failed with no errors. 
+vsim -novopt work.blocksTestbench
+# vsim -novopt work.blocksTestbench 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.blocksTestbench
+# Loading work.blocksTestbench
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.centerScale
+# Loading work.centerScale
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.fp_to_smc_float
+# Loading work.fp_to_smc_float
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.y_o
+# Loading work.y_o
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP
+# Loading work.Fixed_to_FP
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synAbs
+# Loading work.synAbs
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synComparator
+# Loading work.synComparator
+# Loading work.synBusAdapter
+# Loading work.synDelayWithEnable
+# Loading work.synNegate
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synShifter
+# Loading work.synShifter
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_log2
+# Loading work.Fixed_to_FP_log2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_adder
+# Loading work.smc_float_adder
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.x_i
+# Loading work.x_i
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.z_o
+# Loading work.z_o
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder
+# Loading work.FP_Adder
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1
+# Loading work.FP_Adder_getmsbpos1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_1
+# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_2
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_1
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP1
+# Loading work.FP_Adder_getmsbpos1_LZDP1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP2
+# Loading work.FP_Adder_getmsbpos1_LZDP2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP3
+# Loading work.FP_Adder_getmsbpos1_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP4
+# Loading work.FP_Adder_getmsbpos1_LZDP4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP5
+# Loading work.FP_Adder_getmsbpos1_LZDP5
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP6
+# Loading work.FP_Adder_getmsbpos1_LZDP6
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_2
+# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_3
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_multiplier
+# Loading work.smc_float_multiplier
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Multiplier
+# Loading work.FP_Multiplier
+# Loading work.synBusSatRnd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.synInverter
+# Loading work.synInverter
+# Loading work.synDelayWithEnableGeneric
+# Loading work.singleDelayWithEnableGeneric
+add wave  \
+sim:/blocksTestbench/Clock \
+sim:/blocksTestbench/Cycle \
+sim:/blocksTestbench/GlobalReset \
+sim:/blocksTestbench/HalfCycle \
+sim:/blocksTestbench/ResetValue \
+sim:/blocksTestbench/mean \
+sim:/blocksTestbench/numErrors \
+sim:/blocksTestbench/srdyi \
+sim:/blocksTestbench/srdyo_o \
+sim:/blocksTestbench/std \
+sim:/blocksTestbench/testcase \
+sim:/blocksTestbench/x_adc \
+sim:/blocksTestbench/x_centScale
+restart; run -all;
+# *************
+# z_o: 00000000000000000000000000000000
+# srdyo_o: 0
+# *************
+# z_o: 00000000000000000000000000000000
+# srdyo_o: 0
+# Break in Module blocksTestbench at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v line 71
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# 5 compiles, 0 failed with no errors. 
+add wave  \
+sim:/blocksTestbench/Clock \
+sim:/blocksTestbench/Cycle \
+sim:/blocksTestbench/GlobalReset \
+sim:/blocksTestbench/HalfCycle \
+sim:/blocksTestbench/ResetValue \
+sim:/blocksTestbench/mean \
+sim:/blocksTestbench/numErrors \
+sim:/blocksTestbench/srdyi \
+sim:/blocksTestbench/srdyo_o \
+sim:/blocksTestbench/std \
+sim:/blocksTestbench/testcase \
+sim:/blocksTestbench/x_adc \
+sim:/blocksTestbench/x_centScale
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# 5 compiles, 0 failed with no errors. 
+vsim -novopt work.blocksTestbench
+# vsim -novopt work.blocksTestbench 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.blocksTestbench
+# Loading work.blocksTestbench
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.centerScale
+# Loading work.centerScale
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.fp_to_smc_float
+# Loading work.fp_to_smc_float
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.y_o
+# Loading work.y_o
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP
+# Loading work.Fixed_to_FP
+# Loading work.synAbs
+# Loading work.synComparator
+# Loading work.synBusAdapter
+# Loading work.synDelayWithEnable
+# Loading work.synNegate
+# Loading work.synShifter
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_log2
+# Loading work.Fixed_to_FP_log2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_adder
+# Loading work.smc_float_adder
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.x_i
+# Loading work.x_i
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.z_o
+# Loading work.z_o
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder
+# Loading work.FP_Adder
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1
+# Loading work.FP_Adder_getmsbpos1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_1
+# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_2
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_1
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP1
+# Loading work.FP_Adder_getmsbpos1_LZDP1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP2
+# Loading work.FP_Adder_getmsbpos1_LZDP2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP3
+# Loading work.FP_Adder_getmsbpos1_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP4
+# Loading work.FP_Adder_getmsbpos1_LZDP4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP5
+# Loading work.FP_Adder_getmsbpos1_LZDP5
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP6
+# Loading work.FP_Adder_getmsbpos1_LZDP6
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_2
+# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_3
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_multiplier
+# Loading work.smc_float_multiplier
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Multiplier
+# Loading work.FP_Multiplier
+# Loading work.synBusSatRnd
+# Loading work.synInverter
+# Loading work.synDelayWithEnableGeneric
+# Loading work.singleDelayWithEnableGeneric
+add wave  \
+sim:/blocksTestbench/Clock \
+sim:/blocksTestbench/Cycle \
+sim:/blocksTestbench/GlobalReset \
+sim:/blocksTestbench/HalfCycle \
+sim:/blocksTestbench/ResetValue \
+sim:/blocksTestbench/mean \
+sim:/blocksTestbench/numErrors \
+sim:/blocksTestbench/srdyi \
+sim:/blocksTestbench/srdyo_o \
+sim:/blocksTestbench/std \
+sim:/blocksTestbench/testcase \
+sim:/blocksTestbench/x_adc \
+sim:/blocksTestbench/x_centScale; restart; run -all
+# *************
+# z_o: 00000000000000000000000000000000
+# srdyo_o: 0
+# *************
+# z_o: 01001000100101100111100010011010
+# srdyo_o: 0
+# *************
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# Break in Module blocksTestbench at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v line 75
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# 5 compiles, 0 failed with no errors. 
+vsim -novopt work.blocksTestbench
+# vsim -novopt work.blocksTestbench 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.blocksTestbench
+# Loading work.blocksTestbench
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.centerScale
+# Loading work.centerScale
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.fp_to_smc_float
+# Loading work.fp_to_smc_float
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.y_o
+# Loading work.y_o
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP
+# Loading work.Fixed_to_FP
+# Loading work.synAbs
+# Loading work.synComparator
+# Loading work.synBusAdapter
+# Loading work.synDelayWithEnable
+# Loading work.synNegate
+# Loading work.synShifter
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_log2
+# Loading work.Fixed_to_FP_log2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_adder
+# Loading work.smc_float_adder
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.x_i
+# Loading work.x_i
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.z_o
+# Loading work.z_o
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder
+# Loading work.FP_Adder
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1
+# Loading work.FP_Adder_getmsbpos1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_1
+# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_2
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_1
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP1
+# Loading work.FP_Adder_getmsbpos1_LZDP1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP2
+# Loading work.FP_Adder_getmsbpos1_LZDP2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP3
+# Loading work.FP_Adder_getmsbpos1_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP4
+# Loading work.FP_Adder_getmsbpos1_LZDP4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP5
+# Loading work.FP_Adder_getmsbpos1_LZDP5
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP6
+# Loading work.FP_Adder_getmsbpos1_LZDP6
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_2
+# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_3
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_multiplier
+# Loading work.smc_float_multiplier
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Multiplier
+# Loading work.FP_Multiplier
+# Loading work.synBusSatRnd
+# Loading work.synInverter
+# Loading work.synDelayWithEnableGeneric
+# Loading work.singleDelayWithEnableGeneric
+add wave  \
+sim:/blocksTestbench/Clock \
+sim:/blocksTestbench/Cycle \
+sim:/blocksTestbench/GlobalReset \
+sim:/blocksTestbench/HalfCycle \
+sim:/blocksTestbench/ResetValue \
+sim:/blocksTestbench/mean \
+sim:/blocksTestbench/numErrors \
+sim:/blocksTestbench/srdyi \
+sim:/blocksTestbench/srdyo_o \
+sim:/blocksTestbench/std \
+sim:/blocksTestbench/testcase \
+sim:/blocksTestbench/x_adc \
+sim:/blocksTestbench/x_centScale; restart; run -all
+# *************
+# z_o: 00000000000000000000000000000000
+# srdyo_o: 0
+# *************
+#           0
+# z_o: 01001000100101100111100010011010
+# srdyo_o: 0
+# *************
+#           1
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#           2
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#           3
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#           4
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#           5
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#           6
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#           7
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#           8
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#           9
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#          10
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#          11
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#          12
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#          13
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#          14
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#          15
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#          16
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#          17
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#          18
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#          19
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# Break in Module blocksTestbench at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v line 79
+add wave  \
+sim:/blocksTestbench/Clock \
+sim:/blocksTestbench/Cycle \
+sim:/blocksTestbench/GlobalReset \
+sim:/blocksTestbench/HalfCycle \
+sim:/blocksTestbench/ResetValue \
+sim:/blocksTestbench/cnt \
+sim:/blocksTestbench/mean \
+sim:/blocksTestbench/numErrors \
+sim:/blocksTestbench/srdyi \
+sim:/blocksTestbench/srdyo_o \
+sim:/blocksTestbench/std \
+sim:/blocksTestbench/testcase \
+sim:/blocksTestbench/x_adc \
+sim:/blocksTestbench/x_centScale
+vsim -novopt work.blocksTestbench
+# vsim -novopt work.blocksTestbench 
+# Loading work.blocksTestbench
+# Loading work.centerScale
+# Loading work.fp_to_smc_float
+# Loading work.y_o
+# Loading work.Fixed_to_FP
+# Loading work.synAbs
+# Loading work.synComparator
+# Loading work.synBusAdapter
+# Loading work.synDelayWithEnable
+# Loading work.synNegate
+# Loading work.synShifter
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
+# Loading work.Fixed_to_FP_log2
+# Loading work.smc_float_adder
+# Loading work.x_i
+# Loading work.z_o
+# Loading work.FP_Adder
+# Loading work.FP_Adder_getmsbpos1
+# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
+# Loading work.FP_Adder_getmsbpos1_LZDP1
+# Loading work.FP_Adder_getmsbpos1_LZDP2
+# Loading work.FP_Adder_getmsbpos1_LZDP3
+# Loading work.FP_Adder_getmsbpos1_LZDP4
+# Loading work.FP_Adder_getmsbpos1_LZDP5
+# Loading work.FP_Adder_getmsbpos1_LZDP6
+# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
+# Loading work.smc_float_multiplier
+# Loading work.FP_Multiplier
+# Loading work.synBusSatRnd
+# Loading work.synInverter
+# Loading work.synDelayWithEnableGeneric
+# Loading work.singleDelayWithEnableGeneric
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# 5 compiles, 0 failed with no errors. 
+vsim -novopt work.blocksTestbench
+# vsim -novopt work.blocksTestbench 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.blocksTestbench
+# Loading work.blocksTestbench
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.centerScale
+# Loading work.centerScale
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.fp_to_smc_float
+# Loading work.fp_to_smc_float
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.y_o
+# Loading work.y_o
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP
+# Loading work.Fixed_to_FP
+# Loading work.synAbs
+# Loading work.synComparator
+# Loading work.synBusAdapter
+# Loading work.synDelayWithEnable
+# Loading work.synNegate
+# Loading work.synShifter
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_log2
+# Loading work.Fixed_to_FP_log2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_adder
+# Loading work.smc_float_adder
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.x_i
+# Loading work.x_i
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.z_o
+# Loading work.z_o
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder
+# Loading work.FP_Adder
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1
+# Loading work.FP_Adder_getmsbpos1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_1
+# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_2
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_1
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP1
+# Loading work.FP_Adder_getmsbpos1_LZDP1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP2
+# Loading work.FP_Adder_getmsbpos1_LZDP2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP3
+# Loading work.FP_Adder_getmsbpos1_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP4
+# Loading work.FP_Adder_getmsbpos1_LZDP4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP5
+# Loading work.FP_Adder_getmsbpos1_LZDP5
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP6
+# Loading work.FP_Adder_getmsbpos1_LZDP6
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_2
+# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_3
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_multiplier
+# Loading work.smc_float_multiplier
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Multiplier
+# Loading work.FP_Multiplier
+# Loading work.synBusSatRnd
+# Loading work.synInverter
+# Loading work.synDelayWithEnableGeneric
+# Loading work.singleDelayWithEnableGeneric
+add wave  \
+sim:/blocksTestbench/Clock \
+sim:/blocksTestbench/Cycle \
+sim:/blocksTestbench/GlobalReset \
+sim:/blocksTestbench/HalfCycle \
+sim:/blocksTestbench/ResetValue \
+sim:/blocksTestbench/cnt \
+sim:/blocksTestbench/mean \
+sim:/blocksTestbench/numErrors \
+sim:/blocksTestbench/srdyi \
+sim:/blocksTestbench/srdyo_o \
+sim:/blocksTestbench/std \
+sim:/blocksTestbench/testcase \
+sim:/blocksTestbench/x_adc \
+sim:/blocksTestbench/x_centScale
+restart; run -all
+# *************
+# z_o: 00000000000000000000000000000000
+# srdyo_o: 0
+# *************
+#           0
+# z_o: 01001000100101100111100010011010
+# srdyo_o: 0
+# *************
+#           1
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#           2
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#           3
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#           4
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#           5
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#           6
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#           7
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#           8
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#           9
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#          10
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#          11
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#          12
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#          13
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#          14
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#          15
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#          16
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#          17
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#          18
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+#          19
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# *************
+# z_o: 01001101110100010111111101110010
+# srdyo_o: 1
+# Break in Module blocksTestbench at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v line 79
+# Causality operation skipped due to absense of debug database file
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# 5 compiles, 0 failed with no errors. 
+vsim -novopt work.blocksTestbench
+# vsim -novopt work.blocksTestbench 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.blocksTestbench
+# Loading work.blocksTestbench
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.centerScale
+# Loading work.centerScale
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.fp_to_smc_float
+# Loading work.fp_to_smc_float
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.y_o
+# Loading work.y_o
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP
+# Loading work.Fixed_to_FP
+# Loading work.synAbs
+# Loading work.synComparator
+# Loading work.synBusAdapter
+# Loading work.synDelayWithEnable
+# Loading work.synNegate
+# Loading work.synShifter
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_log2
+# Loading work.Fixed_to_FP_log2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_adder
+# Loading work.smc_float_adder
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.x_i
+# Loading work.x_i
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.z_o
+# Loading work.z_o
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder
+# Loading work.FP_Adder
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1
+# Loading work.FP_Adder_getmsbpos1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_1
+# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_2
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_1
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP1
+# Loading work.FP_Adder_getmsbpos1_LZDP1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP2
+# Loading work.FP_Adder_getmsbpos1_LZDP2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP3
+# Loading work.FP_Adder_getmsbpos1_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP4
+# Loading work.FP_Adder_getmsbpos1_LZDP4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP5
+# Loading work.FP_Adder_getmsbpos1_LZDP5
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP6
+# Loading work.FP_Adder_getmsbpos1_LZDP6
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_2
+# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_3
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_multiplier
+# Loading work.smc_float_multiplier
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Multiplier
+# Loading work.FP_Multiplier
+# Loading work.synBusSatRnd
+# Loading work.synInverter
+# Loading work.synDelayWithEnableGeneric
+# Loading work.singleDelayWithEnableGeneric
+add wave  \
+sim:/blocksTestbench/Clock \
+sim:/blocksTestbench/Cycle \
+sim:/blocksTestbench/GlobalReset \
+sim:/blocksTestbench/HalfCycle \
+sim:/blocksTestbench/ResetValue \
+sim:/blocksTestbench/cnt \
+sim:/blocksTestbench/mean \
+sim:/blocksTestbench/numErrors \
+sim:/blocksTestbench/srdyi \
+sim:/blocksTestbench/srdyo_o \
+sim:/blocksTestbench/std \
+sim:/blocksTestbench/testcase \
+sim:/blocksTestbench/x_adc \
+sim:/blocksTestbench/x_centScale; restart; run -all
+# *************
+# z_o:          0
+# srdyo_o: 0
+# *************
+#           0
+# z_o:          0
+# srdyo_o: 0
+# *************
+#           1
+# z_o:          0
+# srdyo_o: 0
+# *************
+#           2
+# z_o:          0
+# srdyo_o: 0
+# *************
+#           3
+# z_o:          0
+# srdyo_o: 0
+# *************
+#           4
+# z_o:          0
+# srdyo_o: 0
+# *************
+#           5
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#           6
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#           7
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#           8
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#           9
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#          10
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#          11
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#          12
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#          13
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#          14
+# z_o: 1217833387
+# srdyo_o: 0
+# *************
+#          15
+# z_o: 1217833387
+# srdyo_o: 0
+# *************
+#          16
+# z_o: 1217820826
+# srdyo_o: 0
+# *************
+#          17
+# z_o: 1305575282
+# srdyo_o: 1
+# *************
+#          18
+# z_o: 1305575282
+# srdyo_o: 1
+# *************
+#          19
+# z_o: 1305575282
+# srdyo_o: 1
+# Break in Module blocksTestbench at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v line 75
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# 5 compiles, 0 failed with no errors. 
+vsim -novopt work.blocksTestbench
+# vsim -novopt work.blocksTestbench 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.blocksTestbench
+# Loading work.blocksTestbench
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.centerScale
+# Loading work.centerScale
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.fp_to_smc_float
+# Loading work.fp_to_smc_float
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.y_o
+# Loading work.y_o
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP
+# Loading work.Fixed_to_FP
+# Loading work.synAbs
+# Loading work.synComparator
+# Loading work.synBusAdapter
+# Loading work.synDelayWithEnable
+# Loading work.synNegate
+# Loading work.synShifter
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_log2
+# Loading work.Fixed_to_FP_log2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_adder
+# Loading work.smc_float_adder
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.x_i
+# Loading work.x_i
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.z_o
+# Loading work.z_o
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder
+# Loading work.FP_Adder
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1
+# Loading work.FP_Adder_getmsbpos1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_1
+# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_2
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_1
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP1
+# Loading work.FP_Adder_getmsbpos1_LZDP1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP2
+# Loading work.FP_Adder_getmsbpos1_LZDP2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP3
+# Loading work.FP_Adder_getmsbpos1_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP4
+# Loading work.FP_Adder_getmsbpos1_LZDP4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP5
+# Loading work.FP_Adder_getmsbpos1_LZDP5
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP6
+# Loading work.FP_Adder_getmsbpos1_LZDP6
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_2
+# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_3
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_multiplier
+# Loading work.smc_float_multiplier
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Multiplier
+# Loading work.FP_Multiplier
+# Loading work.synBusSatRnd
+# Loading work.synInverter
+# Loading work.synDelayWithEnableGeneric
+# Loading work.singleDelayWithEnableGeneric
+add wave  \
+sim:/blocksTestbench/Clock \
+sim:/blocksTestbench/Cycle \
+sim:/blocksTestbench/GlobalReset \
+sim:/blocksTestbench/HalfCycle \
+sim:/blocksTestbench/ResetValue \
+sim:/blocksTestbench/cnt \
+sim:/blocksTestbench/mean \
+sim:/blocksTestbench/numErrors \
+sim:/blocksTestbench/srdyi \
+sim:/blocksTestbench/srdyo_o \
+sim:/blocksTestbench/std \
+sim:/blocksTestbench/testcase \
+sim:/blocksTestbench/x_adc \
+sim:/blocksTestbench/x_centScale; restart; run -all
+# *************
+# z_o:          0
+# srdyo_o: 0
+# *************
+#           1 cycles transpired
+# z_o:          0
+# srdyo_o: 0
+# *************
+#           2 cycles transpired
+# z_o:          0
+# srdyo_o: 0
+# *************
+#           3 cycles transpired
+# z_o:          0
+# srdyo_o: 0
+# *************
+#           4 cycles transpired
+# z_o:          0
+# srdyo_o: 0
+# *************
+#           5 cycles transpired
+# z_o:          0
+# srdyo_o: 0
+# *************
+#           6 cycles transpired
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#           7 cycles transpired
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#           8 cycles transpired
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#           9 cycles transpired
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#          10 cycles transpired
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#          11 cycles transpired
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#          12 cycles transpired
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#          13 cycles transpired
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#          14 cycles transpired
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#          15 cycles transpired
+# z_o: 1217833387
+# srdyo_o: 0
+# *************
+#          16 cycles transpired
+# z_o: 1217833387
+# srdyo_o: 0
+# *************
+#          17 cycles transpired
+# z_o: 1217820826
+# srdyo_o: 0
+# *************
+#          18 cycles transpired
+# z_o: 1305575282
+# srdyo_o: 1
+# *************
+#          19 cycles transpired
+# z_o: 1305575282
+# srdyo_o: 1
+# *************
+#          20 cycles transpired
+# z_o: 1305575282
+# srdyo_o: 1
+# Break in Module blocksTestbench at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v line 75
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# 5 compiles, 0 failed with no errors. 
+vsim -novopt work.blocksTestbench
+# vsim -novopt work.blocksTestbench 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.blocksTestbench
+# Loading work.blocksTestbench
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.centerScale
+# Loading work.centerScale
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.fp_to_smc_float
+# Loading work.fp_to_smc_float
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.y_o
+# Loading work.y_o
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP
+# Loading work.Fixed_to_FP
+# Loading work.synAbs
+# Loading work.synComparator
+# Loading work.synBusAdapter
+# Loading work.synDelayWithEnable
+# Loading work.synNegate
+# Loading work.synShifter
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_log2
+# Loading work.Fixed_to_FP_log2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_adder
+# Loading work.smc_float_adder
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.x_i
+# Loading work.x_i
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.z_o
+# Loading work.z_o
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder
+# Loading work.FP_Adder
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1
+# Loading work.FP_Adder_getmsbpos1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_1
+# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_2
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_1
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP1
+# Loading work.FP_Adder_getmsbpos1_LZDP1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP2
+# Loading work.FP_Adder_getmsbpos1_LZDP2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP3
+# Loading work.FP_Adder_getmsbpos1_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP4
+# Loading work.FP_Adder_getmsbpos1_LZDP4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP5
+# Loading work.FP_Adder_getmsbpos1_LZDP5
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP6
+# Loading work.FP_Adder_getmsbpos1_LZDP6
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_2
+# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_3
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_multiplier
+# Loading work.smc_float_multiplier
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Multiplier
+# Loading work.FP_Multiplier
+# Loading work.synBusSatRnd
+# Loading work.synInverter
+# Loading work.synDelayWithEnableGeneric
+# Loading work.singleDelayWithEnableGeneric
+add wave  \
+sim:/blocksTestbench/Clock \
+sim:/blocksTestbench/Cycle \
+sim:/blocksTestbench/GlobalReset \
+sim:/blocksTestbench/HalfCycle \
+sim:/blocksTestbench/ResetValue \
+sim:/blocksTestbench/cnt \
+sim:/blocksTestbench/mean \
+sim:/blocksTestbench/numErrors \
+sim:/blocksTestbench/srdyi \
+sim:/blocksTestbench/srdyo_o \
+sim:/blocksTestbench/std \
+sim:/blocksTestbench/testcase \
+sim:/blocksTestbench/x_adc \
+sim:/blocksTestbench/x_centScale; restart; run -all
+# *************
+# z_o:          0
+# srdyo_o: 0
+# *************
+#           1 cycles transpired
+# z_o:          0
+# srdyo_o: 0
+# *************
+#           2 cycles transpired
+# z_o:          0
+# srdyo_o: 0
+# *************
+#           3 cycles transpired
+# z_o:          0
+# srdyo_o: 0
+# *************
+#           4 cycles transpired
+# z_o:          0
+# srdyo_o: 0
+# *************
+#           5 cycles transpired
+# z_o:          0
+# srdyo_o: 0
+# *************
+#           6 cycles transpired
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#           7 cycles transpired
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#           8 cycles transpired
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#           9 cycles transpired
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#          10 cycles transpired
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#          11 cycles transpired
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#          12 cycles transpired
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#          13 cycles transpired
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#          14 cycles transpired
+# z_o:   71582788
+# srdyo_o: 0
+# *************
+#          15 cycles transpired
+# z_o: 1217833387
+# srdyo_o: 0
+# *************
+#          16 cycles transpired
+# z_o: 1217833387
+# srdyo_o: 0
+# *************
+#          17 cycles transpired
+# z_o: 1217820826
+# srdyo_o: 0
+# *************
+#          18 cycles transpired
+# z_o: 1305575282
+# srdyo_o: 1
+# *************
+#          19 cycles transpired
+# z_o: 1305575282
+# srdyo_o: 1
+# *************
+#          20 cycles transpired
+# z_o: 1305575282
+# srdyo_o: 1
+# *************
+#          21 cycles transpired
+# z_o: 1305575282
+# srdyo_o: 1
+# Break in Module blocksTestbench at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v line 79
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# 5 compiles, 0 failed with no errors. 
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v failed with 1 errors.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 1 failed with 1 error. 
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v failed with 1 errors.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 1 failed with 1 error. 
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v failed with 1 errors.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 1 failed with 1 error. 
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v failed with 1 errors.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 1 failed with 1 error. 
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v failed with 1 errors.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 1 failed with 1 error. 
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v failed with 1 errors.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 1 failed with 1 error. 
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v failed with 1 errors.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 1 failed with 1 error. 
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 0 failed with no errors. 
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 0 failed with no errors. 
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v failed with 1 errors.
+# 7 compiles, 1 failed with 1 error. 
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v failed with 1 errors.
+# 7 compiles, 1 failed with 1 error. 
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v failed with 1 errors.
+# 7 compiles, 1 failed with 1 error. 
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 0 failed with no errors. 
+vsim -novopt work.comparator_tb
+# vsim -novopt work.comparator_tb 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator_tb
+# Loading work.comparator_tb
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator
+# Loading work.comparator
+add wave  \
+sim:/comparator_tb/Clock \
+sim:/comparator_tb/Cycle \
+sim:/comparator_tb/GlobalReset \
+sim:/comparator_tb/HalfCycle \
+sim:/comparator_tb/ResetValue \
+sim:/comparator_tb/cnt \
+sim:/comparator_tb/coeff0 \
+sim:/comparator_tb/coeff1 \
+sim:/comparator_tb/coeff10 \
+sim:/comparator_tb/coeff1_0 \
+sim:/comparator_tb/coeff1_1 \
+sim:/comparator_tb/coeff1_10 \
+sim:/comparator_tb/coeff1_2 \
+sim:/comparator_tb/coeff1_3 \
+sim:/comparator_tb/coeff1_4 \
+sim:/comparator_tb/coeff1_5 \
+sim:/comparator_tb/coeff1_6 \
+sim:/comparator_tb/coeff1_7 \
+sim:/comparator_tb/coeff1_8 \
+sim:/comparator_tb/coeff1_9 \
+sim:/comparator_tb/coeff2 \
+sim:/comparator_tb/coeff2_0 \
+sim:/comparator_tb/coeff2_1 \
+sim:/comparator_tb/coeff2_10 \
+sim:/comparator_tb/coeff2_2 \
+sim:/comparator_tb/coeff2_3 \
+sim:/comparator_tb/coeff2_4 \
+sim:/comparator_tb/coeff2_5 \
+sim:/comparator_tb/coeff2_6 \
+sim:/comparator_tb/coeff2_7 \
+sim:/comparator_tb/coeff2_8 \
+sim:/comparator_tb/coeff2_9 \
+sim:/comparator_tb/coeff3 \
+sim:/comparator_tb/coeff3_0 \
+sim:/comparator_tb/coeff3_1 \
+sim:/comparator_tb/coeff3_10 \
+sim:/comparator_tb/coeff3_2 \
+sim:/comparator_tb/coeff3_3 \
+sim:/comparator_tb/coeff3_4 \
+sim:/comparator_tb/coeff3_5 \
+sim:/comparator_tb/coeff3_6 \
+sim:/comparator_tb/coeff3_7 \
+sim:/comparator_tb/coeff3_8 \
+sim:/comparator_tb/coeff3_9 \
+sim:/comparator_tb/coeff4 \
+sim:/comparator_tb/coeff4_0 \
+sim:/comparator_tb/coeff4_1 \
+sim:/comparator_tb/coeff4_10 \
+sim:/comparator_tb/coeff4_2 \
+sim:/comparator_tb/coeff4_3 \
+sim:/comparator_tb/coeff4_4 \
+sim:/comparator_tb/coeff4_5 \
+sim:/comparator_tb/coeff4_6 \
+sim:/comparator_tb/coeff4_7 \
+sim:/comparator_tb/coeff4_8 \
+sim:/comparator_tb/coeff4_9 \
+sim:/comparator_tb/coeff5 \
+sim:/comparator_tb/coeff6 \
+sim:/comparator_tb/coeff7 \
+sim:/comparator_tb/coeff8 \
+sim:/comparator_tb/coeff9 \
+sim:/comparator_tb/mean \
+sim:/comparator_tb/mean1 \
+sim:/comparator_tb/mean2 \
+sim:/comparator_tb/mean3 \
+sim:/comparator_tb/mean4 \
+sim:/comparator_tb/section_limit \
+sim:/comparator_tb/std \
+sim:/comparator_tb/std1 \
+sim:/comparator_tb/std2 \
+sim:/comparator_tb/std3 \
+sim:/comparator_tb/std4 \
+sim:/comparator_tb/testcase \
+sim:/comparator_tb/x_adc
+restart; run -all
+# *************
+# mean:        512
+# *************
+# mean:        512
+# *************
+# mean:        512
+# *************
+# mean:        512
+# *************
+# mean:        512
+# *************
+# mean:        512
+# *************
+# mean:        512
+# *************
+# mean:        512
+# *************
+# mean:        512
+# *************
+# mean:        512
+# *************
+# mean:        512
+# *************
+# mean:        512
+# *************
+# mean:        512
+# *************
+# mean:        512
+# *************
+# mean:        512
+# *************
+# mean:        512
+# *************
+# mean:        512
+# *************
+# mean:        512
+# *************
+# mean:        512
+# *************
+# mean:        512
+# *************
+# mean:        512
+# Break in Module comparator_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/comparator_tb.v line 251
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 0 failed with no errors. 
+vsim -novopt work.comparator_tb
+# vsim -novopt work.comparator_tb 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator_tb
+# Loading work.comparator_tb
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator
+# Loading work.comparator
+add wave  \
+sim:/comparator_tb/Clock \
+sim:/comparator_tb/Cycle \
+sim:/comparator_tb/GlobalReset \
+sim:/comparator_tb/HalfCycle \
+sim:/comparator_tb/ResetValue \
+sim:/comparator_tb/cnt \
+sim:/comparator_tb/coeff0 \
+sim:/comparator_tb/coeff1 \
+sim:/comparator_tb/coeff10 \
+sim:/comparator_tb/coeff1_0 \
+sim:/comparator_tb/coeff1_1 \
+sim:/comparator_tb/coeff1_10 \
+sim:/comparator_tb/coeff1_2 \
+sim:/comparator_tb/coeff1_3 \
+sim:/comparator_tb/coeff1_4 \
+sim:/comparator_tb/coeff1_5 \
+sim:/comparator_tb/coeff1_6 \
+sim:/comparator_tb/coeff1_7 \
+sim:/comparator_tb/coeff1_8 \
+sim:/comparator_tb/coeff1_9 \
+sim:/comparator_tb/coeff2 \
+sim:/comparator_tb/coeff2_0 \
+sim:/comparator_tb/coeff2_1 \
+sim:/comparator_tb/coeff2_10 \
+sim:/comparator_tb/coeff2_2 \
+sim:/comparator_tb/coeff2_3 \
+sim:/comparator_tb/coeff2_4 \
+sim:/comparator_tb/coeff2_5 \
+sim:/comparator_tb/coeff2_6 \
+sim:/comparator_tb/coeff2_7 \
+sim:/comparator_tb/coeff2_8 \
+sim:/comparator_tb/coeff2_9 \
+sim:/comparator_tb/coeff3 \
+sim:/comparator_tb/coeff3_0 \
+sim:/comparator_tb/coeff3_1 \
+sim:/comparator_tb/coeff3_10 \
+sim:/comparator_tb/coeff3_2 \
+sim:/comparator_tb/coeff3_3 \
+sim:/comparator_tb/coeff3_4 \
+sim:/comparator_tb/coeff3_5 \
+sim:/comparator_tb/coeff3_6 \
+sim:/comparator_tb/coeff3_7 \
+sim:/comparator_tb/coeff3_8 \
+sim:/comparator_tb/coeff3_9 \
+sim:/comparator_tb/coeff4 \
+sim:/comparator_tb/coeff4_0 \
+sim:/comparator_tb/coeff4_1 \
+sim:/comparator_tb/coeff4_10 \
+sim:/comparator_tb/coeff4_2 \
+sim:/comparator_tb/coeff4_3 \
+sim:/comparator_tb/coeff4_4 \
+sim:/comparator_tb/coeff4_5 \
+sim:/comparator_tb/coeff4_6 \
+sim:/comparator_tb/coeff4_7 \
+sim:/comparator_tb/coeff4_8 \
+sim:/comparator_tb/coeff4_9 \
+sim:/comparator_tb/coeff5 \
+sim:/comparator_tb/coeff6 \
+sim:/comparator_tb/coeff7 \
+sim:/comparator_tb/coeff8 \
+sim:/comparator_tb/coeff9 \
+sim:/comparator_tb/mean \
+sim:/comparator_tb/mean1 \
+sim:/comparator_tb/mean2 \
+sim:/comparator_tb/mean3 \
+sim:/comparator_tb/mean4 \
+sim:/comparator_tb/section_limit \
+sim:/comparator_tb/std \
+sim:/comparator_tb/std1 \
+sim:/comparator_tb/std2 \
+sim:/comparator_tb/std3 \
+sim:/comparator_tb/std4 \
+sim:/comparator_tb/testcase \
+sim:/comparator_tb/x_adc; restart; run -all
+# *************
+# mean:        512
+# *************
+# cnt:           1
+# mean:        512
+# *************
+# cnt:           2
+# mean:        512
+# *************
+# cnt:           3
+# mean:        512
+# *************
+# cnt:           4
+# mean:        512
+# *************
+# cnt:           5
+# mean:        512
+# *************
+# cnt:           6
+# mean:        512
+# *************
+# cnt:           7
+# mean:        512
+# *************
+# cnt:           8
+# mean:        512
+# *************
+# cnt:           9
+# mean:        512
+# *************
+# cnt:          10
+# mean:        512
+# *************
+# cnt:          11
+# mean:        512
+# *************
+# cnt:          12
+# mean:        512
+# *************
+# cnt:          13
+# mean:        512
+# *************
+# cnt:          14
+# mean:        512
+# *************
+# cnt:          15
+# mean:        512
+# *************
+# cnt:          16
+# mean:        512
+# *************
+# cnt:          17
+# mean:        512
+# *************
+# cnt:          18
+# mean:        512
+# *************
+# cnt:          19
+# mean:        512
+# *************
+# cnt:          20
+# mean:        512
+# Break in Module comparator_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/comparator_tb.v line 251
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 0 failed with no errors. 
+vsim -novopt work.comparator_tb
+# vsim -novopt work.comparator_tb 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator_tb
+# Loading work.comparator_tb
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator
+# Loading work.comparator
+add wave  \
+sim:/comparator_tb/Clock \
+sim:/comparator_tb/Cycle \
+sim:/comparator_tb/GlobalReset \
+sim:/comparator_tb/HalfCycle \
+sim:/comparator_tb/ResetValue \
+sim:/comparator_tb/cnt \
+sim:/comparator_tb/coeff0 \
+sim:/comparator_tb/coeff1 \
+sim:/comparator_tb/coeff10 \
+sim:/comparator_tb/coeff1_0 \
+sim:/comparator_tb/coeff1_1 \
+sim:/comparator_tb/coeff1_10 \
+sim:/comparator_tb/coeff1_2 \
+sim:/comparator_tb/coeff1_3 \
+sim:/comparator_tb/coeff1_4 \
+sim:/comparator_tb/coeff1_5 \
+sim:/comparator_tb/coeff1_6 \
+sim:/comparator_tb/coeff1_7 \
+sim:/comparator_tb/coeff1_8 \
+sim:/comparator_tb/coeff1_9 \
+sim:/comparator_tb/coeff2 \
+sim:/comparator_tb/coeff2_0 \
+sim:/comparator_tb/coeff2_1 \
+sim:/comparator_tb/coeff2_10 \
+sim:/comparator_tb/coeff2_2 \
+sim:/comparator_tb/coeff2_3 \
+sim:/comparator_tb/coeff2_4 \
+sim:/comparator_tb/coeff2_5 \
+sim:/comparator_tb/coeff2_6 \
+sim:/comparator_tb/coeff2_7 \
+sim:/comparator_tb/coeff2_8 \
+sim:/comparator_tb/coeff2_9 \
+sim:/comparator_tb/coeff3 \
+sim:/comparator_tb/coeff3_0 \
+sim:/comparator_tb/coeff3_1 \
+sim:/comparator_tb/coeff3_10 \
+sim:/comparator_tb/coeff3_2 \
+sim:/comparator_tb/coeff3_3 \
+sim:/comparator_tb/coeff3_4 \
+sim:/comparator_tb/coeff3_5 \
+sim:/comparator_tb/coeff3_6 \
+sim:/comparator_tb/coeff3_7 \
+sim:/comparator_tb/coeff3_8 \
+sim:/comparator_tb/coeff3_9 \
+sim:/comparator_tb/coeff4 \
+sim:/comparator_tb/coeff4_0 \
+sim:/comparator_tb/coeff4_1 \
+sim:/comparator_tb/coeff4_10 \
+sim:/comparator_tb/coeff4_2 \
+sim:/comparator_tb/coeff4_3 \
+sim:/comparator_tb/coeff4_4 \
+sim:/comparator_tb/coeff4_5 \
+sim:/comparator_tb/coeff4_6 \
+sim:/comparator_tb/coeff4_7 \
+sim:/comparator_tb/coeff4_8 \
+sim:/comparator_tb/coeff4_9 \
+sim:/comparator_tb/coeff5 \
+sim:/comparator_tb/coeff6 \
+sim:/comparator_tb/coeff7 \
+sim:/comparator_tb/coeff8 \
+sim:/comparator_tb/coeff9 \
+sim:/comparator_tb/mean \
+sim:/comparator_tb/mean1 \
+sim:/comparator_tb/mean2 \
+sim:/comparator_tb/mean3 \
+sim:/comparator_tb/mean4 \
+sim:/comparator_tb/section_limit \
+sim:/comparator_tb/std \
+sim:/comparator_tb/std1 \
+sim:/comparator_tb/std2 \
+sim:/comparator_tb/std3 \
+sim:/comparator_tb/std4 \
+sim:/comparator_tb/testcase \
+sim:/comparator_tb/x_adc; restart; run -all
+# *************
+# mean:        512
+# *************
+# cnt:           1
+# mean:        515
+# *************
+# cnt:           2
+# mean:        515
+# *************
+# cnt:           3
+# mean:        515
+# *************
+# cnt:           4
+# mean:        515
+# *************
+# cnt:           5
+# mean:        515
+# *************
+# cnt:           6
+# mean:        515
+# *************
+# cnt:           7
+# mean:        515
+# *************
+# cnt:           8
+# mean:        515
+# *************
+# cnt:           9
+# mean:        515
+# *************
+# cnt:          10
+# mean:        515
+# *************
+# cnt:          11
+# mean:        515
+# *************
+# cnt:          12
+# mean:        515
+# *************
+# cnt:          13
+# mean:        515
+# *************
+# cnt:          14
+# mean:        515
+# *************
+# cnt:          15
+# mean:        515
+# *************
+# cnt:          16
+# mean:        515
+# *************
+# cnt:          17
+# mean:        515
+# *************
+# cnt:          18
+# mean:        515
+# *************
+# cnt:          19
+# mean:        515
+# *************
+# cnt:          20
+# mean:        515
+# Break in Module comparator_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/comparator_tb.v line 251
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v failed with 1 errors.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 1 failed with 1 error. 
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 0 failed with no errors. 
+vsim -novopt work.comparator_tb
+# vsim -novopt work.comparator_tb 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator_tb
+# Loading work.comparator_tb
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator
+# Loading work.comparator
+add wave  \
+sim:/comparator_tb/Clock \
+sim:/comparator_tb/Cycle \
+sim:/comparator_tb/GlobalReset \
+sim:/comparator_tb/HalfCycle \
+sim:/comparator_tb/ResetValue \
+sim:/comparator_tb/cnt \
+sim:/comparator_tb/coeff0 \
+sim:/comparator_tb/coeff1 \
+sim:/comparator_tb/coeff10 \
+sim:/comparator_tb/coeff1_0 \
+sim:/comparator_tb/coeff1_1 \
+sim:/comparator_tb/coeff1_10 \
+sim:/comparator_tb/coeff1_2 \
+sim:/comparator_tb/coeff1_3 \
+sim:/comparator_tb/coeff1_4 \
+sim:/comparator_tb/coeff1_5 \
+sim:/comparator_tb/coeff1_6 \
+sim:/comparator_tb/coeff1_7 \
+sim:/comparator_tb/coeff1_8 \
+sim:/comparator_tb/coeff1_9 \
+sim:/comparator_tb/coeff2 \
+sim:/comparator_tb/coeff2_0 \
+sim:/comparator_tb/coeff2_1 \
+sim:/comparator_tb/coeff2_10 \
+sim:/comparator_tb/coeff2_2 \
+sim:/comparator_tb/coeff2_3 \
+sim:/comparator_tb/coeff2_4 \
+sim:/comparator_tb/coeff2_5 \
+sim:/comparator_tb/coeff2_6 \
+sim:/comparator_tb/coeff2_7 \
+sim:/comparator_tb/coeff2_8 \
+sim:/comparator_tb/coeff2_9 \
+sim:/comparator_tb/coeff3 \
+sim:/comparator_tb/coeff3_0 \
+sim:/comparator_tb/coeff3_1 \
+sim:/comparator_tb/coeff3_10 \
+sim:/comparator_tb/coeff3_2 \
+sim:/comparator_tb/coeff3_3 \
+sim:/comparator_tb/coeff3_4 \
+sim:/comparator_tb/coeff3_5 \
+sim:/comparator_tb/coeff3_6 \
+sim:/comparator_tb/coeff3_7 \
+sim:/comparator_tb/coeff3_8 \
+sim:/comparator_tb/coeff3_9 \
+sim:/comparator_tb/coeff4 \
+sim:/comparator_tb/coeff4_0 \
+sim:/comparator_tb/coeff4_1 \
+sim:/comparator_tb/coeff4_10 \
+sim:/comparator_tb/coeff4_2 \
+sim:/comparator_tb/coeff4_3 \
+sim:/comparator_tb/coeff4_4 \
+sim:/comparator_tb/coeff4_5 \
+sim:/comparator_tb/coeff4_6 \
+sim:/comparator_tb/coeff4_7 \
+sim:/comparator_tb/coeff4_8 \
+sim:/comparator_tb/coeff4_9 \
+sim:/comparator_tb/coeff5 \
+sim:/comparator_tb/coeff6 \
+sim:/comparator_tb/coeff7 \
+sim:/comparator_tb/coeff8 \
+sim:/comparator_tb/coeff9 \
+sim:/comparator_tb/mean \
+sim:/comparator_tb/mean1 \
+sim:/comparator_tb/mean2 \
+sim:/comparator_tb/mean3 \
+sim:/comparator_tb/mean4 \
+sim:/comparator_tb/section_limit \
+sim:/comparator_tb/std \
+sim:/comparator_tb/std1 \
+sim:/comparator_tb/std2 \
+sim:/comparator_tb/std3 \
+sim:/comparator_tb/std4 \
+sim:/comparator_tb/testcase \
+sim:/comparator_tb/x_adc; restart; run -all
+# *************
+# mean:        512
+# *************
+# cnt:           1
+# mean:        512
+# *************
+# cnt:           2
+# mean:        512
+# *************
+# cnt:           3
+# mean:        512
+# *************
+# cnt:           4
+# mean:        512
+# *************
+# cnt:           5
+# mean:        512
+# *************
+# cnt:           6
+# mean:        512
+# *************
+# cnt:           7
+# mean:        512
+# *************
+# cnt:           8
+# mean:        512
+# *************
+# cnt:           9
+# mean:        512
+# *************
+# cnt:          10
+# mean:        512
+# *************
+# cnt:          11
+# mean:        512
+# *************
+# cnt:          12
+# mean:        512
+# *************
+# cnt:          13
+# mean:        512
+# *************
+# cnt:          14
+# mean:        512
+# *************
+# cnt:          15
+# mean:        512
+# *************
+# cnt:          16
+# mean:        512
+# *************
+# cnt:          17
+# mean:        512
+# *************
+# cnt:          18
+# mean:        512
+# *************
+# cnt:          19
+# mean:        512
+# *************
+# cnt:          20
+# mean:        512
+# Break in Module comparator_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/comparator_tb.v line 251
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 0 failed with no errors. 
+vsim -novopt work.comparator_tb
+# vsim -novopt work.comparator_tb 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator_tb
+# Loading work.comparator_tb
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator
+# Loading work.comparator
+add wave  \
+sim:/comparator_tb/Clock \
+sim:/comparator_tb/Cycle \
+sim:/comparator_tb/GlobalReset \
+sim:/comparator_tb/HalfCycle \
+sim:/comparator_tb/ResetValue \
+sim:/comparator_tb/cnt \
+sim:/comparator_tb/coeff0 \
+sim:/comparator_tb/coeff1 \
+sim:/comparator_tb/coeff10 \
+sim:/comparator_tb/coeff1_0 \
+sim:/comparator_tb/coeff1_1 \
+sim:/comparator_tb/coeff1_10 \
+sim:/comparator_tb/coeff1_2 \
+sim:/comparator_tb/coeff1_3 \
+sim:/comparator_tb/coeff1_4 \
+sim:/comparator_tb/coeff1_5 \
+sim:/comparator_tb/coeff1_6 \
+sim:/comparator_tb/coeff1_7 \
+sim:/comparator_tb/coeff1_8 \
+sim:/comparator_tb/coeff1_9 \
+sim:/comparator_tb/coeff2 \
+sim:/comparator_tb/coeff2_0 \
+sim:/comparator_tb/coeff2_1 \
+sim:/comparator_tb/coeff2_10 \
+sim:/comparator_tb/coeff2_2 \
+sim:/comparator_tb/coeff2_3 \
+sim:/comparator_tb/coeff2_4 \
+sim:/comparator_tb/coeff2_5 \
+sim:/comparator_tb/coeff2_6 \
+sim:/comparator_tb/coeff2_7 \
+sim:/comparator_tb/coeff2_8 \
+sim:/comparator_tb/coeff2_9 \
+sim:/comparator_tb/coeff3 \
+sim:/comparator_tb/coeff3_0 \
+sim:/comparator_tb/coeff3_1 \
+sim:/comparator_tb/coeff3_10 \
+sim:/comparator_tb/coeff3_2 \
+sim:/comparator_tb/coeff3_3 \
+sim:/comparator_tb/coeff3_4 \
+sim:/comparator_tb/coeff3_5 \
+sim:/comparator_tb/coeff3_6 \
+sim:/comparator_tb/coeff3_7 \
+sim:/comparator_tb/coeff3_8 \
+sim:/comparator_tb/coeff3_9 \
+sim:/comparator_tb/coeff4 \
+sim:/comparator_tb/coeff4_0 \
+sim:/comparator_tb/coeff4_1 \
+sim:/comparator_tb/coeff4_10 \
+sim:/comparator_tb/coeff4_2 \
+sim:/comparator_tb/coeff4_3 \
+sim:/comparator_tb/coeff4_4 \
+sim:/comparator_tb/coeff4_5 \
+sim:/comparator_tb/coeff4_6 \
+sim:/comparator_tb/coeff4_7 \
+sim:/comparator_tb/coeff4_8 \
+sim:/comparator_tb/coeff4_9 \
+sim:/comparator_tb/coeff5 \
+sim:/comparator_tb/coeff6 \
+sim:/comparator_tb/coeff7 \
+sim:/comparator_tb/coeff8 \
+sim:/comparator_tb/coeff9 \
+sim:/comparator_tb/mean \
+sim:/comparator_tb/mean1 \
+sim:/comparator_tb/mean2 \
+sim:/comparator_tb/mean3 \
+sim:/comparator_tb/mean4 \
+sim:/comparator_tb/section_limit \
+sim:/comparator_tb/std \
+sim:/comparator_tb/std1 \
+sim:/comparator_tb/std2 \
+sim:/comparator_tb/std3 \
+sim:/comparator_tb/std4 \
+sim:/comparator_tb/testcase \
+sim:/comparator_tb/x_adc; restart; run -all
+# *************
+# mean:        512
+# *************
+# cnt:           1
+# mean:        514
+# *************
+# cnt:           2
+# mean:        514
+# *************
+# cnt:           3
+# mean:        514
+# *************
+# cnt:           4
+# mean:        514
+# *************
+# cnt:           5
+# mean:        514
+# *************
+# cnt:           6
+# mean:        514
+# *************
+# cnt:           7
+# mean:        514
+# *************
+# cnt:           8
+# mean:        514
+# *************
+# cnt:           9
+# mean:        514
+# *************
+# cnt:          10
+# mean:        514
+# *************
+# cnt:          11
+# mean:        514
+# *************
+# cnt:          12
+# mean:        514
+# *************
+# cnt:          13
+# mean:        514
+# *************
+# cnt:          14
+# mean:        514
+# *************
+# cnt:          15
+# mean:        514
+# *************
+# cnt:          16
+# mean:        514
+# *************
+# cnt:          17
+# mean:        514
+# *************
+# cnt:          18
+# mean:        514
+# *************
+# cnt:          19
+# mean:        514
+# *************
+# cnt:          20
+# mean:        514
+# Break in Module comparator_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/comparator_tb.v line 251
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 0 failed with no errors. 
+vsim -novopt work.comparator_tb
+# vsim -novopt work.comparator_tb 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator_tb
+# Loading work.comparator_tb
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator
+# Loading work.comparator
+add wave  \
+sim:/comparator_tb/Clock \
+sim:/comparator_tb/Cycle \
+sim:/comparator_tb/GlobalReset \
+sim:/comparator_tb/HalfCycle \
+sim:/comparator_tb/ResetValue \
+sim:/comparator_tb/cnt \
+sim:/comparator_tb/coeff0 \
+sim:/comparator_tb/coeff1 \
+sim:/comparator_tb/coeff10 \
+sim:/comparator_tb/coeff1_0 \
+sim:/comparator_tb/coeff1_1 \
+sim:/comparator_tb/coeff1_10 \
+sim:/comparator_tb/coeff1_2 \
+sim:/comparator_tb/coeff1_3 \
+sim:/comparator_tb/coeff1_4 \
+sim:/comparator_tb/coeff1_5 \
+sim:/comparator_tb/coeff1_6 \
+sim:/comparator_tb/coeff1_7 \
+sim:/comparator_tb/coeff1_8 \
+sim:/comparator_tb/coeff1_9 \
+sim:/comparator_tb/coeff2 \
+sim:/comparator_tb/coeff2_0 \
+sim:/comparator_tb/coeff2_1 \
+sim:/comparator_tb/coeff2_10 \
+sim:/comparator_tb/coeff2_2 \
+sim:/comparator_tb/coeff2_3 \
+sim:/comparator_tb/coeff2_4 \
+sim:/comparator_tb/coeff2_5 \
+sim:/comparator_tb/coeff2_6 \
+sim:/comparator_tb/coeff2_7 \
+sim:/comparator_tb/coeff2_8 \
+sim:/comparator_tb/coeff2_9 \
+sim:/comparator_tb/coeff3 \
+sim:/comparator_tb/coeff3_0 \
+sim:/comparator_tb/coeff3_1 \
+sim:/comparator_tb/coeff3_10 \
+sim:/comparator_tb/coeff3_2 \
+sim:/comparator_tb/coeff3_3 \
+sim:/comparator_tb/coeff3_4 \
+sim:/comparator_tb/coeff3_5 \
+sim:/comparator_tb/coeff3_6 \
+sim:/comparator_tb/coeff3_7 \
+sim:/comparator_tb/coeff3_8 \
+sim:/comparator_tb/coeff3_9 \
+sim:/comparator_tb/coeff4 \
+sim:/comparator_tb/coeff4_0 \
+sim:/comparator_tb/coeff4_1 \
+sim:/comparator_tb/coeff4_10 \
+sim:/comparator_tb/coeff4_2 \
+sim:/comparator_tb/coeff4_3 \
+sim:/comparator_tb/coeff4_4 \
+sim:/comparator_tb/coeff4_5 \
+sim:/comparator_tb/coeff4_6 \
+sim:/comparator_tb/coeff4_7 \
+sim:/comparator_tb/coeff4_8 \
+sim:/comparator_tb/coeff4_9 \
+sim:/comparator_tb/coeff5 \
+sim:/comparator_tb/coeff6 \
+sim:/comparator_tb/coeff7 \
+sim:/comparator_tb/coeff8 \
+sim:/comparator_tb/coeff9 \
+sim:/comparator_tb/mean \
+sim:/comparator_tb/mean1 \
+sim:/comparator_tb/mean2 \
+sim:/comparator_tb/mean3 \
+sim:/comparator_tb/mean4 \
+sim:/comparator_tb/section_limit \
+sim:/comparator_tb/std \
+sim:/comparator_tb/std1 \
+sim:/comparator_tb/std2 \
+sim:/comparator_tb/std3 \
+sim:/comparator_tb/std4 \
+sim:/comparator_tb/testcase \
+sim:/comparator_tb/x_adc; restart; run -all
+# *************
+# mean:        512
+# *************
+# cnt:           1
+# mean:        514
+# *************
+# cnt:           2
+# mean:        515
+# *************
+# cnt:           3
+# mean:        515
+# *************
+# cnt:           4
+# mean:        515
+# *************
+# cnt:           5
+# mean:        515
+# *************
+# cnt:           6
+# mean:        515
+# *************
+# cnt:           7
+# mean:        515
+# *************
+# cnt:           8
+# mean:        515
+# *************
+# cnt:           9
+# mean:        515
+# *************
+# cnt:          10
+# mean:        515
+# *************
+# cnt:          11
+# mean:        515
+# *************
+# cnt:          12
+# mean:        515
+# *************
+# cnt:          13
+# mean:        515
+# *************
+# cnt:          14
+# mean:        515
+# *************
+# cnt:          15
+# mean:        515
+# *************
+# cnt:          16
+# mean:        515
+# *************
+# cnt:          17
+# mean:        515
+# *************
+# cnt:          18
+# mean:        515
+# *************
+# cnt:          19
+# mean:        515
+# *************
+# cnt:          20
+# mean:        515
+# Break in Module comparator_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/comparator_tb.v line 252
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 0 failed with no errors. 
+vsim -novopt work.comparator_tb
+# vsim -novopt work.comparator_tb 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator_tb
+# Loading work.comparator_tb
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator
+# Loading work.comparator
+add wave  \
+sim:/comparator_tb/Clock \
+sim:/comparator_tb/Cycle \
+sim:/comparator_tb/GlobalReset \
+sim:/comparator_tb/HalfCycle \
+sim:/comparator_tb/ResetValue \
+sim:/comparator_tb/cnt \
+sim:/comparator_tb/coeff0 \
+sim:/comparator_tb/coeff1 \
+sim:/comparator_tb/coeff10 \
+sim:/comparator_tb/coeff1_0 \
+sim:/comparator_tb/coeff1_1 \
+sim:/comparator_tb/coeff1_10 \
+sim:/comparator_tb/coeff1_2 \
+sim:/comparator_tb/coeff1_3 \
+sim:/comparator_tb/coeff1_4 \
+sim:/comparator_tb/coeff1_5 \
+sim:/comparator_tb/coeff1_6 \
+sim:/comparator_tb/coeff1_7 \
+sim:/comparator_tb/coeff1_8 \
+sim:/comparator_tb/coeff1_9 \
+sim:/comparator_tb/coeff2 \
+sim:/comparator_tb/coeff2_0 \
+sim:/comparator_tb/coeff2_1 \
+sim:/comparator_tb/coeff2_10 \
+sim:/comparator_tb/coeff2_2 \
+sim:/comparator_tb/coeff2_3 \
+sim:/comparator_tb/coeff2_4 \
+sim:/comparator_tb/coeff2_5 \
+sim:/comparator_tb/coeff2_6 \
+sim:/comparator_tb/coeff2_7 \
+sim:/comparator_tb/coeff2_8 \
+sim:/comparator_tb/coeff2_9 \
+sim:/comparator_tb/coeff3 \
+sim:/comparator_tb/coeff3_0 \
+sim:/comparator_tb/coeff3_1 \
+sim:/comparator_tb/coeff3_10 \
+sim:/comparator_tb/coeff3_2 \
+sim:/comparator_tb/coeff3_3 \
+sim:/comparator_tb/coeff3_4 \
+sim:/comparator_tb/coeff3_5 \
+sim:/comparator_tb/coeff3_6 \
+sim:/comparator_tb/coeff3_7 \
+sim:/comparator_tb/coeff3_8 \
+sim:/comparator_tb/coeff3_9 \
+sim:/comparator_tb/coeff4 \
+sim:/comparator_tb/coeff4_0 \
+sim:/comparator_tb/coeff4_1 \
+sim:/comparator_tb/coeff4_10 \
+sim:/comparator_tb/coeff4_2 \
+sim:/comparator_tb/coeff4_3 \
+sim:/comparator_tb/coeff4_4 \
+sim:/comparator_tb/coeff4_5 \
+sim:/comparator_tb/coeff4_6 \
+sim:/comparator_tb/coeff4_7 \
+sim:/comparator_tb/coeff4_8 \
+sim:/comparator_tb/coeff4_9 \
+sim:/comparator_tb/coeff5 \
+sim:/comparator_tb/coeff6 \
+sim:/comparator_tb/coeff7 \
+sim:/comparator_tb/coeff8 \
+sim:/comparator_tb/coeff9 \
+sim:/comparator_tb/mean \
+sim:/comparator_tb/mean1 \
+sim:/comparator_tb/mean2 \
+sim:/comparator_tb/mean3 \
+sim:/comparator_tb/mean4 \
+sim:/comparator_tb/section_limit \
+sim:/comparator_tb/std \
+sim:/comparator_tb/std1 \
+sim:/comparator_tb/std2 \
+sim:/comparator_tb/std3 \
+sim:/comparator_tb/std4 \
+sim:/comparator_tb/testcase \
+sim:/comparator_tb/x_adc; restart; run -all
+# *************
+# mean:        512
+# *************
+# cnt:           1
+# mean:        514
+# *************
+# cnt:           2
+# mean:        512
+# *************
+# cnt:           3
+# mean:        512
+# *************
+# cnt:           4
+# mean:        512
+# *************
+# cnt:           5
+# mean:        512
+# *************
+# cnt:           6
+# mean:        512
+# *************
+# cnt:           7
+# mean:        512
+# *************
+# cnt:           8
+# mean:        512
+# *************
+# cnt:           9
+# mean:        512
+# *************
+# cnt:          10
+# mean:        512
+# *************
+# cnt:          11
+# mean:        512
+# *************
+# cnt:          12
+# mean:        512
+# *************
+# cnt:          13
+# mean:        512
+# *************
+# cnt:          14
+# mean:        512
+# *************
+# cnt:          15
+# mean:        512
+# *************
+# cnt:          16
+# mean:        512
+# *************
+# cnt:          17
+# mean:        512
+# *************
+# cnt:          18
+# mean:        512
+# *************
+# cnt:          19
+# mean:        512
+# *************
+# cnt:          20
+# mean:        512
+# Break in Module comparator_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/comparator_tb.v line 252
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 0 failed with no errors. 
+vsim -novopt work.comparator_tb
+# vsim -novopt work.comparator_tb 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator_tb
+# Loading work.comparator_tb
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator
+# Loading work.comparator
+add wave  \
+sim:/comparator_tb/Clock \
+sim:/comparator_tb/Cycle \
+sim:/comparator_tb/GlobalReset \
+sim:/comparator_tb/HalfCycle \
+sim:/comparator_tb/ResetValue \
+sim:/comparator_tb/cnt \
+sim:/comparator_tb/coeff0 \
+sim:/comparator_tb/coeff1 \
+sim:/comparator_tb/coeff10 \
+sim:/comparator_tb/coeff1_0 \
+sim:/comparator_tb/coeff1_1 \
+sim:/comparator_tb/coeff1_10 \
+sim:/comparator_tb/coeff1_2 \
+sim:/comparator_tb/coeff1_3 \
+sim:/comparator_tb/coeff1_4 \
+sim:/comparator_tb/coeff1_5 \
+sim:/comparator_tb/coeff1_6 \
+sim:/comparator_tb/coeff1_7 \
+sim:/comparator_tb/coeff1_8 \
+sim:/comparator_tb/coeff1_9 \
+sim:/comparator_tb/coeff2 \
+sim:/comparator_tb/coeff2_0 \
+sim:/comparator_tb/coeff2_1 \
+sim:/comparator_tb/coeff2_10 \
+sim:/comparator_tb/coeff2_2 \
+sim:/comparator_tb/coeff2_3 \
+sim:/comparator_tb/coeff2_4 \
+sim:/comparator_tb/coeff2_5 \
+sim:/comparator_tb/coeff2_6 \
+sim:/comparator_tb/coeff2_7 \
+sim:/comparator_tb/coeff2_8 \
+sim:/comparator_tb/coeff2_9 \
+sim:/comparator_tb/coeff3 \
+sim:/comparator_tb/coeff3_0 \
+sim:/comparator_tb/coeff3_1 \
+sim:/comparator_tb/coeff3_10 \
+sim:/comparator_tb/coeff3_2 \
+sim:/comparator_tb/coeff3_3 \
+sim:/comparator_tb/coeff3_4 \
+sim:/comparator_tb/coeff3_5 \
+sim:/comparator_tb/coeff3_6 \
+sim:/comparator_tb/coeff3_7 \
+sim:/comparator_tb/coeff3_8 \
+sim:/comparator_tb/coeff3_9 \
+sim:/comparator_tb/coeff4 \
+sim:/comparator_tb/coeff4_0 \
+sim:/comparator_tb/coeff4_1 \
+sim:/comparator_tb/coeff4_10 \
+sim:/comparator_tb/coeff4_2 \
+sim:/comparator_tb/coeff4_3 \
+sim:/comparator_tb/coeff4_4 \
+sim:/comparator_tb/coeff4_5 \
+sim:/comparator_tb/coeff4_6 \
+sim:/comparator_tb/coeff4_7 \
+sim:/comparator_tb/coeff4_8 \
+sim:/comparator_tb/coeff4_9 \
+sim:/comparator_tb/coeff5 \
+sim:/comparator_tb/coeff6 \
+sim:/comparator_tb/coeff7 \
+sim:/comparator_tb/coeff8 \
+sim:/comparator_tb/coeff9 \
+sim:/comparator_tb/mean \
+sim:/comparator_tb/mean1 \
+sim:/comparator_tb/mean2 \
+sim:/comparator_tb/mean3 \
+sim:/comparator_tb/mean4 \
+sim:/comparator_tb/section_limit \
+sim:/comparator_tb/std \
+sim:/comparator_tb/std1 \
+sim:/comparator_tb/std2 \
+sim:/comparator_tb/std3 \
+sim:/comparator_tb/std4 \
+sim:/comparator_tb/testcase \
+sim:/comparator_tb/x_adc; restart; run -all
+# *************
+# mean:        512
+# *************
+# cnt:           1
+# mean:        514
+# *************
+# cnt:           2
+# mean:        513
+# *************
+# cnt:           3
+# mean:        513
+# *************
+# cnt:           4
+# mean:        513
+# *************
+# cnt:           5
+# mean:        513
+# *************
+# cnt:           6
+# mean:        513
+# *************
+# cnt:           7
+# mean:        513
+# *************
+# cnt:           8
+# mean:        513
+# *************
+# cnt:           9
+# mean:        513
+# *************
+# cnt:          10
+# mean:        513
+# *************
+# cnt:          11
+# mean:        513
+# *************
+# cnt:          12
+# mean:        513
+# *************
+# cnt:          13
+# mean:        513
+# *************
+# cnt:          14
+# mean:        513
+# *************
+# cnt:          15
+# mean:        513
+# *************
+# cnt:          16
+# mean:        513
+# *************
+# cnt:          17
+# mean:        513
+# *************
+# cnt:          18
+# mean:        513
+# *************
+# cnt:          19
+# mean:        513
+# *************
+# cnt:          20
+# mean:        513
+# Break in Module comparator_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/comparator_tb.v line 252
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v failed with 1 errors.
+# 7 compiles, 1 failed with 1 error. 
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 0 failed with no errors. 
+vsim -novopt work.comparator_tb
+# vsim -novopt work.comparator_tb 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator_tb
+# Loading work.comparator_tb
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator
+# Loading work.comparator
+add wave  \
+sim:/comparator_tb/Clock \
+sim:/comparator_tb/Cycle \
+sim:/comparator_tb/GlobalReset \
+sim:/comparator_tb/HalfCycle \
+sim:/comparator_tb/ResetValue \
+sim:/comparator_tb/cnt \
+sim:/comparator_tb/coeff0 \
+sim:/comparator_tb/coeff1 \
+sim:/comparator_tb/coeff10 \
+sim:/comparator_tb/coeff1_0 \
+sim:/comparator_tb/coeff1_1 \
+sim:/comparator_tb/coeff1_10 \
+sim:/comparator_tb/coeff1_2 \
+sim:/comparator_tb/coeff1_3 \
+sim:/comparator_tb/coeff1_4 \
+sim:/comparator_tb/coeff1_5 \
+sim:/comparator_tb/coeff1_6 \
+sim:/comparator_tb/coeff1_7 \
+sim:/comparator_tb/coeff1_8 \
+sim:/comparator_tb/coeff1_9 \
+sim:/comparator_tb/coeff2 \
+sim:/comparator_tb/coeff2_0 \
+sim:/comparator_tb/coeff2_1 \
+sim:/comparator_tb/coeff2_10 \
+sim:/comparator_tb/coeff2_2 \
+sim:/comparator_tb/coeff2_3 \
+sim:/comparator_tb/coeff2_4 \
+sim:/comparator_tb/coeff2_5 \
+sim:/comparator_tb/coeff2_6 \
+sim:/comparator_tb/coeff2_7 \
+sim:/comparator_tb/coeff2_8 \
+sim:/comparator_tb/coeff2_9 \
+sim:/comparator_tb/coeff3 \
+sim:/comparator_tb/coeff3_0 \
+sim:/comparator_tb/coeff3_1 \
+sim:/comparator_tb/coeff3_10 \
+sim:/comparator_tb/coeff3_2 \
+sim:/comparator_tb/coeff3_3 \
+sim:/comparator_tb/coeff3_4 \
+sim:/comparator_tb/coeff3_5 \
+sim:/comparator_tb/coeff3_6 \
+sim:/comparator_tb/coeff3_7 \
+sim:/comparator_tb/coeff3_8 \
+sim:/comparator_tb/coeff3_9 \
+sim:/comparator_tb/coeff4 \
+sim:/comparator_tb/coeff4_0 \
+sim:/comparator_tb/coeff4_1 \
+sim:/comparator_tb/coeff4_10 \
+sim:/comparator_tb/coeff4_2 \
+sim:/comparator_tb/coeff4_3 \
+sim:/comparator_tb/coeff4_4 \
+sim:/comparator_tb/coeff4_5 \
+sim:/comparator_tb/coeff4_6 \
+sim:/comparator_tb/coeff4_7 \
+sim:/comparator_tb/coeff4_8 \
+sim:/comparator_tb/coeff4_9 \
+sim:/comparator_tb/coeff5 \
+sim:/comparator_tb/coeff6 \
+sim:/comparator_tb/coeff7 \
+sim:/comparator_tb/coeff8 \
+sim:/comparator_tb/coeff9 \
+sim:/comparator_tb/mean \
+sim:/comparator_tb/mean1 \
+sim:/comparator_tb/mean2 \
+sim:/comparator_tb/mean3 \
+sim:/comparator_tb/mean4 \
+sim:/comparator_tb/section_limit \
+sim:/comparator_tb/std \
+sim:/comparator_tb/std1 \
+sim:/comparator_tb/std2 \
+sim:/comparator_tb/std3 \
+sim:/comparator_tb/std4 \
+sim:/comparator_tb/testcase \
+sim:/comparator_tb/x_adc; restart; run -all
+# *************
+# mean:        512
+# *************
+# cnt:           1
+# mean:        514
+# *************
+# cnt:           2
+# mean:        515
+# Break in Module comparator_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/comparator_tb.v line 252
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 0 failed with no errors. 
+vsim -novopt work.comparator_tb
+# vsim -novopt work.comparator_tb 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator_tb
+# Loading work.comparator_tb
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator
+# Loading work.comparator
+add wave  \
+sim:/comparator_tb/Clock \
+sim:/comparator_tb/Cycle \
+sim:/comparator_tb/GlobalReset \
+sim:/comparator_tb/HalfCycle \
+sim:/comparator_tb/ResetValue \
+sim:/comparator_tb/cnt \
+sim:/comparator_tb/coeff0 \
+sim:/comparator_tb/coeff1 \
+sim:/comparator_tb/coeff10 \
+sim:/comparator_tb/coeff1_0 \
+sim:/comparator_tb/coeff1_1 \
+sim:/comparator_tb/coeff1_10 \
+sim:/comparator_tb/coeff1_2 \
+sim:/comparator_tb/coeff1_3 \
+sim:/comparator_tb/coeff1_4 \
+sim:/comparator_tb/coeff1_5 \
+sim:/comparator_tb/coeff1_6 \
+sim:/comparator_tb/coeff1_7 \
+sim:/comparator_tb/coeff1_8 \
+sim:/comparator_tb/coeff1_9 \
+sim:/comparator_tb/coeff2 \
+sim:/comparator_tb/coeff2_0 \
+sim:/comparator_tb/coeff2_1 \
+sim:/comparator_tb/coeff2_10 \
+sim:/comparator_tb/coeff2_2 \
+sim:/comparator_tb/coeff2_3 \
+sim:/comparator_tb/coeff2_4 \
+sim:/comparator_tb/coeff2_5 \
+sim:/comparator_tb/coeff2_6 \
+sim:/comparator_tb/coeff2_7 \
+sim:/comparator_tb/coeff2_8 \
+sim:/comparator_tb/coeff2_9 \
+sim:/comparator_tb/coeff3 \
+sim:/comparator_tb/coeff3_0 \
+sim:/comparator_tb/coeff3_1 \
+sim:/comparator_tb/coeff3_10 \
+sim:/comparator_tb/coeff3_2 \
+sim:/comparator_tb/coeff3_3 \
+sim:/comparator_tb/coeff3_4 \
+sim:/comparator_tb/coeff3_5 \
+sim:/comparator_tb/coeff3_6 \
+sim:/comparator_tb/coeff3_7 \
+sim:/comparator_tb/coeff3_8 \
+sim:/comparator_tb/coeff3_9 \
+sim:/comparator_tb/coeff4 \
+sim:/comparator_tb/coeff4_0 \
+sim:/comparator_tb/coeff4_1 \
+sim:/comparator_tb/coeff4_10 \
+sim:/comparator_tb/coeff4_2 \
+sim:/comparator_tb/coeff4_3 \
+sim:/comparator_tb/coeff4_4 \
+sim:/comparator_tb/coeff4_5 \
+sim:/comparator_tb/coeff4_6 \
+sim:/comparator_tb/coeff4_7 \
+sim:/comparator_tb/coeff4_8 \
+sim:/comparator_tb/coeff4_9 \
+sim:/comparator_tb/coeff5 \
+sim:/comparator_tb/coeff6 \
+sim:/comparator_tb/coeff7 \
+sim:/comparator_tb/coeff8 \
+sim:/comparator_tb/coeff9 \
+sim:/comparator_tb/mean \
+sim:/comparator_tb/mean1 \
+sim:/comparator_tb/mean2 \
+sim:/comparator_tb/mean3 \
+sim:/comparator_tb/mean4 \
+sim:/comparator_tb/section_limit \
+sim:/comparator_tb/std \
+sim:/comparator_tb/std1 \
+sim:/comparator_tb/std2 \
+sim:/comparator_tb/std3 \
+sim:/comparator_tb/std4 \
+sim:/comparator_tb/testcase \
+sim:/comparator_tb/x_adc; restart; run -all
+# *************
+# mean:        512
+# *************
+# cnt:           1
+# mean:        514
+# *************
+# cnt:           2
+# mean:        514
+# Break in Module comparator_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/comparator_tb.v line 252
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 0 failed with no errors. 
+vsim -novopt work.comparator_tb
+# vsim -novopt work.comparator_tb 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator_tb
+# Loading work.comparator_tb
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator
+# Loading work.comparator
+add wave  \
+sim:/comparator_tb/Clock \
+sim:/comparator_tb/Cycle \
+sim:/comparator_tb/GlobalReset \
+sim:/comparator_tb/HalfCycle \
+sim:/comparator_tb/ResetValue \
+sim:/comparator_tb/cnt \
+sim:/comparator_tb/coeff0 \
+sim:/comparator_tb/coeff1 \
+sim:/comparator_tb/coeff10 \
+sim:/comparator_tb/coeff1_0 \
+sim:/comparator_tb/coeff1_1 \
+sim:/comparator_tb/coeff1_10 \
+sim:/comparator_tb/coeff1_2 \
+sim:/comparator_tb/coeff1_3 \
+sim:/comparator_tb/coeff1_4 \
+sim:/comparator_tb/coeff1_5 \
+sim:/comparator_tb/coeff1_6 \
+sim:/comparator_tb/coeff1_7 \
+sim:/comparator_tb/coeff1_8 \
+sim:/comparator_tb/coeff1_9 \
+sim:/comparator_tb/coeff2 \
+sim:/comparator_tb/coeff2_0 \
+sim:/comparator_tb/coeff2_1 \
+sim:/comparator_tb/coeff2_10 \
+sim:/comparator_tb/coeff2_2 \
+sim:/comparator_tb/coeff2_3 \
+sim:/comparator_tb/coeff2_4 \
+sim:/comparator_tb/coeff2_5 \
+sim:/comparator_tb/coeff2_6 \
+sim:/comparator_tb/coeff2_7 \
+sim:/comparator_tb/coeff2_8 \
+sim:/comparator_tb/coeff2_9 \
+sim:/comparator_tb/coeff3 \
+sim:/comparator_tb/coeff3_0 \
+sim:/comparator_tb/coeff3_1 \
+sim:/comparator_tb/coeff3_10 \
+sim:/comparator_tb/coeff3_2 \
+sim:/comparator_tb/coeff3_3 \
+sim:/comparator_tb/coeff3_4 \
+sim:/comparator_tb/coeff3_5 \
+sim:/comparator_tb/coeff3_6 \
+sim:/comparator_tb/coeff3_7 \
+sim:/comparator_tb/coeff3_8 \
+sim:/comparator_tb/coeff3_9 \
+sim:/comparator_tb/coeff4 \
+sim:/comparator_tb/coeff4_0 \
+sim:/comparator_tb/coeff4_1 \
+sim:/comparator_tb/coeff4_10 \
+sim:/comparator_tb/coeff4_2 \
+sim:/comparator_tb/coeff4_3 \
+sim:/comparator_tb/coeff4_4 \
+sim:/comparator_tb/coeff4_5 \
+sim:/comparator_tb/coeff4_6 \
+sim:/comparator_tb/coeff4_7 \
+sim:/comparator_tb/coeff4_8 \
+sim:/comparator_tb/coeff4_9 \
+sim:/comparator_tb/coeff5 \
+sim:/comparator_tb/coeff6 \
+sim:/comparator_tb/coeff7 \
+sim:/comparator_tb/coeff8 \
+sim:/comparator_tb/coeff9 \
+sim:/comparator_tb/mean \
+sim:/comparator_tb/mean1 \
+sim:/comparator_tb/mean2 \
+sim:/comparator_tb/mean3 \
+sim:/comparator_tb/mean4 \
+sim:/comparator_tb/section_limit \
+sim:/comparator_tb/std \
+sim:/comparator_tb/std1 \
+sim:/comparator_tb/std2 \
+sim:/comparator_tb/std3 \
+sim:/comparator_tb/std4 \
+sim:/comparator_tb/testcase \
+sim:/comparator_tb/x_adc; restart; run -all
+# *************
+# mean:        512
+# *************
+# cnt:           1
+# mean:        514
+# *************
+# cnt:           2
+# mean:        513
+# *************
+# cnt:           3
+# mean:        512
+# *************
+# cnt:           4
+# mean:        512
+# *************
+# cnt:           5
+# mean:        512
+# Break in Module comparator_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/comparator_tb.v line 252
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v was successful.
+# 7 compiles, 0 failed with no errors. 
+vsim -novopt work.comparator_tb
+# vsim -novopt work.comparator_tb 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator_tb
+# Loading work.comparator_tb
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.comparator
+# Loading work.comparator
+add wave  \
+sim:/comparator_tb/Clock \
+sim:/comparator_tb/Cycle \
+sim:/comparator_tb/GlobalReset \
+sim:/comparator_tb/HalfCycle \
+sim:/comparator_tb/ResetValue \
+sim:/comparator_tb/cnt \
+sim:/comparator_tb/coeff0 \
+sim:/comparator_tb/coeff1 \
+sim:/comparator_tb/coeff10 \
+sim:/comparator_tb/coeff1_0 \
+sim:/comparator_tb/coeff1_1 \
+sim:/comparator_tb/coeff1_10 \
+sim:/comparator_tb/coeff1_2 \
+sim:/comparator_tb/coeff1_3 \
+sim:/comparator_tb/coeff1_4 \
+sim:/comparator_tb/coeff1_5 \
+sim:/comparator_tb/coeff1_6 \
+sim:/comparator_tb/coeff1_7 \
+sim:/comparator_tb/coeff1_8 \
+sim:/comparator_tb/coeff1_9 \
+sim:/comparator_tb/coeff2 \
+sim:/comparator_tb/coeff2_0 \
+sim:/comparator_tb/coeff2_1 \
+sim:/comparator_tb/coeff2_10 \
+sim:/comparator_tb/coeff2_2 \
+sim:/comparator_tb/coeff2_3 \
+sim:/comparator_tb/coeff2_4 \
+sim:/comparator_tb/coeff2_5 \
+sim:/comparator_tb/coeff2_6 \
+sim:/comparator_tb/coeff2_7 \
+sim:/comparator_tb/coeff2_8 \
+sim:/comparator_tb/coeff2_9 \
+sim:/comparator_tb/coeff3 \
+sim:/comparator_tb/coeff3_0 \
+sim:/comparator_tb/coeff3_1 \
+sim:/comparator_tb/coeff3_10 \
+sim:/comparator_tb/coeff3_2 \
+sim:/comparator_tb/coeff3_3 \
+sim:/comparator_tb/coeff3_4 \
+sim:/comparator_tb/coeff3_5 \
+sim:/comparator_tb/coeff3_6 \
+sim:/comparator_tb/coeff3_7 \
+sim:/comparator_tb/coeff3_8 \
+sim:/comparator_tb/coeff3_9 \
+sim:/comparator_tb/coeff4 \
+sim:/comparator_tb/coeff4_0 \
+sim:/comparator_tb/coeff4_1 \
+sim:/comparator_tb/coeff4_10 \
+sim:/comparator_tb/coeff4_2 \
+sim:/comparator_tb/coeff4_3 \
+sim:/comparator_tb/coeff4_4 \
+sim:/comparator_tb/coeff4_5 \
+sim:/comparator_tb/coeff4_6 \
+sim:/comparator_tb/coeff4_7 \
+sim:/comparator_tb/coeff4_8 \
+sim:/comparator_tb/coeff4_9 \
+sim:/comparator_tb/coeff5 \
+sim:/comparator_tb/coeff6 \
+sim:/comparator_tb/coeff7 \
+sim:/comparator_tb/coeff8 \
+sim:/comparator_tb/coeff9 \
+sim:/comparator_tb/mean \
+sim:/comparator_tb/mean1 \
+sim:/comparator_tb/mean2 \
+sim:/comparator_tb/mean3 \
+sim:/comparator_tb/mean4 \
+sim:/comparator_tb/section_limit \
+sim:/comparator_tb/std \
+sim:/comparator_tb/std1 \
+sim:/comparator_tb/std2 \
+sim:/comparator_tb/std3 \
+sim:/comparator_tb/std4 \
+sim:/comparator_tb/testcase \
+sim:/comparator_tb/x_adc; restart; run -all
+# *************
+# mean:        512
+# *************
+# cnt:           1
+# mean:        514
+# *************
+# cnt:           2
+# mean:        515
+# *************
+# cnt:           3
+# mean:        514
+# *************
+# cnt:           4
+# mean:        513
+# *************
+# cnt:           5
+# mean:        512
+# Break in Module comparator_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/comparator_tb.v line 252
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v was successful.
+# Compile of mux.v was successful.
+# Compile of mux_tb.v was successful.
+# 9 compiles, 0 failed with no errors. 
+vsim -novopt work.mux_tb
+# vsim -novopt work.mux_tb 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.mux_tb
+# Loading work.mux_tb
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.mux
+# Loading work.mux
+add wave  \
+sim:/mux_tb/Clock \
+sim:/mux_tb/Cycle \
+sim:/mux_tb/GlobalReset \
+sim:/mux_tb/HalfCycle \
+sim:/mux_tb/ResetValue \
+sim:/mux_tb/clk \
+sim:/mux_tb/cnt \
+sim:/mux_tb/coeff \
+sim:/mux_tb/coeff0 \
+sim:/mux_tb/coeff1 \
+sim:/mux_tb/coeff10 \
+sim:/mux_tb/coeff2 \
+sim:/mux_tb/coeff3 \
+sim:/mux_tb/coeff4 \
+sim:/mux_tb/coeff5 \
+sim:/mux_tb/coeff6 \
+sim:/mux_tb/coeff7 \
+sim:/mux_tb/coeff8 \
+sim:/mux_tb/coeff9 \
+sim:/mux_tb/coeff_select \
+sim:/mux_tb/testcase
+restart; run -all
+# *************
+# coeff:          x
+# *************
+# cnt:           1
+# coeff:          x
+# *************
+# cnt:           2
+# coeff:          x
+# *************
+# cnt:           3
+# coeff:          x
+# *************
+# cnt:           4
+# coeff:          x
+# *************
+# cnt:           5
+# coeff:          x
+# *************
+# cnt:           6
+# coeff:          x
+# *************
+# cnt:           7
+# coeff:          x
+# *************
+# cnt:           8
+# coeff:          x
+# *************
+# cnt:           9
+# coeff:          x
+# *************
+# cnt:          10
+# coeff:          x
+# *************
+# cnt:          11
+# coeff:          x
+# *************
+# cnt:          12
+# coeff:          x
+# Break in Module mux_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/mux_tb.v line 98
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v was successful.
+# Compile of mux.v was successful.
+# Compile of mux_tb.v was successful.
+# 9 compiles, 0 failed with no errors. 
+add wave  \
+sim:/mux_tb/Clock \
+sim:/mux_tb/Cycle \
+sim:/mux_tb/GlobalReset \
+sim:/mux_tb/HalfCycle \
+sim:/mux_tb/ResetValue \
+sim:/mux_tb/clk \
+sim:/mux_tb/cnt \
+sim:/mux_tb/coeff \
+sim:/mux_tb/coeff0 \
+sim:/mux_tb/coeff1 \
+sim:/mux_tb/coeff10 \
+sim:/mux_tb/coeff2 \
+sim:/mux_tb/coeff3 \
+sim:/mux_tb/coeff4 \
+sim:/mux_tb/coeff5 \
+sim:/mux_tb/coeff6 \
+sim:/mux_tb/coeff7 \
+sim:/mux_tb/coeff8 \
+sim:/mux_tb/coeff9 \
+sim:/mux_tb/coeff_select \
+sim:/mux_tb/testcase
+# Compile of centerScale.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of blocksTestbench.v was successful.
+# Compile of comparator.v was successful.
+# Compile of comparator_tb.v was successful.
+# Compile of mux.v was successful.
+# Compile of mux_tb.v was successful.
+# 9 compiles, 0 failed with no errors. 
+vsim -novopt work.mux_tb
+# vsim -novopt work.mux_tb 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.mux_tb
+# Loading work.mux_tb
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.mux
+# Loading work.mux
+add wave  \
+sim:/mux_tb/Clock \
+sim:/mux_tb/Cycle \
+sim:/mux_tb/GlobalReset \
+sim:/mux_tb/HalfCycle \
+sim:/mux_tb/ResetValue \
+sim:/mux_tb/clk \
+sim:/mux_tb/cnt \
+sim:/mux_tb/coeff \
+sim:/mux_tb/coeff0 \
+sim:/mux_tb/coeff1 \
+sim:/mux_tb/coeff10 \
+sim:/mux_tb/coeff2 \
+sim:/mux_tb/coeff3 \
+sim:/mux_tb/coeff4 \
+sim:/mux_tb/coeff5 \
+sim:/mux_tb/coeff6 \
+sim:/mux_tb/coeff7 \
+sim:/mux_tb/coeff8 \
+sim:/mux_tb/coeff9 \
+sim:/mux_tb/coeff_select \
+sim:/mux_tb/testcase; restart; run -all
+# (vish-4014) No objects found matching '/mux_tb/clk'.
+add wave  \
+sim:/mux_tb/Clock \
+sim:/mux_tb/Cycle \
+sim:/mux_tb/GlobalReset \
+sim:/mux_tb/HalfCycle \
+sim:/mux_tb/ResetValue \
+sim:/mux_tb/cnt \
+sim:/mux_tb/coeff \
+sim:/mux_tb/coeff0 \
+sim:/mux_tb/coeff1 \
+sim:/mux_tb/coeff10 \
+sim:/mux_tb/coeff2 \
+sim:/mux_tb/coeff3 \
+sim:/mux_tb/coeff4 \
+sim:/mux_tb/coeff5 \
+sim:/mux_tb/coeff6 \
+sim:/mux_tb/coeff7 \
+sim:/mux_tb/coeff8 \
+sim:/mux_tb/coeff9 \
+sim:/mux_tb/coeff_select \
+sim:/mux_tb/testcase
+restart; run -all
+# *************
+# coeff:          0
+# *************
+# cnt:           1
+# coeff:          4
+# *************
+# cnt:           2
+# coeff:          0
+# *************
+# cnt:           3
+# coeff:          1
+# *************
+# cnt:           4
+# coeff:          2
+# *************
+# cnt:           5
+# coeff:          3
+# *************
+# cnt:           6
+# coeff:          4
+# *************
+# cnt:           7
+# coeff:          5
+# *************
+# cnt:           8
+# coeff:          6
+# *************
+# cnt:           9
+# coeff:          7
+# *************
+# cnt:          10
+# coeff:          8
+# *************
+# cnt:          11
+# coeff:          9
+# *************
+# cnt:          12
+# coeff:         10
+# Break in Module mux_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/mux_tb.v line 98

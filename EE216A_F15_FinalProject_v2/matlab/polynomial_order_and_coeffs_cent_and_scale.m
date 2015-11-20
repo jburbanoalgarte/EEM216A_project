@@ -1,7 +1,7 @@
 %% clear the workspace and import the non-linearity curve
-clc;
-clear all;
-close all;
+%clc;
+%clear all;
+%close all;
 
 %import the adc_count/voltage curve into our workspace
 load ('./non_linearity_curve.mat');

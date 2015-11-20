@@ -1,0 +1,98 @@
+/w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/comparator_tb.v {1 {vlog -work work -vopt /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/comparator_tb.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module comparator_tb
+
+Top level modules:
+	comparator_tb
+
+} {} {}} /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/centerScale.v {1 {vlog -work work -vopt /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/centerScale.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module centerScale
+
+Top level modules:
+	centerScale
+
+} {} {}} /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v {1 {vlog -work work -vopt /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module blocksTestbench
+
+Top level modules:
+	blocksTestbench
+
+} {} {}} /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/smc_float_multiplier.v {1 {vlog -work work -vopt /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/smc_float_multiplier.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module x_i
+-- Compiling module z_o
+-- Compiling module FP_Multiplier
+-- Compiling module smc_float_multiplier
+
+Top level modules:
+	smc_float_multiplier
+
+} {} {}} /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/mux_tb.v {1 {vlog -work work -vopt /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/mux_tb.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module mux_tb
+
+Top level modules:
+	mux_tb
+
+} {} {}} /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/smc_float_adder.v {1 {vlog -work work -vopt /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/smc_float_adder.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module FP_Adder_getmsbpos1_LZDPstg2_1
+-- Compiling module FP_Adder_getmsbpos1_LZDPstg1_2
+-- Compiling module FP_Adder_getmsbpos1_LZDPstg1_1
+-- Compiling module FP_Adder_getmsbpos1_LZDP1
+-- Compiling module FP_Adder_getmsbpos1_LZDP2
+-- Compiling module FP_Adder_getmsbpos1_LZDP3
+-- Compiling module FP_Adder_getmsbpos1_LZDP4
+-- Compiling module FP_Adder_getmsbpos1_LZDP5
+-- Compiling module FP_Adder_getmsbpos1_LZDP6
+-- Compiling module FP_Adder_getmsbpos1_LZDPstg2_2
+-- Compiling module FP_Adder_getmsbpos1_LZDPstg1_3
+-- Compiling module FP_Adder_getmsbpos1
+-- Compiling module x_i
+-- Compiling module z_o
+-- Compiling module FP_Adder
+-- Compiling module smc_float_adder
+
+Top level modules:
+	smc_float_adder
+
+} {} {}} /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/fp_to_smc_float.v {1 {vlog -work work -vopt /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/fp_to_smc_float.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
+-- Compiling module Fixed_to_FP_Leading_Zero_Counter1_LZDP1
+-- Compiling module Fixed_to_FP_Leading_Zero_Counter1_LZDP2
+-- Compiling module Fixed_to_FP_Leading_Zero_Counter1_LZDP3
+-- Compiling module Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
+-- Compiling module Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
+-- Compiling module Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
+-- Compiling module Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
+-- Compiling module Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
+-- Compiling module Fixed_to_FP_Leading_Zero_Counter2_LZDP3
+-- Compiling module Fixed_to_FP_Leading_Zero_Counter2_LZDP4
+-- Compiling module Fixed_to_FP_Leading_Zero_Counter2_LZDP5
+-- Compiling module Fixed_to_FP_Leading_Zero_Counter2_LZDP6
+-- Compiling module Fixed_to_FP_Leading_Zero_Counter2_LZDP7
+-- Compiling module Fixed_to_FP_Leading_Zero_Counter2_LZDP8
+-- Compiling module Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
+-- Compiling module Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
+-- Compiling module Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
+-- Compiling module Fixed_to_FP_Leading_Zero_Counter1
+-- Compiling module Fixed_to_FP_Leading_Zero_Counter2
+-- Compiling module Fixed_to_FP_log2
+-- Compiling module y_o
+-- Compiling module Fixed_to_FP
+-- Compiling module fp_to_smc_float
+
+Top level modules:
+	fp_to_smc_float
+
+} {} {}} /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/comparator.v {1 {vlog -work work -vopt /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/comparator.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module comparator
+
+Top level modules:
+	comparator
+
+} {} {}}
