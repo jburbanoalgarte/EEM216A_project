@@ -20,7 +20,8 @@ module centerScale_tb();
 	reg [31:0] mean;
 	reg [31:0] std;
 	wire [31:0] x_centScale;
-	wire srdyo_o;	
+	wire srdyo_o;
+	wire [20:0] x_adc_latched;
 	
 	integer numErrors, cnt;
 	reg [20:0]		testcase;
@@ -37,7 +38,8 @@ module centerScale_tb();
 	.mean(mean),
 	.std(std),
 	.x_centScale(x_centScale),
-	.srdyo_o(srdyo_o)
+	.srdyo_o(srdyo_o),
+	.x_adc_latched(x_adc_latched)
     );
 	
 	//---------------------------------------------------------------
@@ -54,27 +56,49 @@ module centerScale_tb();
 		// Initial Conditions
 		testcase=21'd0;
 		GlobalReset = 1;
-		x_adc = 21'b010001000100010001000;
+		mean = 32'd512;
+		std = 32'd2;
+		
+		x_adc = 21'h7F;
 		srdyi = 1'b1;
-		mean = 32'b01000100010001000100010001000100;
-		std = 32'b01000100010001000100010001000100;
+		
+		#(Cycle);
+		if( (x_adc_latched != 21'd0) ) begin
+			$display ("*************");
+			$display ("z_o: %d\nsrdyo_o: %b\nx_adc_latched", x_centScale, srdyo_o, x_adc_latched);
+		end
+		
+		GlobalReset = 0;
+		cnt=1;
+		repeat(18) begin
+			#(Cycle);
+			$display ("*************\ncnt: %d",cnt);
+			$display ("z_o: %d\nsrdyo_o: %b\nx_adc_latched: %h", x_centScale, srdyo_o, x_adc_latched);
+			cnt = cnt +1;
+		end
+		
+		x_adc = 21'h09;
+		srdyi = 1'b0;
+		#(100*Cycle);
+		$display ("*************");
+		$display ("z_o: %d\nsrdyo_o: %b\nx_adc_latched: %h", x_centScale, srdyo_o, x_adc_latched);
+		
+		srdyi = 1'b1;
+		#(Cycle);
+		$display ("*************");
+		$display ("z_o: %d\nsrdyo_o: %b\nx_adc_latched: %h", x_centScale, srdyo_o, x_adc_latched);
+		
+		#(16*Cycle);
+		$display ("*************");
+		$display ("z_o: %d\nsrdyo_o: %b\nx_adc_latched: %h", x_centScale, srdyo_o, x_adc_latched);
 		
 		#(Cycle);
 		$display ("*************");
-		$display ("z_o: %d\nsrdyo_o: %b", x_centScale, srdyo_o);
+		$display ("z_o: %d\nsrdyo_o: %b\nx_adc_latched: %h", x_centScale, srdyo_o, x_adc_latched);
 		
-		GlobalReset = 0;
-		cnt = 0;
-		repeat(20) begin
-			#(Cycle);
-			cnt = cnt + 1;
-			$display ("*************\n%d cycles transpired", cnt);
-			$display ("z_o: %d\nsrdyo_o: %b", x_centScale, srdyo_o);
-		end
-			#(100*Cycle);
-			cnt = cnt + 1;
-			$display ("*************\n%d cycles transpired", cnt);
-			$display ("z_o: %d\nsrdyo_o: %b", x_centScale, srdyo_o);
+		#(100*Cycle);
+		$display ("*************");
+		$display ("z_o: %d\nsrdyo_o: %b\nx_adc_latched: %h", x_centScale, srdyo_o, x_adc_latched);
 		
 		$stop;/*
 		// Test Code

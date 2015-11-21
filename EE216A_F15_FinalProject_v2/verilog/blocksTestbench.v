@@ -15,12 +15,11 @@ module blocksTestbench();
 	//----------------------------------------------------------------
 	reg				Clock;
 	reg				GlobalReset;
-	reg	[20:0] x_adc;
-	reg srdyi;
-	reg [31:0] mean;
-	reg [31:0] std;
-	wire [31:0] x_centScale;
-	wire srdyo_o;	
+	
+	wire [31:0] y_o_portx;
+	reg [20:0] x_i;
+	wire srdyo_o;
+	reg srdyi_i;
 	
 	integer numErrors, cnt;
 	reg [20:0]		testcase;
@@ -29,16 +28,14 @@ module blocksTestbench();
 	//----------------------------------------------------------------
 	//		Model
 	//----------------------------------------------------------------
-	centerScale UUT( 
-    .GlobalReset(GlobalReset),
-	.clk(Clock),
-	.x_adc(x_adc),
-	.srdyi(srdyi),
-	.mean(mean),
-	.std(std),
-	.x_centScale(x_centScale),
-	.srdyo_o(srdyo_o)
-    );
+	fp_to_smc_float UUT(
+	  Clock,
+	  GlobalReset,
+	  y_o_portx,
+	  x_i,
+	  srdyo_o,
+	  srdyi_i
+	);
 	
 	//---------------------------------------------------------------
 	//		Clock Source
@@ -54,27 +51,25 @@ module blocksTestbench();
 		// Initial Conditions
 		testcase=21'd0;
 		GlobalReset = 1;
-		x_adc = 21'b010001000100010001000;
-		srdyi = 1'b1;
-		mean = 32'b01000100010001000100010001000100;
-		std = 32'b01000100010001000100010001000100;
+		x_i = 21'b010001000100010001000;
+		srdyi_i = 1;
 		
 		#(Cycle);
 		$display ("*************");
-		$display ("z_o: %d\nsrdyo_o: %b", x_centScale, srdyo_o);
+		$display ("z_o: %b\nsrdyo_o: %b", y_o_portx, srdyo_o);
 		
 		GlobalReset = 0;
 		cnt = 0;
-		repeat(20) begin
+		repeat(2) begin
 			#(Cycle);
 			cnt = cnt + 1;
 			$display ("*************\n%d cycles transpired", cnt);
-			$display ("z_o: %d\nsrdyo_o: %b", x_centScale, srdyo_o);
+			$display ("z_o: %b\nsrdyo_o: %b", y_o_portx, srdyo_o);
 		end
-			#(100*Cycle);
-			cnt = cnt + 1;
-			$display ("*************\n%d cycles transpired", cnt);
-			$display ("z_o: %d\nsrdyo_o: %b", x_centScale, srdyo_o);
+		#(100*Cycle);
+		cnt = cnt + 1;
+		$display ("*************\n%d cycles transpired", cnt);
+		$display ("z_o: %b\nsrdyo_o: %b", y_o_portx, srdyo_o);
 		
 		$stop;/*
 		// Test Code

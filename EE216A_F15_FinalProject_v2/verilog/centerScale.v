@@ -21,6 +21,7 @@
 // Outputs [bit width]:
 //	x_centScale [31:0]
 //	srdyo_o [0]
+//	x_adc_latched [20:0]
 ////////////////////////////////////////////////////////////////
 
 module centerScale ( 
@@ -31,7 +32,8 @@ module centerScale (
 	mean,
 	std,
 	x_centScale,
-	srdyo_o
+	srdyo_o,
+	x_adc_latched
     );
 
 parameter WL = 8; //parametrize length
@@ -46,14 +48,13 @@ input [31:0] mean;
 input [31:0] std;
 output	[31:0] x_centScale;
 output	srdyo_o;
+output reg [20:0] x_adc_latched;
 	
 ////////////////////////////////////////////////////////////////
 //  reg & wire declarations
 
 //reg
-reg	[20:0] theReg; // holds x_adc after srdyi is asserted
 wire [20:0]	theReg_x_adc;
-reg theReg_valid;
 
 //ieee to smc
 wire [31:0] ieee2smc_x_smc;
@@ -63,10 +64,6 @@ wire ieee2smc_srdyo_o;
 wire [31:0] add_o;
 wire add_srdyo_o;
 
-//mult
-//wire [31:0] mult_o;
-//wire mult_srdyo_o;
-
 ////////////////////////////////////////////////////////////////
 //  Modules
 fp_to_smc_float ieee2smc(
@@ -75,7 +72,7 @@ fp_to_smc_float ieee2smc(
   .y_o_portx( ieee2smc_x_smc ),
   .x_i( theReg_x_adc ),
   .srdyo_o( ieee2smc_srdyo_o ),
-  .srdyi_i( theReg_valid )
+  .srdyi_i( srdyi )
 );
 
 smc_float_adder theAdder(
@@ -101,28 +98,18 @@ smc_float_multiplier theMult(
 ////////////////////////////////////////////////////////////////
 //  Combinational Logic
 
-assign theReg_x_adc = theReg;
-//assign theReg_valid_wire = theReg_valid;
-
-always @( * ) begin
-end
+assign theReg_x_adc = x_adc_latched;
 
 ////////////////////////////////////////////////////////////////
 //  Registers
 always @(posedge clk) begin
     if (GlobalReset == 1'b1) begin
-	    theReg       		<= 21'd0;
-		theReg_valid		<= 1'b0;
+		x_adc_latched		<= 21'd0;
     end
     else begin
 		if (srdyi == 1'b1) begin
-			theReg				<= x_adc;
-			theReg_valid		<= 1'b1;
+			x_adc_latched		<= x_adc;
 		end
-		else begin
-			theReg_valid		<= 1'b0;
-		end
-		
     end
 end
 
