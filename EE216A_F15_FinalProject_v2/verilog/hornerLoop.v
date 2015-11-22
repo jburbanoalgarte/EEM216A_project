@@ -8,7 +8,7 @@
 //      Taking 32-bit SMC x_adc and a coefficient as inputs,
 //		as well as sum register control signals, implements
 //		Horner loop to compute 10th order polynomial
-//		latency 3+1+15=19? cycles
+//		latency 3+1+15=19 cycles
 //
 // Parameters:
 //      
