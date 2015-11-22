@@ -8,2566 +8,1891 @@
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
 # Loading project centerScale
-# Compile of hornerLoop.v failed with 1 errors.
-# Compile of hornerLoop_tb.v failed with 1 errors.
-# 2 compiles, 2 failed with 2 errors. 
-# Compile of hornerLoop.v failed with 1 errors.
-# Compile of hornerLoop_tb.v failed with 1 errors.
-# 2 compiles, 2 failed with 2 errors. 
 # Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v failed with 1 errors.
-# 2 compiles, 1 failed with 1 error. 
+# Compile of control.v failed with 1 errors.
+# Compile of control_tb.v was successful.
+# 3 compiles, 1 failed with 1 error. 
 # Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
-# 2 compiles, 0 failed with no errors. 
-vsim -novopt work.hornerLoop_tb
-# vsim -novopt work.hornerLoop_tb 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop_tb
-# Loading work.hornerLoop_tb
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop
-# Loading work.hornerLoop
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_multiplier
-# Loading work.smc_float_multiplier
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.x_i
-# Loading work.x_i
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.z_o
-# Loading work.z_o
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Multiplier
-# Loading work.FP_Multiplier
-# Loading work.synBusSatRnd
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synInverter
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_adder
-# Loading work.smc_float_adder
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder
-# Loading work.FP_Adder
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synNegate
-# Loading work.synShifter
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1
-# Loading work.FP_Adder_getmsbpos1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP1
-# Loading work.FP_Adder_getmsbpos1_LZDP1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP2
-# Loading work.FP_Adder_getmsbpos1_LZDP2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP3
-# Loading work.FP_Adder_getmsbpos1_LZDP3
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP4
-# Loading work.FP_Adder_getmsbpos1_LZDP4
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP5
-# Loading work.FP_Adder_getmsbpos1_LZDP5
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP6
-# Loading work.FP_Adder_getmsbpos1_LZDP6
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.smc_float_to_fp
-# Loading work.FP_to_Fixed
-# Loading work.synShifterR
-# Loading work.singleDelayWithEnableGeneric
-# Loading work.synDelayWithEnableGeneric
-# ** Warning: (vsim-3015) /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop.v(80): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'y_i_porty'. The port definition is at: /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/smc_float_multiplier.v(521).
-#         Region: /hornerLoop_tb/UUT/theMult
-# ** Error: (vsim-3053) /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop.v(99): Illegal output or inout port connection for "port 'y_o'".
-#         Region: /hornerLoop_tb/UUT/smc2ieee
-# Error loading design
+# Compile of control.v failed with 1 errors.
+# Compile of control_tb.v was successful.
+# 3 compiles, 1 failed with 1 error. 
 # Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
-# 2 compiles, 0 failed with no errors. 
-vsim -novopt work.hornerLoop_tb
-# vsim -novopt work.hornerLoop_tb 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop_tb
-# Loading work.hornerLoop_tb
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop
-# Loading work.hornerLoop
-# Loading work.smc_float_multiplier
-# Loading work.x_i
-# Loading work.z_o
-# Loading work.FP_Multiplier
-# Loading work.synBusSatRnd
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synInverter
-# Loading work.smc_float_adder
-# Loading work.FP_Adder
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synNegate
-# Loading work.synShifter
-# Loading work.FP_Adder_getmsbpos1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Loading work.FP_Adder_getmsbpos1_LZDP1
-# Loading work.FP_Adder_getmsbpos1_LZDP2
-# Loading work.FP_Adder_getmsbpos1_LZDP3
-# Loading work.FP_Adder_getmsbpos1_LZDP4
-# Loading work.FP_Adder_getmsbpos1_LZDP5
-# Loading work.FP_Adder_getmsbpos1_LZDP6
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.smc_float_to_fp
-# Loading work.FP_to_Fixed
-# Loading work.synShifterR
-# Loading work.singleDelayWithEnableGeneric
-# Loading work.synDelayWithEnableGeneric
-# ** Error: (vsim-3053) /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop.v(99): Illegal output or inout port connection for "port 'y_o'".
-#         Region: /hornerLoop_tb/UUT/smc2ieee
-# Error loading design
-# Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
-# 2 compiles, 0 failed with no errors. 
-vsim -novopt work.hornerLoop_tb
-# vsim -novopt work.hornerLoop_tb 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop_tb
-# Loading work.hornerLoop_tb
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop
-# Loading work.hornerLoop
-# Loading work.smc_float_multiplier
-# Loading work.x_i
-# Loading work.z_o
-# Loading work.FP_Multiplier
-# Loading work.synBusSatRnd
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synInverter
-# Loading work.smc_float_adder
-# Loading work.FP_Adder
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synNegate
-# Loading work.synShifter
-# Loading work.FP_Adder_getmsbpos1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Loading work.FP_Adder_getmsbpos1_LZDP1
-# Loading work.FP_Adder_getmsbpos1_LZDP2
-# Loading work.FP_Adder_getmsbpos1_LZDP3
-# Loading work.FP_Adder_getmsbpos1_LZDP4
-# Loading work.FP_Adder_getmsbpos1_LZDP5
-# Loading work.FP_Adder_getmsbpos1_LZDP6
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.smc_float_to_fp
-# Loading work.FP_to_Fixed
-# Loading work.synShifterR
-# Loading work.singleDelayWithEnableGeneric
-# Loading work.synDelayWithEnableGeneric
-restart; run -all
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# cnt:           1
-# x_lin:       0
-# *************
-# cnt:           2
-# x_lin:       0
-# *************
-# cnt:           3
-# x_lin:       0
-# *************
-# cnt:           4
-# x_lin:       0
-# *************
-# cnt:           5
-# x_lin:       0
-# *************
-# cnt:           6
-# x_lin:       0
-# *************
-# cnt:           7
-# x_lin:       0
-# *************
-# cnt:           8
-# x_lin:       0
-# *************
-# cnt:           9
-# x_lin:       0
-# *************
-# cnt:          10
-# x_lin:       0
-# *************
-# cnt:          11
-# x_lin:       0
-# *************
-# cnt:          12
-# x_lin:       0
-# *************
-# cnt:          13
-# x_lin:       0
-# *************
-# cnt:          14
-# x_lin:       0
-# *************
-# cnt:          15
-# x_lin:       0
-# *************
-# cnt:          16
-# x_lin:       0
-# *************
-# cnt:          17
-# x_lin:       0
-# *************
-# cnt:          18
-# x_lin:       0
-# *************
-# cnt:          19
-# x_lin:       0
-# *************
-# cnt:          20
-# x_lin:       0
-# Break in Module hornerLoop_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop_tb.v line 101
-# Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
-# 2 compiles, 0 failed with no errors. 
-vsim -novopt work.hornerLoop_tb
-# vsim -novopt work.hornerLoop_tb 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop_tb
-# Loading work.hornerLoop_tb
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop
-# Loading work.hornerLoop
-# Loading work.smc_float_multiplier
-# Loading work.x_i
-# Loading work.z_o
-# Loading work.FP_Multiplier
-# Loading work.synBusSatRnd
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synInverter
-# Loading work.smc_float_adder
-# Loading work.FP_Adder
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synNegate
-# Loading work.synShifter
-# Loading work.FP_Adder_getmsbpos1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Loading work.FP_Adder_getmsbpos1_LZDP1
-# Loading work.FP_Adder_getmsbpos1_LZDP2
-# Loading work.FP_Adder_getmsbpos1_LZDP3
-# Loading work.FP_Adder_getmsbpos1_LZDP4
-# Loading work.FP_Adder_getmsbpos1_LZDP5
-# Loading work.FP_Adder_getmsbpos1_LZDP6
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.smc_float_to_fp
-# Loading work.FP_to_Fixed
-# Loading work.synShifterR
-# Loading work.singleDelayWithEnableGeneric
-# Loading work.synDelayWithEnableGeneric
-restart; run -all
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# cnt:           1
-# x_lin:       0
-# *************
-# cnt:           2
-# x_lin:       0
-# *************
-# cnt:           3
-# x_lin:       0
-# *************
-# cnt:           4
-# x_lin:       0
-# *************
-# cnt:           5
-# x_lin:       0
-# *************
-# cnt:           6
-# x_lin:       0
-# *************
-# cnt:           7
-# x_lin:       0
-# *************
-# cnt:           8
-# x_lin:       0
-# *************
-# cnt:           9
-# x_lin:       0
-# *************
-# cnt:          10
-# x_lin:       0
-# *************
-# cnt:          11
-# x_lin:       0
-# *************
-# cnt:          12
-# x_lin:       0
-# *************
-# cnt:          13
-# x_lin:       0
-# *************
-# cnt:          14
-# x_lin:       0
-# *************
-# cnt:          15
-# x_lin:       0
-# *************
-# cnt:          16
-# x_lin:       0
-# *************
-# cnt:          17
-# x_lin:       0
-# *************
-# cnt:          18
-# x_lin:       0
-# *************
-# cnt:          19
-# x_lin:       0
-# *************
-# cnt:          20
-# x_lin:       0
-# Break in Module hornerLoop_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop_tb.v line 103
-# Compile of centerScale.v was successful.
-# Compile of fp_to_smc_float.v was successful.
-# Compile of smc_float_adder.v was successful.
-# Compile of smc_float_multiplier.v was successful.
-# Compile of blocksTestbench.v was successful.
-# Compile of comparator.v was successful.
-# Compile of comparator_tb.v was successful.
-# Compile of mux.v was successful.
-# Compile of mux_tb.v was successful.
-# Compile of centerScale_tb.v was successful.
-# Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
-# 12 compiles, 0 failed with no errors. 
-vsim -novopt work.hornerLoop_tb
-# vsim -novopt work.hornerLoop_tb 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop_tb
-# Loading work.hornerLoop_tb
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop
-# Loading work.hornerLoop
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_multiplier
-# Loading work.smc_float_multiplier
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.x_i
-# Loading work.x_i
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.z_o
-# Loading work.z_o
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Multiplier
-# Loading work.FP_Multiplier
-# Loading work.synBusSatRnd
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synInverter
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_adder
-# Loading work.smc_float_adder
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder
-# Loading work.FP_Adder
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synNegate
-# Loading work.synShifter
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1
-# Loading work.FP_Adder_getmsbpos1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP1
-# Loading work.FP_Adder_getmsbpos1_LZDP1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP2
-# Loading work.FP_Adder_getmsbpos1_LZDP2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP3
-# Loading work.FP_Adder_getmsbpos1_LZDP3
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP4
-# Loading work.FP_Adder_getmsbpos1_LZDP4
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP5
-# Loading work.FP_Adder_getmsbpos1_LZDP5
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP6
-# Loading work.FP_Adder_getmsbpos1_LZDP6
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.smc_float_to_fp
-# Loading work.FP_to_Fixed
-# Loading work.synShifterR
-# Loading work.singleDelayWithEnableGeneric
-# Loading work.synDelayWithEnableGeneric
-restart; run -all
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# cnt:           1
-# x_lin:       0
-# *************
-# cnt:           2
-# x_lin:       0
-# *************
-# cnt:           3
-# x_lin:       0
-# *************
-# cnt:           4
-# x_lin:       0
-# *************
-# cnt:           5
-# x_lin:       0
-# *************
-# cnt:           6
-# x_lin:       0
-# *************
-# cnt:           7
-# x_lin:       0
-# *************
-# cnt:           8
-# x_lin:       0
-# *************
-# cnt:           9
-# x_lin:       0
-# *************
-# cnt:          10
-# x_lin:       0
-# *************
-# cnt:          11
-# x_lin:       0
-# *************
-# cnt:          12
-# x_lin:       0
-# *************
-# cnt:          13
-# x_lin:       0
-# *************
-# cnt:          14
-# x_lin:       0
-# *************
-# cnt:          15
-# x_lin:       0
-# *************
-# cnt:          16
-# x_lin:       0
-# *************
-# cnt:          17
-# x_lin:       0
-# *************
-# cnt:          18
-# x_lin:       0
-# *************
-# cnt:          19
-# x_lin:       0
-# *************
-# cnt:          20
-# x_lin:       0
-# *************
-# cnt:          20
-# x_lin:       0
-# Break in Module hornerLoop_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop_tb.v line 105
-# Compile of centerScale.v was successful.
-# Compile of fp_to_smc_float.v was successful.
-# Compile of smc_float_adder.v was successful.
-# Compile of smc_float_multiplier.v was successful.
-# Compile of blocksTestbench.v was successful.
-# Compile of comparator.v was successful.
-# Compile of comparator_tb.v was successful.
-# Compile of mux.v was successful.
-# Compile of mux_tb.v was successful.
-# Compile of centerScale_tb.v was successful.
-# Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
-# 12 compiles, 0 failed with no errors. 
-vsim -novopt work.hornerLoop_tb
-# vsim -novopt work.hornerLoop_tb 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop_tb
-# Loading work.hornerLoop_tb
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop
-# Loading work.hornerLoop
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_multiplier
-# Loading work.smc_float_multiplier
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.x_i
-# Loading work.x_i
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.z_o
-# Loading work.z_o
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Multiplier
-# Loading work.FP_Multiplier
-# Loading work.synBusSatRnd
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synInverter
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_adder
-# Loading work.smc_float_adder
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder
-# Loading work.FP_Adder
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synNegate
-# Loading work.synShifter
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1
-# Loading work.FP_Adder_getmsbpos1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP1
-# Loading work.FP_Adder_getmsbpos1_LZDP1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP2
-# Loading work.FP_Adder_getmsbpos1_LZDP2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP3
-# Loading work.FP_Adder_getmsbpos1_LZDP3
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP4
-# Loading work.FP_Adder_getmsbpos1_LZDP4
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP5
-# Loading work.FP_Adder_getmsbpos1_LZDP5
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP6
-# Loading work.FP_Adder_getmsbpos1_LZDP6
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.smc_float_to_fp
-# Loading work.FP_to_Fixed
-# Loading work.synShifterR
-# Loading work.singleDelayWithEnableGeneric
-# Loading work.synDelayWithEnableGeneric
-restart; run -all
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# cnt:           1
-# x_lin:       0
-# *************
-# cnt:           2
-# x_lin:       0
-# *************
-# cnt:           3
-# x_lin:       0
-# *************
-# cnt:           4
-# x_lin:       0
-# *************
-# cnt:           5
-# x_lin:       0
-# *************
-# cnt:           6
-# x_lin:       0
-# *************
-# cnt:           7
-# x_lin:       0
-# *************
-# cnt:           8
-# x_lin:       0
-# *************
-# cnt:           9
-# x_lin:       0
-# *************
-# cnt:          10
-# x_lin:       0
-# *************
-# cnt:          11
-# x_lin:       0
-# *************
-# cnt:          12
-# x_lin:       0
-# *************
-# cnt:          13
-# x_lin:       0
-# *************
-# cnt:          14
-# x_lin:       0
-# *************
-# cnt:          15
-# x_lin:       0
-# *************
-# cnt:          16
-# x_lin:       0
-# *************
-# cnt:          17
-# x_lin:       0
-# *************
-# cnt:          18
-# x_lin:       0
-# *************
-# cnt:          19
-# x_lin:       0
-# *************
-# cnt:          20
-# x_lin:       0
-# x_lin:       0
-# Break in Module hornerLoop_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop_tb.v line 104
-# Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
-# 2 compiles, 0 failed with no errors. 
-vsim -novopt work.hornerLoop_tb
-# vsim -novopt work.hornerLoop_tb 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop_tb
-# Loading work.hornerLoop_tb
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop
-# Loading work.hornerLoop
-# Loading work.smc_float_multiplier
-# Loading work.x_i
-# Loading work.z_o
-# Loading work.FP_Multiplier
-# Loading work.synBusSatRnd
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synInverter
-# Loading work.smc_float_adder
-# Loading work.FP_Adder
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synNegate
-# Loading work.synShifter
-# Loading work.FP_Adder_getmsbpos1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Loading work.FP_Adder_getmsbpos1_LZDP1
-# Loading work.FP_Adder_getmsbpos1_LZDP2
-# Loading work.FP_Adder_getmsbpos1_LZDP3
-# Loading work.FP_Adder_getmsbpos1_LZDP4
-# Loading work.FP_Adder_getmsbpos1_LZDP5
-# Loading work.FP_Adder_getmsbpos1_LZDP6
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.smc_float_to_fp
-# Loading work.FP_to_Fixed
-# Loading work.synShifterR
-# Loading work.singleDelayWithEnableGeneric
-# Loading work.synDelayWithEnableGeneric
-restart; run -all
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# cnt:           1
-# x_lin:       0
-# *************
-# cnt:           2
-# x_lin:       0
-# *************
-# cnt:           3
-# x_lin:       0
-# *************
-# cnt:           4
-# x_lin:       0
-# *************
-# cnt:           5
-# x_lin:       0
-# *************
-# cnt:           6
-# x_lin:       0
-# *************
-# cnt:           7
-# x_lin:       0
-# *************
-# cnt:           8
-# x_lin:       0
-# *************
-# cnt:           9
-# x_lin:       0
-# *************
-# cnt:          10
-# x_lin:       0
-# *************
-# cnt:          11
-# x_lin:       0
-# *************
-# cnt:          12
-# x_lin:       0
-# *************
-# cnt:          13
-# x_lin:       0
-# *************
-# cnt:          14
-# x_lin:       0
-# *************
-# cnt:          15
-# x_lin:       0
-# *************
-# cnt:          16
-# x_lin:       0
-# *************
-# cnt:          17
-# x_lin:       0
-# *************
-# cnt:          18
-# x_lin:       0
-# *************
-# cnt:          19
-# x_lin:       0
-# *************
-# cnt:          20
-# x_lin:       0
-# x_lin:       0
-# Break in Module hornerLoop_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop_tb.v line 104
-# Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
-# 2 compiles, 0 failed with no errors. 
-vsim -novopt work.hornerLoop_tb
-# vsim -novopt work.hornerLoop_tb 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop_tb
-# Loading work.hornerLoop_tb
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop
-# Loading work.hornerLoop
-# Loading work.smc_float_multiplier
-# Loading work.x_i
-# Loading work.z_o
-# Loading work.FP_Multiplier
-# Loading work.synBusSatRnd
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synInverter
-# Loading work.smc_float_adder
-# Loading work.FP_Adder
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synNegate
-# Loading work.synShifter
-# Loading work.FP_Adder_getmsbpos1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Loading work.FP_Adder_getmsbpos1_LZDP1
-# Loading work.FP_Adder_getmsbpos1_LZDP2
-# Loading work.FP_Adder_getmsbpos1_LZDP3
-# Loading work.FP_Adder_getmsbpos1_LZDP4
-# Loading work.FP_Adder_getmsbpos1_LZDP5
-# Loading work.FP_Adder_getmsbpos1_LZDP6
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.smc_float_to_fp
-# Loading work.FP_to_Fixed
-# Loading work.synShifterR
-# Loading work.singleDelayWithEnableGeneric
-# Loading work.synDelayWithEnableGeneric
-restart; run -all
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# cnt:           1
-# x_lin:       0
-# *************
-# cnt:           2
-# x_lin:       0
-# *************
-# cnt:           3
-# x_lin:       0
-# *************
-# cnt:           4
-# x_lin:       0
-# *************
-# cnt:           5
-# x_lin:       0
-# *************
-# cnt:           6
-# x_lin:       0
-# *************
-# cnt:           7
-# x_lin:       0
-# *************
-# cnt:           8
-# x_lin:       0
-# *************
-# cnt:           9
-# x_lin:       0
-# *************
-# cnt:          10
-# x_lin:       0
-# *************
-# cnt:          11
-# x_lin:       0
-# *************
-# cnt:          12
-# x_lin:       0
-# *************
-# cnt:          13
-# x_lin:       0
-# *************
-# cnt:          14
-# x_lin:       0
-# *************
-# cnt:          15
-# x_lin:       0
-# *************
-# cnt:          16
-# x_lin:       0
-# *************
-# cnt:          17
-# x_lin:       0
-# *************
-# cnt:          18
-# x_lin:       0
-# *************
-# cnt:          19
-# x_lin:       0
-# *************
-# cnt:          20
-# x_lin:       0
-# x_lin:       0
-# Break in Module hornerLoop_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop_tb.v line 104
-# Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
-# 2 compiles, 0 failed with no errors. 
-vsim -novopt work.hornerLoop_tb
-# vsim -novopt work.hornerLoop_tb 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop_tb
-# Loading work.hornerLoop_tb
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop
-# Loading work.hornerLoop
-# Loading work.smc_float_multiplier
-# Loading work.x_i
-# Loading work.z_o
-# Loading work.FP_Multiplier
-# Loading work.synBusSatRnd
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synInverter
-# Loading work.smc_float_adder
-# Loading work.FP_Adder
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synNegate
-# Loading work.synShifter
-# Loading work.FP_Adder_getmsbpos1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Loading work.FP_Adder_getmsbpos1_LZDP1
-# Loading work.FP_Adder_getmsbpos1_LZDP2
-# Loading work.FP_Adder_getmsbpos1_LZDP3
-# Loading work.FP_Adder_getmsbpos1_LZDP4
-# Loading work.FP_Adder_getmsbpos1_LZDP5
-# Loading work.FP_Adder_getmsbpos1_LZDP6
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.smc_float_to_fp
-# Loading work.FP_to_Fixed
-# Loading work.synShifterR
-# Loading work.singleDelayWithEnableGeneric
-# Loading work.synDelayWithEnableGeneric
-restart; run -all
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# cnt:           1
-# x_lin:       0
-# *************
-# cnt:           2
-# x_lin:       0
-# *************
-# cnt:           3
-# x_lin:       0
-# *************
-# cnt:           4
-# x_lin:       0
-# *************
-# cnt:           5
-# x_lin:       0
-# *************
-# cnt:           6
-# x_lin:       0
-# *************
-# cnt:           7
-# x_lin:       0
-# *************
-# cnt:           8
-# x_lin:       0
-# *************
-# cnt:           9
-# x_lin:       0
-# *************
-# cnt:          10
-# x_lin:       0
-# *************
-# cnt:          11
-# x_lin:       0
-# *************
-# cnt:          12
-# x_lin:       0
-# *************
-# cnt:          13
-# x_lin:       0
-# *************
-# cnt:          14
-# x_lin:       0
-# *************
-# cnt:          15
-# x_lin:       0
-# *************
-# cnt:          16
-# x_lin:       0
-# *************
-# cnt:          17
-# x_lin:       0
-# *************
-# cnt:          18
-# x_lin:       0
-# *************
-# cnt:          19
-# x_lin:       0
-# *************
-# cnt:          20
-# x_lin:       0
-# x_lin:       0
-# Break in Module hornerLoop_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop_tb.v line 104
-# Compile of centerScale.v was successful.
-# Compile of fp_to_smc_float.v was successful.
-# Compile of smc_float_adder.v was successful.
-# Compile of smc_float_multiplier.v was successful.
-# Compile of blocksTestbench.v was successful.
-# Compile of comparator.v was successful.
-# Compile of comparator_tb.v was successful.
-# Compile of mux.v was successful.
-# Compile of mux_tb.v was successful.
-# Compile of centerScale_tb.v was successful.
-# Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
-# 12 compiles, 0 failed with no errors. 
-vsim -novopt work.hornerLoop_tb
-# vsim -novopt work.hornerLoop_tb 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop_tb
-# Loading work.hornerLoop_tb
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop
-# Loading work.hornerLoop
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_multiplier
-# Loading work.smc_float_multiplier
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.x_i
-# Loading work.x_i
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.z_o
-# Loading work.z_o
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Multiplier
-# Loading work.FP_Multiplier
-# Loading work.synBusSatRnd
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synInverter
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_adder
-# Loading work.smc_float_adder
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder
-# Loading work.FP_Adder
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synNegate
-# Loading work.synShifter
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1
-# Loading work.FP_Adder_getmsbpos1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP1
-# Loading work.FP_Adder_getmsbpos1_LZDP1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP2
-# Loading work.FP_Adder_getmsbpos1_LZDP2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP3
-# Loading work.FP_Adder_getmsbpos1_LZDP3
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP4
-# Loading work.FP_Adder_getmsbpos1_LZDP4
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP5
-# Loading work.FP_Adder_getmsbpos1_LZDP5
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP6
-# Loading work.FP_Adder_getmsbpos1_LZDP6
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.smc_float_to_fp
-# Loading work.FP_to_Fixed
-# Loading work.synShifterR
-# Loading work.singleDelayWithEnableGeneric
-# Loading work.synDelayWithEnableGeneric
-restart; run -all
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# cnt:           1
-# x_lin:       0
-# *************
-# cnt:           2
-# x_lin:       0
-# *************
-# cnt:           3
-# x_lin:       0
-# *************
-# cnt:           4
-# x_lin:       0
-# *************
-# cnt:           5
-# x_lin:       0
-# *************
-# cnt:           6
-# x_lin:       0
-# *************
-# cnt:           7
-# x_lin:       0
-# *************
-# cnt:           8
-# x_lin:       0
-# *************
-# cnt:           9
-# x_lin:       0
-# *************
-# cnt:          10
-# x_lin:       0
-# *************
-# cnt:          11
-# x_lin:       0
-# *************
-# cnt:          12
-# x_lin:       0
-# *************
-# cnt:          13
-# x_lin:       0
-# *************
-# cnt:          14
-# x_lin:       0
-# *************
-# cnt:          15
-# x_lin:       0
-# *************
-# cnt:          16
-# x_lin:       0
-# *************
-# cnt:          17
-# x_lin:       0
-# *************
-# cnt:          18
-# x_lin:       0
-# *************
-# cnt:          19
-# x_lin:       0
-# *************
-# cnt:          20
-# x_lin:       0
-# x_lin:       0
-# Break in Module hornerLoop_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop_tb.v line 104
-# Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
-# 2 compiles, 0 failed with no errors. 
-vsim -novopt work.hornerLoop_tb
-# vsim -novopt work.hornerLoop_tb 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop_tb
-# Loading work.hornerLoop_tb
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop
-# Loading work.hornerLoop
-# Loading work.smc_float_multiplier
-# Loading work.x_i
-# Loading work.z_o
-# Loading work.FP_Multiplier
-# Loading work.synBusSatRnd
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synInverter
-# Loading work.smc_float_adder
-# Loading work.FP_Adder
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synNegate
-# Loading work.synShifter
-# Loading work.FP_Adder_getmsbpos1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Loading work.FP_Adder_getmsbpos1_LZDP1
-# Loading work.FP_Adder_getmsbpos1_LZDP2
-# Loading work.FP_Adder_getmsbpos1_LZDP3
-# Loading work.FP_Adder_getmsbpos1_LZDP4
-# Loading work.FP_Adder_getmsbpos1_LZDP5
-# Loading work.FP_Adder_getmsbpos1_LZDP6
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.smc_float_to_fp
-# Loading work.FP_to_Fixed
-# Loading work.synShifterR
-# Loading work.singleDelayWithEnableGeneric
-# Loading work.synDelayWithEnableGeneric
-restart; run -all
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# cnt:           1
-# x_lin:       0
-# *************
-# cnt:           2
-# x_lin:       0
-# *************
-# cnt:           3
-# x_lin:       0
-# *************
-# cnt:           4
-# x_lin:       0
-# *************
-# cnt:           5
-# x_lin:       0
-# *************
-# cnt:           6
-# x_lin:       0
-# *************
-# cnt:           7
-# x_lin:       0
-# *************
-# cnt:           8
-# x_lin:       0
-# *************
-# cnt:           9
-# x_lin:       0
-# *************
-# cnt:          10
-# x_lin:       0
-# *************
-# cnt:          11
-# x_lin:       0
-# *************
-# cnt:          12
-# x_lin:       0
-# *************
-# cnt:          13
-# x_lin:       0
-# *************
-# cnt:          14
-# x_lin:       0
-# *************
-# cnt:          15
-# x_lin:       0
-# *************
-# cnt:          16
-# x_lin:       0
-# *************
-# cnt:          17
-# x_lin:       0
-# *************
-# cnt:          18
-# x_lin:       0
-# *************
-# cnt:          19
-# x_lin:       0
-# *************
-# cnt:          20
-# x_lin:       0
-# x_lin:       0
-# Break in Module hornerLoop_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop_tb.v line 104
-# Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
-# 2 compiles, 0 failed with no errors. 
-vsim -novopt work.hornerLoop_tb
-# vsim -novopt work.hornerLoop_tb 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop_tb
-# Loading work.hornerLoop_tb
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop
-# Loading work.hornerLoop
-# Loading work.smc_float_multiplier
-# Loading work.x_i
-# Loading work.z_o
-# Loading work.FP_Multiplier
-# Loading work.synBusSatRnd
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synInverter
-# Loading work.smc_float_adder
-# Loading work.FP_Adder
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synNegate
-# Loading work.synShifter
-# Loading work.FP_Adder_getmsbpos1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Loading work.FP_Adder_getmsbpos1_LZDP1
-# Loading work.FP_Adder_getmsbpos1_LZDP2
-# Loading work.FP_Adder_getmsbpos1_LZDP3
-# Loading work.FP_Adder_getmsbpos1_LZDP4
-# Loading work.FP_Adder_getmsbpos1_LZDP5
-# Loading work.FP_Adder_getmsbpos1_LZDP6
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.smc_float_to_fp
-# Loading work.FP_to_Fixed
-# Loading work.synShifterR
-# Loading work.singleDelayWithEnableGeneric
-# Loading work.synDelayWithEnableGeneric
-
-restart; run -all
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# cnt:           1
-# x_lin:       0
-# *************
-# cnt:           2
-# x_lin:       0
-# *************
-# cnt:           3
-# x_lin:       0
-# *************
-# cnt:           4
-# x_lin:       0
-# *************
-# cnt:           5
-# x_lin:       0
-# *************
-# cnt:           6
-# x_lin:       0
-# *************
-# cnt:           7
-# x_lin:       0
-# *************
-# cnt:           8
-# x_lin:       0
-# *************
-# cnt:           9
-# x_lin:       0
-# *************
-# cnt:          10
-# x_lin:       0
-# *************
-# cnt:          11
-# x_lin:       0
-# *************
-# cnt:          12
-# x_lin:       0
-# *************
-# cnt:          13
-# x_lin:       0
-# *************
-# cnt:          14
-# x_lin:       0
-# *************
-# cnt:          15
-# x_lin:       0
-# *************
-# cnt:          16
-# x_lin:       0
-# *************
-# cnt:          17
-# x_lin:       0
-# *************
-# cnt:          18
-# x_lin:       0
-# *************
-# cnt:          19
-# x_lin:       0
-# *************
-# cnt:          20
-# x_lin:       0
-# x_lin:       0
-# Break in Module hornerLoop_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop_tb.v line 104
-# Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
-# 2 compiles, 0 failed with no errors. 
-vsim -novopt work.hornerLoop_tb
-# vsim -novopt work.hornerLoop_tb 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop_tb
-# Loading work.hornerLoop_tb
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop
-# Loading work.hornerLoop
-# Loading work.smc_float_multiplier
-# Loading work.x_i
-# Loading work.z_o
-# Loading work.FP_Multiplier
-# Loading work.synBusSatRnd
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synInverter
-# Loading work.smc_float_adder
-# Loading work.FP_Adder
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synNegate
-# Loading work.synShifter
-# Loading work.FP_Adder_getmsbpos1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Loading work.FP_Adder_getmsbpos1_LZDP1
-# Loading work.FP_Adder_getmsbpos1_LZDP2
-# Loading work.FP_Adder_getmsbpos1_LZDP3
-# Loading work.FP_Adder_getmsbpos1_LZDP4
-# Loading work.FP_Adder_getmsbpos1_LZDP5
-# Loading work.FP_Adder_getmsbpos1_LZDP6
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.smc_float_to_fp
-# Loading work.FP_to_Fixed
-# Loading work.synShifterR
-# Loading work.singleDelayWithEnableGeneric
-# Loading work.synDelayWithEnableGeneric
-restart; run -all
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# **********asdf***
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# cnt:           1
-# x_lin:       0
-# *************
-# cnt:           2
-# x_lin:       0
-# *************
-# cnt:           3
-# x_lin:       0
-# *************
-# cnt:           4
-# x_lin:       0
-# *************
-# cnt:           5
-# x_lin:       0
-# *************
-# cnt:           6
-# x_lin:       0
-# *************
-# cnt:           7
-# x_lin:       0
-# *************
-# cnt:           8
-# x_lin:       0
-# *************
-# cnt:           9
-# x_lin:       0
-# *************
-# cnt:          10
-# x_lin:       0
-# *************
-# cnt:          11
-# x_lin:       0
-# *************
-# cnt:          12
-# x_lin:       0
-# *************
-# cnt:          13
-# x_lin:       0
-# *************
-# cnt:          14
-# x_lin:       0
-# *************
-# cnt:          15
-# x_lin:       0
-# *************
-# cnt:          16
-# x_lin:       0
-# *************
-# cnt:          17
-# x_lin:       0
-# *************
-# cnt:          18
-# x_lin:       0
-# *************
-# cnt:          19
-# x_lin:       0
-# *************
-# cnt:          20
-# x_lin:       0
-# x_lin:       0
-# Break in Module hornerLoop_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop_tb.v line 104
-# Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
-# 2 compiles, 0 failed with no errors. 
-vsim -novopt work.hornerLoop_tb
-# vsim -novopt work.hornerLoop_tb 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop_tb
-# Loading work.hornerLoop_tb
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop
-# Loading work.hornerLoop
-# Loading work.smc_float_multiplier
-# Loading work.x_i
-# Loading work.z_o
-# Loading work.FP_Multiplier
-# Loading work.synBusSatRnd
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synInverter
-# Loading work.smc_float_adder
-# Loading work.FP_Adder
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synNegate
-# Loading work.synShifter
-# Loading work.FP_Adder_getmsbpos1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Loading work.FP_Adder_getmsbpos1_LZDP1
-# Loading work.FP_Adder_getmsbpos1_LZDP2
-# Loading work.FP_Adder_getmsbpos1_LZDP3
-# Loading work.FP_Adder_getmsbpos1_LZDP4
-# Loading work.FP_Adder_getmsbpos1_LZDP5
-# Loading work.FP_Adder_getmsbpos1_LZDP6
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.smc_float_to_fp
-# Loading work.FP_to_Fixed
-# Loading work.synShifterR
-# Loading work.singleDelayWithEnableGeneric
-# Loading work.synDelayWithEnableGeneric
-restart; run -all
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# cnt:           1
-# x_lin:       0
-# *************
-# cnt:           2
-# x_lin:       0
-# *************
-# cnt:           3
-# x_lin:       0
-# *************
-# cnt:           4
-# x_lin:       0
-# *************
-# cnt:           5
-# x_lin:       0
-# *************
-# cnt:           6
-# x_lin:       0
-# *************
-# cnt:           7
-# x_lin:       0
-# *************
-# cnt:           8
-# x_lin:       0
-# *************
-# cnt:           9
-# x_lin:       0
-# *************
-# cnt:          10
-# x_lin:       0
-# *************
-# cnt:          11
-# x_lin:       0
-# *************
-# cnt:          12
-# x_lin:       0
-# *************
-# cnt:          13
-# x_lin:       0
-# *************
-# cnt:          14
-# x_lin:       0
-# *************
-# cnt:          15
-# x_lin:       0
-# *************
-# cnt:          16
-# x_lin:       0
-# *************
-# cnt:          17
-# x_lin:       0
-# *************
-# cnt:          18
-# x_lin:       0
-# *************
-# cnt:          19
-# x_lin:       0
-# *************
-# cnt:          20
-# x_lin:       0
-# x_lin:       0
-# Break in Module hornerLoop_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop_tb.v line 104
-# Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
-# 2 compiles, 0 failed with no errors. 
-vsim -novopt work.hornerLoop_tb
-# vsim -novopt work.hornerLoop_tb 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop_tb
-# Loading work.hornerLoop_tb
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop
-# Loading work.hornerLoop
-# Loading work.smc_float_multiplier
-# Loading work.x_i
-# Loading work.z_o
-# Loading work.FP_Multiplier
-# Loading work.synBusSatRnd
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synInverter
-# Loading work.smc_float_adder
-# Loading work.FP_Adder
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synNegate
-# Loading work.synShifter
-# Loading work.FP_Adder_getmsbpos1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Loading work.FP_Adder_getmsbpos1_LZDP1
-# Loading work.FP_Adder_getmsbpos1_LZDP2
-# Loading work.FP_Adder_getmsbpos1_LZDP3
-# Loading work.FP_Adder_getmsbpos1_LZDP4
-# Loading work.FP_Adder_getmsbpos1_LZDP5
-# Loading work.FP_Adder_getmsbpos1_LZDP6
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.smc_float_to_fp
-# Loading work.FP_to_Fixed
-# Loading work.synShifterR
-# Loading work.singleDelayWithEnableGeneric
-# Loading work.synDelayWithEnableGeneric
-restart; run -all
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# cnt:           1
-# x_lin:       0
-# *************
-# cnt:           2
-# x_lin:       0
-# *************
-# cnt:           3
-# x_lin:       0
-# *************
-# cnt:           4
-# x_lin:       0
-# *************
-# cnt:           5
-# x_lin:       0
-# *************
-# cnt:           6
-# x_lin:       0
-# *************
-# cnt:           7
-# x_lin:       0
-# *************
-# cnt:           8
-# x_lin:       0
-# *************
-# cnt:           9
-# x_lin:       0
-# *************
-# cnt:          10
-# x_lin:       0
-# *************
-# cnt:          11
-# x_lin:       0
-# *************
-# cnt:          12
-# x_lin:       0
-# *************
-# cnt:          13
-# x_lin:       0
-# *************
-# cnt:          14
-# x_lin:       0
-# *************
-# cnt:          15
-# x_lin:       0
-# *************
-# cnt:          16
-# x_lin:       0
-# *************
-# cnt:          17
-# x_lin:       0
-# *************
-# cnt:          18
-# x_lin:       0
-# *************
-# cnt:          19
-# x_lin:       0
-# *************
-# cnt:          20
-# x_lin:       0
-# x_lin:       0
-# Break in Module hornerLoop_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop_tb.v line 104
-# Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
-# 2 compiles, 0 failed with no errors. 
-vsim -novopt work.hornerLoop_tb
-# vsim -novopt work.hornerLoop_tb 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop_tb
-# Loading work.hornerLoop_tb
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop
-# Loading work.hornerLoop
-# Loading work.smc_float_multiplier
-# Loading work.x_i
-# Loading work.z_o
-# Loading work.FP_Multiplier
-# Loading work.synBusSatRnd
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synInverter
-# Loading work.smc_float_adder
-# Loading work.FP_Adder
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synNegate
-# Loading work.synShifter
-# Loading work.FP_Adder_getmsbpos1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Loading work.FP_Adder_getmsbpos1_LZDP1
-# Loading work.FP_Adder_getmsbpos1_LZDP2
-# Loading work.FP_Adder_getmsbpos1_LZDP3
-# Loading work.FP_Adder_getmsbpos1_LZDP4
-# Loading work.FP_Adder_getmsbpos1_LZDP5
-# Loading work.FP_Adder_getmsbpos1_LZDP6
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.smc_float_to_fp
-# Loading work.FP_to_Fixed
-# Loading work.synShifterR
-# Loading work.singleDelayWithEnableGeneric
-# Loading work.synDelayWithEnableGeneric
-restart; run -all
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# cnt:           1
-# x_lin:       0
-# *************
-# cnt:           2
-# x_lin:       0
-# *************
-# cnt:           3
-# x_lin:       0
-# *************
-# cnt:           4
-# x_lin:       0
-# *************
-# cnt:           5
-# x_lin:       0
-# *************
-# cnt:           6
-# x_lin:       0
-# *************
-# cnt:           7
-# x_lin:       0
-# *************
-# cnt:           8
-# x_lin:       0
-# *************
-# cnt:           9
-# x_lin:       0
-# *************
-# cnt:          10
-# x_lin:       0
-# *************
-# cnt:          11
-# x_lin:       0
-# *************
-# cnt:          12
-# x_lin:       0
-# *************
-# cnt:          13
-# x_lin:       0
-# *************
-# cnt:          14
-# x_lin:       0
-# *************
-# cnt:          15
-# x_lin:       0
-# *************
-# cnt:          16
-# x_lin:       0
-# *************
-# cnt:          17
-# x_lin:       0
-# *************
-# cnt:          18
-# x_lin:       0
-# *************
-# cnt:          19
-# x_lin:       0
-# *************
-# cnt:          20
-# x_lin:       0
-# x_lin:       0
-# Break in Module hornerLoop_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop_tb.v line 104
-# Compile of centerScale.v was successful.
-# Compile of fp_to_smc_float.v was successful.
-# Compile of smc_float_adder.v was successful.
-# Compile of smc_float_multiplier.v was successful.
-# Compile of blocksTestbench.v failed with 1 errors.
-# Compile of comparator.v was successful.
-# Compile of comparator_tb.v was successful.
-# Compile of mux.v was successful.
-# Compile of mux_tb.v was successful.
-# Compile of centerScale_tb.v was successful.
-# Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
-# 12 compiles, 1 failed with 1 error. 
-# Compile of centerScale.v was successful.
-# Compile of fp_to_smc_float.v was successful.
-# Compile of smc_float_adder.v was successful.
-# Compile of smc_float_multiplier.v was successful.
-# Compile of blocksTestbench.v was successful.
-# Compile of comparator.v was successful.
-# Compile of comparator_tb.v was successful.
-# Compile of mux.v was successful.
-# Compile of mux_tb.v was successful.
-# Compile of centerScale_tb.v was successful.
-# Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
-# 12 compiles, 0 failed with no errors. 
-work -novopt work.blocksTestbench
-# invalid command name "work"
-vsim -novopt work.blocksTestbench
-# vsim -novopt work.blocksTestbench 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.blocksTestbench
-# Loading work.blocksTestbench
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.fp_to_smc_float
-# Loading work.fp_to_smc_float
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.y_o
-# Loading work.y_o
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP
-# Loading work.Fixed_to_FP
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synNegate
-# Loading work.synShifter
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_log2
-# Loading work.Fixed_to_FP_log2
-# Loading work.synBusSatRnd
-# Loading work.synDelayWithEnableGeneric
-restart; run -all
-# *************
-# z_o: 1065353216
-# srdyo_o: 0
-# *************
-#           1 cycles transpired
-# z_o: 1065353216
-# srdyo_o: 0
-# *************
-#           2 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# *************
-#           3 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# *************
-#           4 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# *************
-#           5 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# *************
-#           6 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# *************
-#           7 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# *************
-#           8 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# *************
-#           9 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# *************
-#          10 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# *************
-#          11 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# *************
-#          12 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# *************
-#          13 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# *************
-#          14 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# *************
-#          15 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# *************
-#          16 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# *************
-#          17 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# *************
-#          18 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# *************
-#          19 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# *************
-#          20 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# *************
-#          21 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# Break in Module blocksTestbench at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v line 74
-# Compile of centerScale.v was successful.
-# Compile of fp_to_smc_float.v was successful.
-# Compile of smc_float_adder.v was successful.
-# Compile of smc_float_multiplier.v was successful.
-# Compile of blocksTestbench.v was successful.
-# Compile of comparator.v was successful.
-# Compile of comparator_tb.v was successful.
-# Compile of mux.v was successful.
-# Compile of mux_tb.v was successful.
-# Compile of centerScale_tb.v was successful.
-# Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
-# 12 compiles, 0 failed with no errors. 
-vsim -novopt work.blocksTestbench
-# vsim -novopt work.blocksTestbench 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.blocksTestbench
-# Loading work.blocksTestbench
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.fp_to_smc_float
-# Loading work.fp_to_smc_float
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.y_o
-# Loading work.y_o
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP
-# Loading work.Fixed_to_FP
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synNegate
-# Loading work.synShifter
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.Fixed_to_FP_log2
-# Loading work.Fixed_to_FP_log2
-# Loading work.synBusSatRnd
-# Loading work.synDelayWithEnableGeneric
-restart; run -all
-# *************
-# z_o: 1065353216
-# srdyo_o: 0
-# *************
-#           1 cycles transpired
-# z_o: 1065353216
-# srdyo_o: 0
-# *************
-#           2 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# *************
-#           3 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 0
-# Break in Module blocksTestbench at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v line 74
-# Compile of blocksTestbench.v was successful.
-vsim -novopt work.blocksTestbench
-# vsim -novopt work.blocksTestbench 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.blocksTestbench
-# Loading work.blocksTestbench
-# Loading work.fp_to_smc_float
-# Loading work.y_o
-# Loading work.Fixed_to_FP
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synNegate
-# Loading work.synShifter
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
-# Loading work.Fixed_to_FP_log2
-# Loading work.synBusSatRnd
-# Loading work.synDelayWithEnableGeneric
-restart; run -all
-# *************
-# z_o: 1065353216
-# srdyo_o: 0
-# *************
-#           1 cycles transpired
-# z_o: 1065353216
-# srdyo_o: 0
-# *************
-#           2 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 1
-# *************
-#           3 cycles transpired
-# z_o: 1233684608
-# srdyo_o: 1
-# Break in Module blocksTestbench at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v line 74
-# Compile of blocksTestbench.v was successful.
-vsim -novopt work.blocksTestbench
-# vsim -novopt work.blocksTestbench 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.blocksTestbench
-# Loading work.blocksTestbench
-# Loading work.fp_to_smc_float
-# Loading work.y_o
-# Loading work.Fixed_to_FP
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synNegate
-# Loading work.synShifter
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
-# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
-# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
-# Loading work.Fixed_to_FP_log2
-# Loading work.synBusSatRnd
-# Loading work.synDelayWithEnableGeneric
-restart; run -all
-# *************
-# z_o: 00111111100000000000000000000000
-# srdyo_o: 0
-# *************
-#           1 cycles transpired
-# z_o: 00111111100000000000000000000000
-# srdyo_o: 0
-# *************
-#           2 cycles transpired
-# z_o: 01001001100010001000100010000000
-# srdyo_o: 1
-# *************
-#           3 cycles transpired
-# z_o: 01001001100010001000100010000000
-# srdyo_o: 1
-# Break in Module blocksTestbench at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v line 74
-# Compile of blocksTestbench.v was successful.
-# Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
+# Compile of control.v was successful.
+# Compile of control_tb.v was successful.
 # 3 compiles, 0 failed with no errors. 
-vsim -novopt work.hornerLoop_tb
-# vsim -novopt work.hornerLoop_tb 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop_tb
-# Loading work.hornerLoop_tb
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop
-# Loading work.hornerLoop
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_multiplier
-# Loading work.smc_float_multiplier
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.x_i
-# Loading work.x_i
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.z_o
-# Loading work.z_o
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Multiplier
-# Loading work.FP_Multiplier
-# Loading work.synBusSatRnd
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synInverter
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.smc_float_adder
-# Loading work.smc_float_adder
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder
-# Loading work.FP_Adder
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synNegate
-# Loading work.synShifter
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1
-# Loading work.FP_Adder_getmsbpos1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP1
-# Loading work.FP_Adder_getmsbpos1_LZDP1
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP2
-# Loading work.FP_Adder_getmsbpos1_LZDP2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP3
-# Loading work.FP_Adder_getmsbpos1_LZDP3
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP4
-# Loading work.FP_Adder_getmsbpos1_LZDP4
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP5
-# Loading work.FP_Adder_getmsbpos1_LZDP5
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDP6
-# Loading work.FP_Adder_getmsbpos1_LZDP6
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.smc_float_to_fp
-# Loading work.FP_to_Fixed
-# Loading work.synShifterR
-# Loading work.singleDelayWithEnableGeneric
-# Loading work.synDelayWithEnableGeneric
+vsim -novopt work.control_tb
+# vsim -novopt work.control_tb 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.control_tb
+# Loading work.control_tb
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.control
+# Loading work.control
 restart; run -all
 # *************
-# x_lin:       0
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   0
 # *************
-# x_lin:       0
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   0
 # *************
-# x_lin:       0
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   0
 # *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# cnt:           1
-# x_lin:       0
-# *************
-# cnt:           2
-# x_lin:       0
-# *************
-# cnt:           3
-# x_lin:       0
-# *************
-# cnt:           4
-# x_lin:  559240
-# *************
-# cnt:           5
-# x_lin:  559240
-# *************
-# cnt:           6
-# x_lin:  559240
-# *************
-# cnt:           7
-# x_lin:  559240
-# *************
-# cnt:           8
-# x_lin:  559240
-# *************
-# cnt:           9
-# x_lin:  559240
-# *************
-# cnt:          10
-# x_lin:  559240
-# *************
-# cnt:          11
-# x_lin:  559240
-# *************
-# cnt:          12
-# x_lin:  559240
-# *************
-# cnt:          13
-# x_lin:  559240
-# *************
-# cnt:          14
-# x_lin:  559240
-# *************
-# cnt:          15
-# x_lin:  559240
-# *************
-# cnt:          16
-# x_lin:  559240
-# *************
-# cnt:          17
-# x_lin:  559240
-# *************
-# cnt:          18
-# x_lin:  559240
-# *************
-# cnt:          19
-# x_lin:  559240
-# *************
-# cnt:          20
-# x_lin:  655360
-# x_lin:       0
-# Break in Module hornerLoop_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop_tb.v line 104
-# Compile of blocksTestbench.v was successful.
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   0
+# Break in Module control_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/control_tb.v line 79
 # Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
+# Compile of control.v was successful.
+# Compile of control_tb.v was successful.
 # 3 compiles, 0 failed with no errors. 
-vsim -novopt work.hornerLoop_tb
-# vsim -novopt work.hornerLoop_tb 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop_tb
-# Loading work.hornerLoop_tb
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop
-# Loading work.hornerLoop
-# Loading work.smc_float_multiplier
-# Loading work.x_i
-# Loading work.z_o
-# Loading work.FP_Multiplier
-# Loading work.synBusSatRnd
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synInverter
-# Loading work.smc_float_adder
-# Loading work.FP_Adder
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synNegate
-# Loading work.synShifter
-# Loading work.FP_Adder_getmsbpos1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Loading work.FP_Adder_getmsbpos1_LZDP1
-# Loading work.FP_Adder_getmsbpos1_LZDP2
-# Loading work.FP_Adder_getmsbpos1_LZDP3
-# Loading work.FP_Adder_getmsbpos1_LZDP4
-# Loading work.FP_Adder_getmsbpos1_LZDP5
-# Loading work.FP_Adder_getmsbpos1_LZDP6
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.smc_float_to_fp
-# Loading work.FP_to_Fixed
-# Loading work.synShifterR
-# Loading work.singleDelayWithEnableGeneric
-# Loading work.synDelayWithEnableGeneric
+vsim -novopt work.control_tb
+# vsim -novopt work.control_tb 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.control_tb
+# Loading work.control_tb
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.control
+# Loading work.control
 restart; run -all
 # *************
-# x_lin:       0
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   0
 # *************
-# x_lin:       0
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   0
 # *************
-# x_lin:       0
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   0
 # *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   0
 # *************
 # cnt:           1
-# x_lin:       0
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:           2
-# x_lin:       0
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:           3
-# x_lin:       0
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:           4
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:           5
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:           6
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:           7
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:           8
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:           9
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:          10
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:          11
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:          12
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:          13
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:          14
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:          15
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:          16
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:          17
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:          18
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:          19
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:          20
-# x_lin:  655360
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:          21
-# x_lin:  655360
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:          22
-# x_lin:  655360
-# x_lin:       0
-# Break in Module hornerLoop_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop_tb.v line 104
-# Compile of blocksTestbench.v was successful.
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          23
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          24
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          25
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          26
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          27
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          28
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          29
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          30
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          31
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          32
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          33
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          34
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          35
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          36
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          37
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          38
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          39
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          40
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          41
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          42
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          43
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          44
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          45
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          46
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          47
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          48
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          49
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          50
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          51
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          52
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          53
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          54
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          55
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          56
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          57
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          58
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          59
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          60
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          61
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          62
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          63
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          64
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          65
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          66
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          67
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          68
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          69
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          70
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          71
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          72
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          73
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          74
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          75
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          76
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          77
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          78
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          79
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          80
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          81
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          82
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          83
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          84
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          85
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          86
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          87
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          88
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          89
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          90
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          91
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          92
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          93
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          94
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          95
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          96
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          97
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          98
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:          99
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         100
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         101
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         102
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         103
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         104
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         105
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         106
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         107
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         108
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         109
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         110
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         111
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         112
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         113
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         114
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         115
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         116
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         117
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         118
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         119
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         120
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         121
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         122
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         123
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         124
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         125
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         126
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         127
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         128
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         129
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         130
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         131
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         132
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         133
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         134
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         135
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         136
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         137
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         138
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         139
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         140
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         141
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         142
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         143
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         144
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         145
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         146
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         147
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         148
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         149
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         150
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         151
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         152
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         153
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         154
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         155
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         156
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         157
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         158
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         159
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         160
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         161
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         162
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         163
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         164
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         165
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         166
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         167
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         168
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         169
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         170
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         171
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         172
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         173
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         174
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         175
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         176
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         177
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         178
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         179
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         180
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         181
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         182
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         183
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         184
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         185
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         186
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         187
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         188
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         189
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         190
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         191
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         192
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         193
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         194
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         195
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         196
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         197
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         198
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         199
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# *************
+# cnt:         200
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
+# Break in Module control_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/control_tb.v line 91
 # Compile of hornerLoop.v was successful.
-# Compile of hornerLoop_tb.v was successful.
+# Compile of control.v was successful.
+# Compile of control_tb.v was successful.
 # 3 compiles, 0 failed with no errors. 
-vsim -novopt work.hornerLoop_tb
-# vsim -novopt work.hornerLoop_tb 
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop_tb
-# Loading work.hornerLoop_tb
-# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.hornerLoop
-# Loading work.hornerLoop
-# Loading work.smc_float_multiplier
-# Loading work.x_i
-# Loading work.z_o
-# Loading work.FP_Multiplier
-# Loading work.synBusSatRnd
-# Loading work.synBusAdapter
-# Loading work.synDelayWithEnable
-# Loading work.synInverter
-# Loading work.smc_float_adder
-# Loading work.FP_Adder
-# Loading work.synAbs
-# Loading work.synComparator
-# Loading work.synNegate
-# Loading work.synShifter
-# Loading work.FP_Adder_getmsbpos1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
-# Loading work.FP_Adder_getmsbpos1_LZDP1
-# Loading work.FP_Adder_getmsbpos1_LZDP2
-# Loading work.FP_Adder_getmsbpos1_LZDP3
-# Loading work.FP_Adder_getmsbpos1_LZDP4
-# Loading work.FP_Adder_getmsbpos1_LZDP5
-# Loading work.FP_Adder_getmsbpos1_LZDP6
-# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
-# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
-# Loading work.smc_float_to_fp
-# Loading work.FP_to_Fixed
-# Loading work.synShifterR
-# Loading work.singleDelayWithEnableGeneric
-# Loading work.synDelayWithEnableGeneric
+vsim -novopt work.control_tb
+# vsim -novopt work.control_tb 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.control_tb
+# Loading work.control_tb
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.control
+# Loading work.control
 restart; run -all
 # *************
-# x_lin:       0
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   0
 # *************
-# x_lin:       0
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   0
 # *************
-# x_lin:       0
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   0
 # *************
-# x_lin:       0
-# *************
-# x_lin:       0
-# *************
-# x_lin:       0
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   0
 # *************
 # cnt:           1
-# x_lin:       0
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   1
 # *************
 # cnt:           2
-# x_lin:       0
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   2
 # *************
 # cnt:           3
-# x_lin:       0
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   3
 # *************
 # cnt:           4
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   4
 # *************
 # cnt:           5
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   5
 # *************
 # cnt:           6
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   6
 # *************
 # cnt:           7
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   7
 # *************
 # cnt:           8
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   8
 # *************
 # cnt:           9
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   9
 # *************
 # cnt:          10
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:  10
 # *************
 # cnt:          11
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:  11
 # *************
 # cnt:          12
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:  12
 # *************
 # cnt:          13
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:  13
 # *************
 # cnt:          14
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:  14
 # *************
 # cnt:          15
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:  15
 # *************
 # cnt:          16
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:  16
 # *************
 # cnt:          17
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:  17
 # *************
 # cnt:          18
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:  18
 # *************
 # cnt:          19
-# x_lin:  559240
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:  19
 # *************
 # cnt:          20
-# x_lin:  655360
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:  20
 # *************
 # cnt:          21
-# x_lin:  655360
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:  21
 # *************
 # cnt:          22
-# x_lin:  655360
-# x_lin:  655360
-# Break in Module hornerLoop_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop_tb.v line 104
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:  22
+# *************
+# cnt:          23
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:  23
+# *************
+# cnt:          24
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:  24
+# *************
+# cnt:          25
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:  25
+# *************
+# cnt:          26
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:  26
+# *************
+# cnt:          27
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:  27
+# *************
+# cnt:          28
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:  28
+# *************
+# cnt:          29
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:  29
+# *************
+# cnt:          30
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:  30
+# *************
+# cnt:          31
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:  31
+# *************
+# cnt:          32
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:  32
+# *************
+# cnt:          33
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:  33
+# *************
+# cnt:          34
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:  34
+# *************
+# cnt:          35
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:  35
+# *************
+# cnt:          36
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:  36
+# *************
+# cnt:          37
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:  37
+# *************
+# cnt:          38
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:  38
+# *************
+# cnt:          39
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:  39
+# *************
+# cnt:          40
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:  40
+# *************
+# cnt:          41
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:  41
+# *************
+# cnt:          42
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:  42
+# *************
+# cnt:          43
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:  43
+# *************
+# cnt:          44
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:  44
+# *************
+# cnt:          45
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:  45
+# *************
+# cnt:          46
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:  46
+# *************
+# cnt:          47
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:  47
+# *************
+# cnt:          48
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:  48
+# *************
+# cnt:          49
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:  49
+# *************
+# cnt:          50
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:  50
+# *************
+# cnt:          51
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:  51
+# *************
+# cnt:          52
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:  52
+# *************
+# cnt:          53
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:  53
+# *************
+# cnt:          54
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:  54
+# *************
+# cnt:          55
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:  55
+# *************
+# cnt:          56
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:  56
+# *************
+# cnt:          57
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:  57
+# *************
+# cnt:          58
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:  58
+# *************
+# cnt:          59
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:  59
+# *************
+# cnt:          60
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:  60
+# *************
+# cnt:          61
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:  61
+# *************
+# cnt:          62
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:  62
+# *************
+# cnt:          63
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:  63
+# *************
+# cnt:          64
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:  64
+# *************
+# cnt:          65
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:  65
+# *************
+# cnt:          66
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:  66
+# *************
+# cnt:          67
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:  67
+# *************
+# cnt:          68
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:  68
+# *************
+# cnt:          69
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:  69
+# *************
+# cnt:          70
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:  70
+# *************
+# cnt:          71
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:  71
+# *************
+# cnt:          72
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:  72
+# *************
+# cnt:          73
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:  73
+# *************
+# cnt:          74
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:  74
+# *************
+# cnt:          75
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:  75
+# *************
+# cnt:          76
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:  76
+# *************
+# cnt:          77
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:  77
+# *************
+# cnt:          78
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:  78
+# *************
+# cnt:          79
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:  79
+# *************
+# cnt:          80
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:  80
+# *************
+# cnt:          81
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:  81
+# *************
+# cnt:          82
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:  82
+# *************
+# cnt:          83
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:  83
+# *************
+# cnt:          84
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:  84
+# *************
+# cnt:          85
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:  85
+# *************
+# cnt:          86
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:  86
+# *************
+# cnt:          87
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:  87
+# *************
+# cnt:          88
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:  88
+# *************
+# cnt:          89
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:  89
+# *************
+# cnt:          90
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:  90
+# *************
+# cnt:          91
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:  91
+# *************
+# cnt:          92
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:  92
+# *************
+# cnt:          93
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:  93
+# *************
+# cnt:          94
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:  94
+# *************
+# cnt:          95
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:  95
+# *************
+# cnt:          96
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:  96
+# *************
+# cnt:          97
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:  97
+# *************
+# cnt:          98
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count:  98
+# *************
+# cnt:          99
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count:  99
+# *************
+# cnt:         100
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count: 100
+# *************
+# cnt:         101
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count: 101
+# *************
+# cnt:         102
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count: 102
+# *************
+# cnt:         103
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count: 103
+# *************
+# cnt:         104
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count: 104
+# *************
+# cnt:         105
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count: 105
+# *************
+# cnt:         106
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count: 106
+# *************
+# cnt:         107
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count: 107
+# *************
+# cnt:         108
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count: 108
+# *************
+# cnt:         109
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count: 109
+# *************
+# cnt:         110
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count: 110
+# *************
+# cnt:         111
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count: 111
+# *************
+# cnt:         112
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count: 112
+# *************
+# cnt:         113
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count: 113
+# *************
+# cnt:         114
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count: 114
+# *************
+# cnt:         115
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count: 115
+# *************
+# cnt:         116
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count: 116
+# *************
+# cnt:         117
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count: 117
+# *************
+# cnt:         118
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count: 118
+# *************
+# cnt:         119
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count: 119
+# *************
+# cnt:         120
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count: 120
+# *************
+# cnt:         121
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count: 121
+# *************
+# cnt:         122
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count: 122
+# *************
+# cnt:         123
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count: 123
+# *************
+# cnt:         124
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count: 124
+# *************
+# cnt:         125
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count: 125
+# *************
+# cnt:         126
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count: 126
+# *************
+# cnt:         127
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count: 127
+# *************
+# cnt:         128
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count: 128
+# *************
+# cnt:         129
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count: 129
+# *************
+# cnt:         130
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count: 130
+# *************
+# cnt:         131
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count: 131
+# *************
+# cnt:         132
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count: 132
+# *************
+# cnt:         133
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count: 133
+# *************
+# cnt:         134
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count: 134
+# *************
+# cnt:         135
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count: 135
+# *************
+# cnt:         136
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count: 136
+# *************
+# cnt:         137
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count: 137
+# *************
+# cnt:         138
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count: 138
+# *************
+# cnt:         139
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count: 139
+# *************
+# cnt:         140
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count: 140
+# *************
+# cnt:         141
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count: 141
+# *************
+# cnt:         142
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count: 142
+# *************
+# cnt:         143
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count: 143
+# *************
+# cnt:         144
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count: 144
+# *************
+# cnt:         145
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count: 145
+# *************
+# cnt:         146
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count: 146
+# *************
+# cnt:         147
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count: 147
+# *************
+# cnt:         148
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count: 148
+# *************
+# cnt:         149
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count: 149
+# *************
+# cnt:         150
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count: 150
+# *************
+# cnt:         151
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count: 151
+# *************
+# cnt:         152
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count: 152
+# *************
+# cnt:         153
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count: 153
+# *************
+# cnt:         154
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count: 154
+# *************
+# cnt:         155
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count: 155
+# *************
+# cnt:         156
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count: 156
+# *************
+# cnt:         157
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count: 157
+# *************
+# cnt:         158
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count: 158
+# *************
+# cnt:         159
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count: 159
+# *************
+# cnt:         160
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count: 160
+# *************
+# cnt:         161
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count: 161
+# *************
+# cnt:         162
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count: 162
+# *************
+# cnt:         163
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count: 163
+# *************
+# cnt:         164
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count: 164
+# *************
+# cnt:         165
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count: 165
+# *************
+# cnt:         166
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count: 166
+# *************
+# cnt:         167
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count: 167
+# *************
+# cnt:         168
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count: 168
+# *************
+# cnt:         169
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count: 169
+# *************
+# cnt:         170
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count: 170
+# *************
+# cnt:         171
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count: 171
+# *************
+# cnt:         172
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count: 172
+# *************
+# cnt:         173
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count: 173
+# *************
+# cnt:         174
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count: 174
+# *************
+# cnt:         175
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count: 175
+# *************
+# cnt:         176
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count: 176
+# *************
+# cnt:         177
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count: 177
+# *************
+# cnt:         178
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count: 178
+# *************
+# cnt:         179
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count: 179
+# *************
+# cnt:         180
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count: 180
+# *************
+# cnt:         181
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count: 181
+# *************
+# cnt:         182
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count: 182
+# *************
+# cnt:         183
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count: 183
+# *************
+# cnt:         184
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count: 184
+# *************
+# cnt:         185
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count: 185
+# *************
+# cnt:         186
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count: 186
+# *************
+# cnt:         187
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count: 187
+# *************
+# cnt:         188
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count: 188
+# *************
+# cnt:         189
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count: 189
+# *************
+# cnt:         190
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count: 190
+# *************
+# cnt:         191
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count: 191
+# *************
+# cnt:         192
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count: 192
+# *************
+# cnt:         193
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count: 193
+# *************
+# cnt:         194
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count: 194
+# *************
+# cnt:         195
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count: 195
+# *************
+# cnt:         196
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count: 196
+# *************
+# cnt:         197
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 1, count: 197
+# *************
+# cnt:         198
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count: 198
+# *************
+# cnt:         199
+# coeff_sel:  0, sum_rst: 0, sum_en: 0, srdyo: 0, count:   0
+# *************
+# cnt:         200
+# coeff_sel:  0, sum_rst: 0, sum_en: 0, srdyo: 0, count:   0
+# Break in Module control_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/control_tb.v line 91
+# Compile of hornerLoop.v was successful.
+# Compile of control.v was successful.
+# Compile of control_tb.v was successful.
+# 3 compiles, 0 failed with no errors. 
+vsim -novopt work.control_tb
+# vsim -novopt work.control_tb 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.control_tb
+# Loading work.control_tb
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/work.control
+# Loading work.control
+restart; run -all
+# *************
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# cnt:           1
+# coeff_sel: 10, sum_rst: 1, sum_en: 0, srdyo: 0, count:   z
+# *************
+# cnt:           2
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# cnt:           3
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# cnt:           4
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# cnt:           5
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# cnt:           6
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# cnt:           7
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# cnt:           8
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# cnt:           9
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# cnt:          10
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# cnt:          11
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# cnt:          12
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# cnt:          13
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# cnt:          14
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# cnt:          15
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# cnt:          16
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# cnt:          17
+# coeff_sel: 10, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# cnt:          18
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          19
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          20
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          21
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          22
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          23
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          24
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          25
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          26
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          27
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          28
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          29
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          30
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          31
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          32
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          33
+# coeff_sel: 10, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          34
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          35
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          36
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          37
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          38
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          39
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          40
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          41
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          42
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          43
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          44
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          45
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          46
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          47
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          48
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          49
+# coeff_sel:  9, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          50
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          51
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          52
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          53
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          54
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          55
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          56
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          57
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          58
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          59
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          60
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          61
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          62
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          63
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          64
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          65
+# coeff_sel:  8, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          66
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          67
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          68
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          69
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          70
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          71
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          72
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          73
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          74
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          75
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          76
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          77
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          78
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          79
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          80
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          81
+# coeff_sel:  7, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          82
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          83
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          84
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          85
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          86
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          87
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          88
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          89
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          90
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          91
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          92
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          93
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          94
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          95
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          96
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          97
+# coeff_sel:  6, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          98
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:          99
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         100
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         101
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         102
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         103
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         104
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         105
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         106
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         107
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         108
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         109
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         110
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         111
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         112
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         113
+# coeff_sel:  5, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         114
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         115
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         116
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         117
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         118
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         119
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         120
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         121
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         122
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         123
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         124
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         125
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         126
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         127
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         128
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         129
+# coeff_sel:  4, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         130
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         131
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         132
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         133
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         134
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         135
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         136
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         137
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         138
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         139
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         140
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         141
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         142
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         143
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         144
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         145
+# coeff_sel:  3, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         146
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         147
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         148
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         149
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         150
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         151
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         152
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         153
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         154
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         155
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         156
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         157
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         158
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         159
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         160
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         161
+# coeff_sel:  2, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         162
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         163
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         164
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         165
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         166
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         167
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         168
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         169
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         170
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         171
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         172
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         173
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         174
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         175
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         176
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         177
+# coeff_sel:  1, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         178
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         179
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         180
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         181
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         182
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         183
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         184
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         185
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         186
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         187
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         188
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         189
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         190
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         191
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         192
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         193
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         194
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         195
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         196
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         197
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 1, count:   z
+# *************
+# cnt:         198
+# coeff_sel:  0, sum_rst: 0, sum_en: 1, srdyo: 0, count:   z
+# *************
+# cnt:         199
+# coeff_sel:  0, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# *************
+# cnt:         200
+# coeff_sel:  0, sum_rst: 0, sum_en: 0, srdyo: 0, count:   z
+# Break in Module control_tb at /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/control_tb.v line 91

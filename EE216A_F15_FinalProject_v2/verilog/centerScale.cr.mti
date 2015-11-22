@@ -5,6 +5,13 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 Top level modules:
 	comparator_tb
 
+} {} {}} /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/control_tb.v {1 {vlog -work work -vopt /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/control_tb.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module control_tb
+
+Top level modules:
+	control_tb
+
 } {} {}} /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v {1 {vlog -work work -vopt /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/blocksTestbench.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module blocksTestbench
@@ -115,6 +122,13 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 
 Top level modules:
 	hornerLoop
+
+} {} {}} /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/control.v {1 {vlog -work work -vopt /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/control.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module control
+
+Top level modules:
+	control
 
 } {} {}} /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/mux.v {1 {vlog -work work -vopt /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/mux.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012

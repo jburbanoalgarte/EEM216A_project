@@ -34,8 +34,8 @@ module control (
 	coeff_sel,
 	sum_rst,
 	sum_en,
-	srdyo,
-	cnt //used only for testbench
+	srdyo/*,
+	cnt*/ //used only for testbench
     );
 
 ////////////////////////////////////////////////////////////////
@@ -50,7 +50,7 @@ output reg sum_rst;
 output reg sum_en;
 output reg srdyo;
 
-output reg cnt;//used only for testbench
+//output reg [7:0] cnt;//used only for testbench
 	
 ////////////////////////////////////////////////////////////////
 //  reg & wire declarations
@@ -120,14 +120,14 @@ always @(*) begin
 	
 	srdyo = ( (cnt == 8'd197) ? 1'b1 : 1'b0 );
 	sum_rst = ( (cnt  == 8'd1) ? 1'b1 : 1'b0 );
-	sum_en = ( (cnt >= 8'd18) ? : 1'b1 : 1'b0 );
+	sum_en = ( (cnt >= 8'd18) ? 1'b1 : 1'b0 );
 end
 
 ////////////////////////////////////////////////////////////////
 //  Registers
 always @(posedge clk) begin
     if (GlobalReset == 1'b1) begin
-		coeff_sel <= 4'd0;
+		coeff_sel <= 4'd10;
 		sum_rst <= 1'b0;
 		sum_en <= 1'b0;
 		srdyo <= 1'b0;
@@ -142,7 +142,7 @@ always @(posedge clk) begin
 			if ( (cnt >= 8'd1) && (cnt <= 8'd197) ) begin //end-to-end requires 197 cycles
 				cnt <= cnt + 1;
 			end
-			else //done, output no longer valid
+			else begin //done, output no longer valid
 				cnt <= 8'd0;
 			end
 		end

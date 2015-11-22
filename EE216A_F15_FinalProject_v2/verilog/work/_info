@@ -96,6 +96,42 @@ R2
 !s107 /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/comparator_tb.v|
 !i10b 1
 !s85 0
+vcontrol
+VSj^dGzGOglUTo=_zn3i5;0
+r1
+!s85 0
+31
+IlmN3?_^mL>mMU9VejiGWG0
+R3
+w1448181803
+8/w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/control.v
+F/w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/control.v
+L0 30
+R1
+R2
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/control.v|
+!s100 U[oBemfD71R@1?a@2CfI70
+!s108 1448181840.503679
+!s107 /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/control.v|
+!i10b 1
+vcontrol_tb
+V4Ym_UIed``=WSVcCXjR0H1
+r1
+31
+I1k9cM61kM7DO>Fc1;K?hK0
+R3
+w1448181815
+8/w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/control_tb.v
+F/w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/control_tb.v
+L0 3
+R1
+R2
+!s85 0
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/control_tb.v|
+!i10b 1
+!s100 TdSYFYTIDS@b>bb^0eDXe1
+!s108 1448181840.557436
+!s107 /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/control_tb.v|
 vFixed_to_FP
 Vm?i64i?aBmBRhLRWlWYSm1
 r1
@@ -818,24 +854,24 @@ R2
 !s85 0
 !i10b 1
 vhornerLoop
-V[I60G2]Tb7gnVlaCMV_nm1
-r1
-!s85 0
-31
 Ik45=LRzXb;[VPCOOM;J]Z2
+V[I60G2]Tb7gnVlaCMV_nm1
 R3
-w1448091606
+w1448146484
 8/w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop.v
 F/w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop.v
 L0 31
 R1
+r1
+31
 R2
 nhorner@loop
 !s100 AzEEMY]1daI@Bjdn3^X6@0
 !s90 -reportprogress|300|-work|work|-vopt|/w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop.v|
-!s108 1448094704.160099
+!s108 1448181840.442862
 !s107 /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop.v|
 !i10b 1
+!s85 0
 vhornerLoop_tb
 Vj]<^gYXGZPP1QfocThjVS0
 r1
@@ -849,12 +885,12 @@ L0 3
 R1
 R2
 nhorner@loop_tb
-!s85 0
 !s90 -reportprogress|300|-work|work|-vopt|/w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop_tb.v|
-!i10b 1
 !s100 Nz4U64IFh5k<dEMZPj]NC1
 !s108 1448094704.214634
 !s107 /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/hornerLoop_tb.v|
+!s85 0
+!i10b 1
 vmux
 IX8KMDiH;_3kb@NeYS[>?G3
 VCALf^NJn2YQ31Sb;Z`IW23
