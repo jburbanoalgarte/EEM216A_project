@@ -1,5 +1,13 @@
 ////////////////////////////////////////////////////////////////
 //
+
+
+/******************************************
+THIS BLOCK IS DEPRECATED
+USE centerScale2.v INSTEAD
+**********************************************/
+
+
 // Module: centerScale.v
 // Author: Jordi Burbano
 //         jburbanoalgarte@gmail.com
@@ -35,8 +43,6 @@ module centerScale (
 	srdyo_o,
 	x_adc_latched
     );
-
-parameter WL = 8; //parametrize length
 
 ////////////////////////////////////////////////////////////////
 //  Inputs & Outputs
