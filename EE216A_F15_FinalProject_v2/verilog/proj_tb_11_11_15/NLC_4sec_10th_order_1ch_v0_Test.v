@@ -1,4 +1,4 @@
-/
+
 `timescale 1ns/1ns
 module clock_gen(clk, rst); 
   parameter cperiod = 20;
@@ -1256,7 +1256,7 @@ end //always
         $display("Failed with %d mismatches", mismatch);
         $fdisplay(logFile,"Failed with %d mismatches", mismatch);
       end 
-    $finish;
+    $stop;//$finish;
     end 
   end //always
 endmodule

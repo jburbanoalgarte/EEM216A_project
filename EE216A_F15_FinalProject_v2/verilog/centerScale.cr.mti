@@ -29,6 +29,29 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 Top level modules:
 	smc_float_multiplier
 
+} {} {}} /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/proj_tb_11_11_15/NLC_4sec_10th_order_1ch_v0_Test.v {1 {vlog -work work -vopt /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/proj_tb_11_11_15/NLC_4sec_10th_order_1ch_v0_Test.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module clock_gen
+-- Compiling module clocks
+-- Compiling module test_NLC_4sec_10th_order_1ch_v0
+
+Top level modules:
+	test_NLC_4sec_10th_order_1ch_v0
+
+} {} {}} /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/proj_tb_11_11_15/NLC_4sec_10th_order_1ch_v0.v {1 {vlog -work work -vopt /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/proj_tb_11_11_15/NLC_4sec_10th_order_1ch_v0.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module NLC_4sec_10th_order_1ch_v0
+
+Top level modules:
+	NLC_4sec_10th_order_1ch_v0
+
+} {} {}} /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/NLC_1ch.v {1 {vlog -work work -vopt /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/NLC_1ch.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module NLC_1ch
+
+Top level modules:
+	NLC_1ch
+
 } {} {}} /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/comparator.v {1 {vlog -work work -vopt /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/comparator.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module comparator
@@ -56,6 +79,81 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 
 Top level modules:
 	centerScale_tb
+
+} {} {}} /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/proj_tb_11_11_15/SynLib.v {1 {vlog -work work -vopt /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/proj_tb_11_11_15/SynLib.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module synAddSub
+-- Compiling module synMult
+-- Compiling module synBusAdapter
+-- Compiling module synBusAdapter_sat
+-- Compiling module synGain
+-- Compiling module synBusSatRnd
+-- Compiling module synBusSatRnd_sat
+-- Compiling module singleDelayWithEnableGeneric
+-- Compiling module synDelayWithEnableGeneric
+-- Compiling module synDelayWithEnable
+-- Compiling module synRobustLatch
+-- Compiling module synMux
+-- Compiling module synCounter
+-- Compiling module synCounterSync
+-- Compiling module synCounterFR
+-- Compiling module synCounterMC
+-- Compiling module synCounterFRMC
+-- Compiling module synAccumulator
+-- Compiling module synAccumulatorOvf
+-- Compiling module synAccumulatorMC
+-- Compiling module synAccumulatorMCOvf
+-- Compiling module synRegister
+-- Compiling module synStepFunction
+-- Compiling module synAbs
+-- Compiling module synBinLogic
+-- Compiling module synComparator
+-- Compiling module synInverter
+-- Compiling module synNegate
+-- Compiling module synShifter
+-- Compiling module synShifterR
+-- Compiling module synFIFO
+-- Compiling module synMultiRateFIFO
+-- Compiling module synSRL
+-- Compiling module synCSAUnit
+-- Compiling module synPipelinedAdd
+-- Compiling module synRegister_MC
+-- Compiling module synFIFO_MC
+-- Compiling module synDownsampleSimple
+
+Top level modules:
+	synAddSub
+	synMult
+	synBusAdapter
+	synBusAdapter_sat
+	synGain
+	synRobustLatch
+	synMux
+	synCounter
+	synCounterSync
+	synCounterFR
+	synCounterMC
+	synCounterFRMC
+	synAccumulator
+	synAccumulatorOvf
+	synAccumulatorMC
+	synAccumulatorMCOvf
+	synRegister
+	synStepFunction
+	synAbs
+	synBinLogic
+	synComparator
+	synInverter
+	synNegate
+	synShifter
+	synShifterR
+	synMultiRateFIFO
+	synSRL
+	synCSAUnit
+	synPipelinedAdd
+	synRegister_MC
+	synFIFO_MC
+	synDownsampleSimple
 
 } {} {}} /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/mux_tb.v {1 {vlog -work work -vopt /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/EE216A_F15_FinalProject_v2/verilog/mux_tb.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
