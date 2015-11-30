@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////
 //
-// Module: comparator.v
+// Module: mux_x_adc_2ch.v
 // Author: Jordi Burbano, Hyunseok Park
 //         jburbanoalgarte@gmail.com
 //		   hnskpark@gmail.com

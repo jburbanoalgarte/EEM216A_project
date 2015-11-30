@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////
 //
-// Module: comparator.v
+// Module: mux.v
 // Author: Jordi Burbano
 //         jburbanoalgarte@gmail.com
 //
