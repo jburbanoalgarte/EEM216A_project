@@ -1,2 +1,0 @@
-*******  Verilog Verification Successful! *******
-No extra latency 
