@@ -1,11 +1,11 @@
 ////////////////////////////////////////////////////////////////
 //
-// Module: centerScale2.v
+// Module: centerScale3.v
 // Author: Jordi Burbano
 //         jburbanoalgarte@gmail.com
 //
 // Description:
-//      Incoming x_adc[20:0] is stored through register, converted to SMC, scaled, centered
+//      Incoming x_adc[20:0] is converted to SMC, scaled, centered
 //		latency 18 cycles
 //
 // Parameters:
@@ -24,7 +24,7 @@
 //	x_adc_valid [20:0]
 ////////////////////////////////////////////////////////////////
 
-module centerScale2 ( 
+module centerScale3 ( 
     GlobalReset,
 	clk,
 	x_adc,
@@ -32,8 +32,7 @@ module centerScale2 (
 	mean,
 	std,
 	x_centScale,
-	srdyo_o,
-	x_adc_valid
+	srdyo_o
     );
 
 ////////////////////////////////////////////////////////////////
@@ -46,13 +45,9 @@ input [31:0] mean;
 input [31:0] std;
 output	[31:0] x_centScale;
 output	srdyo_o;
-output reg [20:0] x_adc_valid;
 	
 ////////////////////////////////////////////////////////////////
 //  reg & wire declarations
-
-//reg
-wire [20:0]	theReg_x_adc;
 
 //ieee to smc
 wire [31:0] ieee2smc_x_smc;
@@ -72,7 +67,7 @@ fp_to_smc_float ieee2smc(
   .clk( clk ),
   .GlobalReset( GlobalReset),
   .y_o_portx( ieee2smc_x_smc ),
-  .x_i( theReg_x_adc ),
+  .x_i( x_adc ),
   .srdyo_o( ieee2smc_srdyo_o ),
   .srdyi_i( srdyi )
 );
@@ -110,19 +105,7 @@ smc_float_adder theAdder(
 ////////////////////////////////////////////////////////////////
 //  Combinational Logic
 
-assign theReg_x_adc = x_adc_valid;
-
 ////////////////////////////////////////////////////////////////
 //  Registers
-always @(posedge clk) begin
-    if (GlobalReset == 1'b1) begin
-		x_adc_valid		<= 21'd0;
-    end
-    else begin
-		if (srdyi == 1'b1) begin
-			x_adc_valid		<= x_adc;
-		end
-    end
-end
 
 endmodule

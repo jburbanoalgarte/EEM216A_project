@@ -5,7 +5,7 @@
 //         jburbanoalgarte@gmail.com
 //
 // Description:
-//      Incoming x_adc_latched[20:0] is examined to determine appropriate section coefficients, mean, std
+//      Incoming x_adc_valid[20:0] is examined to determine appropriate section coefficients, mean, std
 //		latency 1 cycle
 //
 // Parameters:
@@ -14,7 +14,7 @@
 // Inputs [bit width]:
 //	clk
 //	GlobalReset
-//	x_adc_latched [20:0]: incoming IEEE floating point adc sample
+//	x_adc_valid [20:0]: incoming IEEE floating point adc sample
 //	section_limit [19:0]: used in comparison for determining section
 //	coeff1_0 [31:0]
 //	coeff1_1 [31:0]
@@ -36,7 +36,7 @@
 module comparator ( 
 	clk,
 	GlobalReset,
-    x_adc_latched,
+    x_adc_valid,
 	section_limit,
 	coeff1_0,
 	coeff1_1,
@@ -110,7 +110,7 @@ module comparator (
 input clk;
 input GlobalReset;
 
-input [20:0] x_adc_latched;
+input [20:0] x_adc_valid;
 input [19:0] section_limit;
 
 input [31:0] coeff1_0;
@@ -185,7 +185,7 @@ output reg [31:0] std;
 	
 ////////////////////////////////////////////////////////////////
 //  reg & wire declarations
-reg [31:0] absx; //stores absolute value of x_adc_latched
+reg [31:0] absx; //stores absolute value of x_adc_valid
 
 reg [31:0] coeff0_r;
 reg [31:0] coeff1_r;
@@ -209,10 +209,10 @@ reg [31:0] std_r;
 //  Combinational Logic
 
 always @( * ) begin
-	absx = ( x_adc_latched[20] ? ( (x_adc_latched ^ 21'hFFFFFF) + 21'b1 ) : (x_adc_latched) );
+	absx = ( x_adc_valid[20] ? ( (x_adc_valid ^ 21'hFFFFFF) + 21'b1 ) : (x_adc_valid) );
 	absx = absx[19:0];
 	
-	if ( x_adc_latched[20] ) begin
+	if ( x_adc_valid[20] ) begin
 		if ( absx > section_limit ) begin
 			coeff0_r = coeff1_0;
 			coeff1_r = coeff1_1;

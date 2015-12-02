@@ -143,10 +143,12 @@ end
 //  Registers
 always @(posedge clk) begin
     if (GlobalReset == 1'b1) begin
+		/*
 		coeff_sel <= 4'd10;
 		sum_rst <= 1'b0;
 		sum_en <= 1'b0;
 		srdyo <= 1'b0;
+		*/
 		
 		cnt <= 8'd0; //used only for testbench
     end

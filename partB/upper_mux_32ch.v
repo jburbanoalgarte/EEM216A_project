@@ -2132,7 +2132,7 @@ input [31:0]	ch0_coeff3_5;
 input [31:0]	ch0_coeff3_6;
 input [31:0]	ch0_coeff3_7;
 input [31:0]	ch0_coeff3_8;
-input [31:0]	ch0_coeff3_;
+input [31:0]	ch0_coeff3_9;
 input [31:0]	ch0_coeff3_10;
 input [31:0]	ch0_mean3;
 input [31:0]	ch0_std3;
@@ -2440,7 +2440,7 @@ input [31:0]	ch5_coeff4_5;
 input [31:0]	ch5_coeff4_6;
 input [31:0]	ch5_coeff4_7;
 input [31:0]	ch5_coeff4_8;
-input [31:0]	ch5_coeff4_9;;
+input [31:0]	ch5_coeff4_9;
 input [31:0]	ch5_coeff4_10;
 input [31:0]	ch5_mean4;
 input [31:0]	ch5_std4;
@@ -3828,7 +3828,7 @@ input [31:0]	ch29_coeff2_5;
 input [31:0]	ch29_coeff2_6;
 input [31:0]	ch29_coeff2_7;
 input [31:0]	ch29_coeff2_8;
-input [31:0]	ch29_coeff2_9;;
+input [31:0]	ch29_coeff2_9;
 input [31:0]	ch29_coeff2_10;
 input [31:0]	ch29_mean2;
 input [31:0]	ch29_std2;
@@ -3842,7 +3842,7 @@ input [31:0]	ch29_coeff3_5;
 input [31:0]	ch29_coeff3_6;
 input [31:0]	ch29_coeff3_7;
 input [31:0]	ch29_coeff3_8;
-input [31:0]	ch29_coeff3_9;;
+input [31:0]	ch29_coeff3_9;
 input [31:0]	ch29_coeff3_10;
 input [31:0]	ch29_mean3;
 input [31:0]	ch29_std3;
@@ -3856,7 +3856,7 @@ input [31:0]	ch29_coeff4_5;
 input [31:0]	ch29_coeff4_6;
 input [31:0]	ch29_coeff4_7;
 input [31:0]	ch29_coeff4_8;
-input [31:0]	ch29_coeff4_9;;
+input [31:0]	ch29_coeff4_9;
 input [31:0]	ch29_coeff4_10;
 input [31:0]	ch29_mean4;
 input [31:0]	ch29_std4;
@@ -3873,7 +3873,7 @@ input [31:0]	ch30_coeff1_5;
 input [31:0]	ch30_coeff1_6;
 input [31:0]	ch30_coeff1_7;
 input [31:0]	ch30_coeff1_8;
-input [31:0]	ch30_coeff1_9;;
+input [31:0]	ch30_coeff1_9;
 input [31:0]	ch30_coeff1_10;
 input [31:0]   ch30_mean1;
 input [31:0]	ch30_std1;
@@ -3887,7 +3887,7 @@ input [31:0]	ch30_coeff2_5;
 input [31:0]	ch30_coeff2_6;
 input [31:0]	ch30_coeff2_7;
 input [31:0]	ch30_coeff2_8;
-input [31:0]	ch30_coeff2_9;;
+input [31:0]	ch30_coeff2_9;
 input [31:0]	ch30_coeff2_10;
 input [31:0]	ch30_mean2;
 input [31:0]	ch30_std2;
@@ -3901,7 +3901,7 @@ input [31:0]	ch30_coeff3_5;
 input [31:0]	ch30_coeff3_6;
 input [31:0]	ch30_coeff3_7;
 input [31:0]	ch30_coeff3_8;
-input [31:0]	ch30_coeff3_9;;
+input [31:0]	ch30_coeff3_9;
 input [31:0]	ch30_coeff3_10;
 input [31:0]	ch30_mean3;
 input [31:0]	ch30_std3;
@@ -4123,7 +4123,6 @@ always @( * ) begin
 			coeff1_8_r = ch0_coeff1_8;
 			coeff1_9_r = ch0_coeff1_9;
 			coeff1_10_r = ch0_coeff1_10;
-			coeff1_11_r = ch0_coeff1_11;
 			
 			coeff2_0_r = ch0_coeff2_0;
 			coeff2_1_r = ch0_coeff2_1;
@@ -4136,7 +4135,6 @@ always @( * ) begin
 			coeff2_8_r = ch0_coeff2_8;
 			coeff2_9_r = ch0_coeff2_9;
 			coeff2_10_r = ch0_coeff2_10;
-			coeff2_11_r = ch0_coeff2_11;
 			
 			coeff3_0_r = ch0_coeff3_0;
 			coeff3_1_r = ch0_coeff3_1;
@@ -4149,7 +4147,6 @@ always @( * ) begin
 			coeff3_8_r = ch0_coeff3_8;
 			coeff3_9_r = ch0_coeff3_9;
 			coeff3_10_r = ch0_coeff3_10;
-			coeff3_11_r = ch0_coeff3_11;
 			
 			coeff4_0_r = ch0_coeff4_0;
 			coeff4_1_r = ch0_coeff4_1;
@@ -4162,7 +4159,6 @@ always @( * ) begin
 			coeff4_8_r = ch0_coeff4_8;
 			coeff4_9_r = ch0_coeff4_9;
 			coeff4_10_r = ch0_coeff4_10;
-			coeff4_11_r = ch0_coeff4_11;
 			
 			mean1_r = ch0_mean1;
 			std1_r = ch0_std1;
@@ -4194,7 +4190,7 @@ always @( * ) begin
 			coeff1_8_r = ch1_coeff1_8;
 			coeff1_9_r = ch1_coeff1_9;
 			coeff1_10_r = ch1_coeff1_10;
-			coeff1_11_r = ch1_coeff1_11;
+			
 			
 			coeff2_0_r = ch1_coeff2_0;
 			coeff2_1_r = ch1_coeff2_1;
@@ -4207,7 +4203,7 @@ always @( * ) begin
 			coeff2_8_r = ch1_coeff2_8;
 			coeff2_9_r = ch1_coeff2_9;
 			coeff2_10_r = ch1_coeff2_10;
-			coeff2_11_r = ch1_coeff2_11;
+			
 			
 			coeff3_0_r = ch1_coeff3_0;
 			coeff3_1_r = ch1_coeff3_1;
@@ -4220,7 +4216,7 @@ always @( * ) begin
 			coeff3_8_r = ch1_coeff3_8;
 			coeff3_9_r = ch1_coeff3_9;
 			coeff3_10_r = ch1_coeff3_10;
-			coeff3_11_r = ch1_coeff3_11;
+			
 			
 			coeff4_0_r = ch1_coeff4_0;
 			coeff4_1_r = ch1_coeff4_1;
@@ -4233,7 +4229,7 @@ always @( * ) begin
 			coeff4_8_r = ch1_coeff4_8;
 			coeff4_9_r = ch1_coeff4_9;
 			coeff4_10_r = ch1_coeff4_10;
-			coeff4_11_r = ch1_coeff4_11;
+			
 			
 			mean1_r = ch1_mean1;
 			std1_r = ch1_std1;
@@ -4261,7 +4257,7 @@ always @( * ) begin
 			coeff1_8_r = ch2_coeff1_8;
 			coeff1_9_r = ch2_coeff1_9;
 			coeff1_10_r = ch2_coeff1_10;
-			coeff1_11_r = ch2_coeff1_11;
+			
 			
 			coeff2_0_r = ch2_coeff2_0;
 			coeff2_1_r = ch2_coeff2_1;
@@ -4274,7 +4270,7 @@ always @( * ) begin
 			coeff2_8_r = ch2_coeff2_8;
 			coeff2_9_r = ch2_coeff2_9;
 			coeff2_10_r = ch2_coeff2_10;
-			coeff2_11_r = ch2_coeff2_11;
+			
 			
 			coeff3_0_r = ch2_coeff3_0;
 			coeff3_1_r = ch2_coeff3_1;
@@ -4287,7 +4283,7 @@ always @( * ) begin
 			coeff3_8_r = ch2_coeff3_8;
 			coeff3_9_r = ch2_coeff3_9;
 			coeff3_10_r = ch2_coeff3_10;
-			coeff3_11_r = ch2_coeff3_11;
+			
 			
 			coeff4_0_r = ch2_coeff4_0;
 			coeff4_1_r = ch2_coeff4_1;
@@ -4300,7 +4296,7 @@ always @( * ) begin
 			coeff4_8_r = ch2_coeff4_8;
 			coeff4_9_r = ch2_coeff4_9;
 			coeff4_10_r = ch2_coeff4_10;
-			coeff4_11_r = ch2_coeff4_11;
+			
 			
 			mean1_r = ch2_mean1;
 			std1_r = ch2_std1;
@@ -4328,7 +4324,7 @@ always @( * ) begin
 			coeff1_8_r = ch3_coeff1_8;
 			coeff1_9_r = ch3_coeff1_9;
 			coeff1_10_r = ch3_coeff1_10;
-			coeff1_11_r = ch3_coeff1_11;
+			
 			
 			coeff2_0_r = ch3_coeff2_0;
 			coeff2_1_r = ch3_coeff2_1;
@@ -4341,7 +4337,7 @@ always @( * ) begin
 			coeff2_8_r = ch3_coeff2_8;
 			coeff2_9_r = ch3_coeff2_9;
 			coeff2_10_r = ch3_coeff2_10;
-			coeff2_11_r = ch3_coeff2_11;
+			
 			
 			coeff3_0_r = ch3_coeff3_0;
 			coeff3_1_r = ch3_coeff3_1;
@@ -4354,7 +4350,7 @@ always @( * ) begin
 			coeff3_8_r = ch3_coeff3_8;
 			coeff3_9_r = ch3_coeff3_9;
 			coeff3_10_r = ch3_coeff3_10;
-			coeff3_11_r = ch3_coeff3_11;
+			
 			
 			coeff4_0_r = ch3_coeff4_0;
 			coeff4_1_r = ch3_coeff4_1;
@@ -4367,7 +4363,7 @@ always @( * ) begin
 			coeff4_8_r = ch3_coeff4_8;
 			coeff4_9_r = ch3_coeff4_9;
 			coeff4_10_r = ch3_coeff4_10;
-			coeff4_11_r = ch3_coeff4_11;
+			
 			
 			mean1_r = ch3_mean1;
 			std1_r = ch3_std1;

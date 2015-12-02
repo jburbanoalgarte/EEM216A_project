@@ -16,31 +16,31 @@
 // Inputs [bit width]:
 //	clk
 //	GlobalReset
-//	x_adc_0 [31:0]
-//	x_adc_1 [31:0]
-//  x_adc_2 [31:0]
-//  x_adc_3 [31:0]
-//  x_adc_4 [31:0]
-//  x_adc_5 [31:0]
-//  x_adc_6 [31:0]
-//  x_adc_7 [31:0]
-//  x_adc_8 [31:0]
-//  x_adc_9 [31:0]
-//  x_adc_10 [31:0]
-//  x_adc_11 [31:0]
-//  x_adc_12 [31:0]
-//  x_adc_13 [31:0]
-//  x_adc_14 [31:0]
-//  x_adc_15 [31:0]
+//	x_adc_0 [20:0]
+//	x_adc_1 [20:0]
+//  x_adc_2 [20:0]
+//  x_adc_3 [20:0]
+//  x_adc_4 [20:0]
+//  x_adc_5 [20:0]
+//  x_adc_6 [20:0]
+//  x_adc_7 [20:0]
+//  x_adc_8 [20:0]
+//  x_adc_9 [20:0]
+//  x_adc_10 [20:0]
+//  x_adc_11 [20:0]
+//  x_adc_12 [20:0]
+//  x_adc_13 [20:0]
+//  x_adc_14 [20:0]
+//  x_adc_15 [20:0]
 //  ...
-//  x_adc_31 [31:0]
+//  x_adc_31 [20:0]
 //	x_adc_select [4:0]
 //
 // Outputs [bit width]:
-//	x_adc_out [31:0]
+//	x_adc [20:0]
 ////////////////////////////////////////////////////////////////
 
-module mux ( 
+module mux_x_adc_32ch ( 
 	clk,
 	GlobalReset,
     x_adc_0,
@@ -85,47 +85,47 @@ module mux (
 input clk;
 input GlobalReset;
 
-input [31:0] x_adc_0;
-input [31:0] x_adc_1;
-input [31:0] x_adc_2;
-input [31:0] x_adc_3;
-input [31:0] x_adc_4;
-input [31:0] x_adc_5;
-input [31:0] x_adc_6;
-input [31:0] x_adc_7;
-input [31:0] x_adc_8;
-input [31:0] x_adc_9;
-input [31:0] x_adc_10;
-input [31:0] x_adc_11;
-input [31:0] x_adc_12;
-input [31:0] x_adc_13;
-input [31:0] x_adc_14;
-input [31:0] x_adc_15;
-input [31:0] x_adc_16;
-input [31:0] x_adc_17;
-input [31:0] x_adc_18;
-input [31:0] x_adc_19;
-input [31:0] x_adc_20;
-input [31:0] x_adc_21;
-input [31:0] x_adc_22;
-input [31:0] x_adc_23;
-input [31:0] x_adc_24;
-input [31:0] x_adc_25;
-input [31:0] x_adc_26;
-input [31:0] x_adc_27;
-input [31:0] x_adc_28;
-input [31:0] x_adc_29;
-input [31:0] x_adc_30;
-input [31:0] x_adc_31;
+input [20:0] x_adc_0;
+input [20:0] x_adc_1;
+input [20:0] x_adc_2;
+input [20:0] x_adc_3;
+input [20:0] x_adc_4;
+input [20:0] x_adc_5;
+input [20:0] x_adc_6;
+input [20:0] x_adc_7;
+input [20:0] x_adc_8;
+input [20:0] x_adc_9;
+input [20:0] x_adc_10;
+input [20:0] x_adc_11;
+input [20:0] x_adc_12;
+input [20:0] x_adc_13;
+input [20:0] x_adc_14;
+input [20:0] x_adc_15;
+input [20:0] x_adc_16;
+input [20:0] x_adc_17;
+input [20:0] x_adc_18;
+input [20:0] x_adc_19;
+input [20:0] x_adc_20;
+input [20:0] x_adc_21;
+input [20:0] x_adc_22;
+input [20:0] x_adc_23;
+input [20:0] x_adc_24;
+input [20:0] x_adc_25;
+input [20:0] x_adc_26;
+input [20:0] x_adc_27;
+input [20:0] x_adc_28;
+input [20:0] x_adc_29;
+input [20:0] x_adc_30;
+input [20:0] x_adc_31;
 
 
 input [4:0] x_adc_select;
 
-output reg [31:0] x_adc;
+output reg [20:0] x_adc;
 	
 ////////////////////////////////////////////////////////////////
 //  reg & wire declarations
-reg [31:0] x_adc_r;
+reg [20:0] x_adc_r;
 
 ////////////////////////////////////////////////////////////////
 //  Modules

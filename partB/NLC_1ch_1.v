@@ -175,7 +175,7 @@ input [31:0] coeff_1_0;
 // centerScale
 wire [31:0] x_centScale;
 wire srdyo_o;
-wire [20:0] x_adc_latched;
+wire [20:0] x_adc_valid;
 
 // comparator
 wire [31:0] coeff0;
@@ -211,13 +211,13 @@ centerScale2 theCenterScale(
 	.std(std),
 	.x_centScale(x_centScale),
 	.srdyo_o(srdyo_o),
-	.x_adc_latched(x_adc_latched)
+	.x_adc_valid(x_adc_valid)
     );
 	
 comparator theComparator( 
 	.clk(clk),
 	.GlobalReset(reset),
-    .x_adc_latched(x_adc_latched),
+    .x_adc_valid(x_adc_valid),
 	.section_limit(section_limit),
 	.coeff1_0(coeff_1_0),
 	.coeff1_1(coeff_1_1),
