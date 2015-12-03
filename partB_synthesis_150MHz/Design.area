@@ -1,0 +1,126 @@
+ 
+****************************************
+Report : area
+Design : NLC_1ch
+Version: G-2012.06-SP1
+Date   : Thu Dec  3 04:33:02 2015
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ff1p16vn40c (File: /w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ff1p16vn40c.db)
+
+Number of ports:                        55236
+Number of nets:                        109509
+Number of cells:                        51133
+Number of combinational cells:          44536
+Number of sequential cells:              6554
+Number of macros:                           0
+Number of buf/inv:                       6394
+Number of references:                      90
+
+Combinational area:       134835.590113
+Buf/Inv area:             13179.654232
+Noncombinational area:    44618.030109
+Net Interconnect area:    93101.271049 
+
+Total cell area:          179453.620222
+Total area:               272554.891271
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  ------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-   Black
+                                  Total        Total    national     national    boxes   Design
+--------------------------------  -----------  -------  -----------  ----------  ------  ---------------------
+NLC_1ch                           179453.6202    100.0  116181.4206  44618.0301  0.0000  NLC_1ch
+add_0_root_theCenterScale3/theAdder/myFP_Adder/add_1190
+                                      32.0221      0.0      32.0221      0.0000  0.0000  NLC_1ch_DW01_inc_7
+add_0_root_theHornerLoop/theAdder/myFP_Adder/add_1190
+                                      32.0221      0.0      32.0221      0.0000  0.0000  NLC_1ch_DW01_inc_6
+r1206                                 28.7183      0.0      28.7183      0.0000  0.0000  NLC_1ch_DW01_inc_4
+theCenterScale3/ieee2smc/myFixed_to_FP/Convert2/Convert/add_388_2
+                                       0.0000      0.0       0.0000      0.0000  0.0000  NLC_1ch_DW01_add_18
+theCenterScale3/ieee2smc/myFixed_to_FP/Shifter1_block.Shifter1/sla_1972
+                                     426.9619      0.2     426.9619      0.0000  0.0000  NLC_1ch_DW_leftsh_3
+theCenterScale3/theAdder/myFP_Adder/Abs_syn_block.Abs_syn/sub_1852
+                                     182.2212      0.1     182.2212      0.0000  0.0000  NLC_1ch_DW01_sub_8
+theCenterScale3/theAdder/myFP_Adder/Convert7/Convert/add_388
+                                     164.6853      0.1     164.6853      0.0000  0.0000  NLC_1ch_DW01_add_3
+theCenterScale3/theAdder/myFP_Adder/Convert7/Convert/add_388_2
+                                     163.1604      0.1     163.1604      0.0000  0.0000  NLC_1ch_DW01_add_2
+theCenterScale3/theAdder/myFP_Adder/Negate1_block.Negate1/sub_1945
+                                     244.7407      0.1     244.7407      0.0000  0.0000  NLC_1ch_DW01_sub_5
+theCenterScale3/theAdder/myFP_Adder/Negate_block.Negate/sub_1945
+                                     244.7407      0.1     244.7407      0.0000  0.0000  NLC_1ch_DW01_sub_6
+theCenterScale3/theAdder/myFP_Adder/Shifter1_block.Shifter1/sra_1974
+                                     556.3212      0.3     556.3212      0.0000  0.0000  NLC_1ch_DW_rightsh_4
+theCenterScale3/theAdder/myFP_Adder/Shifter2_block.Shifter2/sra_1974
+                                     556.3212      0.3     556.3212      0.0000  0.0000  NLC_1ch_DW_rightsh_3
+theCenterScale3/theAdder/myFP_Adder/Shifter3_block.Shifter3/sla_1972
+                                     353.2602      0.2     353.2602      0.0000  0.0000  NLC_1ch_DW_leftsh_2
+theCenterScale3/theAdder/myFP_Adder/add_1128
+                                      24.3978      0.0      24.3978      0.0000  0.0000  NLC_1ch_DW01_inc_1
+theCenterScale3/theAdder/myFP_Adder/add_1173
+                                     170.5306      0.1     170.5306      0.0000  0.0000  NLC_1ch_DW01_add_5
+theCenterScale3/theAdder/myFP_Adder/sub_1143
+                                      52.3537      0.0      52.3537      0.0000  0.0000  NLC_1ch_DW01_sub_12
+theCenterScale3/theAdder/myFP_Adder/sub_1158
+                                      52.3537      0.0      52.3537      0.0000  0.0000  NLC_1ch_DW01_sub_11
+theCenterScale3/theMult1/myFP_Multiplier/Convert2/Convert/add_388
+                                     150.1991      0.1     150.1991      0.0000  0.0000  NLC_1ch_DW01_add_11
+theCenterScale3/theMult1/myFP_Multiplier/Convert2/Convert/add_388_2
+                                     148.1660      0.1     148.1660      0.0000  0.0000  NLC_1ch_DW01_add_10
+theCenterScale3/theMult1/myFP_Multiplier/add_170
+                                      40.1548      0.0      40.1548      0.0000  0.0000  NLC_1ch_DW01_add_16
+theCenterScale3/theMult1/myFP_Multiplier/mult_492
+                                    3648.7454      2.0    3648.7454      0.0000  0.0000  NLC_1ch_DW_mult_uns_2
+theCenterScale3/theMult2/myFP_Multiplier/Convert2/Convert/add_388
+                                     150.1991      0.1     150.1991      0.0000  0.0000  NLC_1ch_DW01_add_9
+theCenterScale3/theMult2/myFP_Multiplier/Convert2/Convert/add_388_2
+                                     148.1660      0.1     148.1660      0.0000  0.0000  NLC_1ch_DW01_add_8
+theCenterScale3/theMult2/myFP_Multiplier/add_170
+                                      40.1548      0.0      40.1548      0.0000  0.0000  NLC_1ch_DW01_add_14
+theCenterScale3/theMult2/myFP_Multiplier/mult_492
+                                    3648.7454      2.0    3648.7454      0.0000  0.0000  NLC_1ch_DW_mult_uns_1
+theComparator/add_212                 65.0609      0.0      65.0609      0.0000  0.0000  NLC_1ch_DW01_inc_5
+theHornerLoop/smc2ieee/myFP_to_Fixed/Shifter2_block.Shifter2/sll_2002
+                                     577.4152      0.3     577.4152      0.0000  0.0000  NLC_1ch_DW_leftsh_0
+theHornerLoop/theAdder/myFP_Adder/Abs_syn_block.Abs_syn/sub_1852
+                                     182.2212      0.1     182.2212      0.0000  0.0000  NLC_1ch_DW01_sub_7
+theHornerLoop/theAdder/myFP_Adder/Convert7/Convert/add_388
+                                     164.6853      0.1     164.6853      0.0000  0.0000  NLC_1ch_DW01_add_1
+theHornerLoop/theAdder/myFP_Adder/Convert7/Convert/add_388_2
+                                     163.1604      0.1     163.1604      0.0000  0.0000  NLC_1ch_DW01_add_0
+theHornerLoop/theAdder/myFP_Adder/Negate1_block.Negate1/sub_1945
+                                     244.7407      0.1     244.7407      0.0000  0.0000  NLC_1ch_DW01_sub_3
+theHornerLoop/theAdder/myFP_Adder/Negate_block.Negate/sub_1945
+                                     244.7407      0.1     244.7407      0.0000  0.0000  NLC_1ch_DW01_sub_4
+theHornerLoop/theAdder/myFP_Adder/Shifter1_block.Shifter1/sra_1974
+                                     556.3212      0.3     556.3212      0.0000  0.0000  NLC_1ch_DW_rightsh_2
+theHornerLoop/theAdder/myFP_Adder/Shifter2_block.Shifter2/sra_1974
+                                     556.3212      0.3     556.3212      0.0000  0.0000  NLC_1ch_DW_rightsh_1
+theHornerLoop/theAdder/myFP_Adder/Shifter3_block.Shifter3/sla_1972
+                                     353.2602      0.2     353.2602      0.0000  0.0000  NLC_1ch_DW_leftsh_1
+theHornerLoop/theAdder/myFP_Adder/add_1128
+                                      24.3978      0.0      24.3978      0.0000  0.0000  NLC_1ch_DW01_inc_0
+theHornerLoop/theAdder/myFP_Adder/add_1173
+                                     170.5306      0.1     170.5306      0.0000  0.0000  NLC_1ch_DW01_add_4
+theHornerLoop/theAdder/myFP_Adder/sub_1143
+                                      52.3537      0.0      52.3537      0.0000  0.0000  NLC_1ch_DW01_sub_10
+theHornerLoop/theAdder/myFP_Adder/sub_1158
+                                      52.3537      0.0      52.3537      0.0000  0.0000  NLC_1ch_DW01_sub_9
+theHornerLoop/theMult/myFP_Multiplier/Convert2/Convert/add_388
+                                     150.1991      0.1     150.1991      0.0000  0.0000  NLC_1ch_DW01_add_7
+theHornerLoop/theMult/myFP_Multiplier/Convert2/Convert/add_388_2
+                                     148.1660      0.1     148.1660      0.0000  0.0000  NLC_1ch_DW01_add_6
+theHornerLoop/theMult/myFP_Multiplier/add_170
+                                      40.1548      0.0      40.1548      0.0000  0.0000  NLC_1ch_DW01_add_12
+theHornerLoop/theMult/myFP_Multiplier/mult_492
+                                    3648.7454      2.0    3648.7454      0.0000  0.0000  NLC_1ch_DW_mult_uns_0
+--------------------------------  -----------  -------  -----------  ----------  ------  ---------------------
+Total                                                   134835.5901  44618.0301  0.0000
+
+1

@@ -1,0 +1,171 @@
+Loading db file '/w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ff1p16vn40c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : NLC_1ch
+Version: G-2012.06-SP1
+Date   : Thu Dec  3 04:34:30 2015
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ff1p16vn40c (File: /w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ff1p16vn40c.db)
+
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+NLC_1ch                280000            saed32rvt_ff1p16vn40c
+NLC_1ch_DW_leftsh_0    8000              saed32rvt_ff1p16vn40c
+NLC_1ch_DW_leftsh_1    8000              saed32rvt_ff1p16vn40c
+NLC_1ch_DW_leftsh_2    8000              saed32rvt_ff1p16vn40c
+NLC_1ch_DW_rightsh_1   8000              saed32rvt_ff1p16vn40c
+NLC_1ch_DW_rightsh_2   8000              saed32rvt_ff1p16vn40c
+NLC_1ch_DW_rightsh_3   8000              saed32rvt_ff1p16vn40c
+NLC_1ch_DW_rightsh_4   8000              saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_sub_3     8000              saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_sub_4     8000              saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_sub_5     8000              saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_sub_6     8000              saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_add_0     ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_add_1     ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_add_2     ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_add_3     ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_sub_7     ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_sub_8     ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_add_4     ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_sub_9     ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_sub_10    ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_inc_0     ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_add_5     ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_sub_11    ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_sub_12    ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_inc_1     ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_add_6     ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_add_7     ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_add_8     ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_add_9     ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_add_10    ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_add_11    ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_add_12    ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_add_14    ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_add_16    ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_add_18    ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW_leftsh_3    8000              saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_inc_4     ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_inc_5     ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW_mult_uns_0  8000              saed32rvt_ff1p16vn40c
+NLC_1ch_DW_mult_uns_1  8000              saed32rvt_ff1p16vn40c
+NLC_1ch_DW_mult_uns_2  8000              saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_inc_6     ForQA             saed32rvt_ff1p16vn40c
+NLC_1ch_DW01_inc_7     ForQA             saed32rvt_ff1p16vn40c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+NLC_1ch                                 299.533 9.64e+03 3.05e+11 3.15e+05 100.0
+  theHornerLoop/theMult/myFP_Multiplier/mult_492 (NLC_1ch_DW_mult_uns_0)
+                                          5.152   13.715 4.70e+09 4.72e+03   1.5
+  theCenterScale3/theMult2/myFP_Multiplier/mult_492 (NLC_1ch_DW_mult_uns_1)
+                                         42.605  115.358 5.55e+09 5.70e+03   1.8
+  theCenterScale3/theMult1/myFP_Multiplier/mult_492 (NLC_1ch_DW_mult_uns_2)
+                                         28.758   70.568 5.27e+09 5.37e+03   1.7
+  add_0_root_theHornerLoop/theAdder/myFP_Adder/add_1190 (NLC_1ch_DW01_inc_6)
+                                       1.96e-02      N/A 8.75e+07   87.464   0.0
+  add_0_root_theCenterScale3/theAdder/myFP_Adder/add_1190 (NLC_1ch_DW01_inc_7)
+                                       4.91e-02      N/A 8.78e+07   87.759   0.0
+  theComparator/add_212 (NLC_1ch_DW01_inc_5)
+                                          0.249      N/A 1.67e+08  167.025   0.1
+  r1206 (NLC_1ch_DW01_inc_4)           2.96e-02    0.109 7.29e+07   73.024   0.0
+  theCenterScale3/ieee2smc/myFixed_to_FP/Shifter1_block.Shifter1/sla_1972 (NLC_1ch_DW_leftsh_3)
+                                          1.640   11.157 4.78e+08  491.236   0.2
+  theCenterScale3/ieee2smc/myFixed_to_FP/Convert2/Convert/add_388_2 (NLC_1ch_DW01_add_18)
+                                          0.000    0.000    0.000    0.000   0.0
+  theCenterScale3/theMult1/myFP_Multiplier/add_170 (NLC_1ch_DW01_add_16)
+                                          0.247    0.502 5.65e+07   57.258   0.0
+  theCenterScale3/theMult2/myFP_Multiplier/add_170 (NLC_1ch_DW01_add_14)
+                                          0.275    0.760 6.03e+07   61.323   0.0
+  theHornerLoop/theMult/myFP_Multiplier/add_170 (NLC_1ch_DW01_add_12)
+                                       2.82e-02 2.61e-02 3.93e+07   39.381   0.0
+  theCenterScale3/theMult1/myFP_Multiplier/Convert2/Convert/add_388 (NLC_1ch_DW01_add_11)
+                                          0.164    1.549 1.85e+08  186.213   0.1
+  theCenterScale3/theMult1/myFP_Multiplier/Convert2/Convert/add_388_2 (NLC_1ch_DW01_add_10)
+                                          0.153    1.545 1.83e+08  185.026   0.1
+  theCenterScale3/theMult2/myFP_Multiplier/Convert2/Convert/add_388 (NLC_1ch_DW01_add_9)
+                                          0.222    1.992 1.85e+08  187.265   0.1
+  theCenterScale3/theMult2/myFP_Multiplier/Convert2/Convert/add_388_2 (NLC_1ch_DW01_add_8)
+                                          0.203    1.983 1.84e+08  185.916   0.1
+  theHornerLoop/theMult/myFP_Multiplier/Convert2/Convert/add_388 (NLC_1ch_DW01_add_7)
+                                       1.37e-02    0.148 1.78e+08  178.127   0.1
+  theHornerLoop/theMult/myFP_Multiplier/Convert2/Convert/add_388_2 (NLC_1ch_DW01_add_6)
+                                       1.36e-02    0.148 1.77e+08  177.352   0.1
+  theCenterScale3/theAdder/myFP_Adder/add_1128 (NLC_1ch_DW01_inc_1)
+                                       3.30e-02      N/A 6.67e+07   66.599   0.0
+  theCenterScale3/theAdder/myFP_Adder/sub_1143 (NLC_1ch_DW01_sub_12)
+                                          0.369    0.888 8.79e+07   89.147   0.0
+  theCenterScale3/theAdder/myFP_Adder/sub_1158 (NLC_1ch_DW01_sub_11)
+                                          0.414    1.040 8.76e+07   89.085   0.0
+  theCenterScale3/theAdder/myFP_Adder/add_1173 (NLC_1ch_DW01_add_5)
+                                          0.431    1.058 1.60e+08  161.746   0.1
+  theHornerLoop/theAdder/myFP_Adder/add_1128 (NLC_1ch_DW01_inc_0)
+                                       4.82e-03      N/A 6.64e+07   66.373   0.0
+  theHornerLoop/theAdder/myFP_Adder/sub_1143 (NLC_1ch_DW01_sub_10)
+                                       5.48e-02    0.138 8.96e+07   89.798   0.0
+  theHornerLoop/theAdder/myFP_Adder/sub_1158 (NLC_1ch_DW01_sub_9)
+                                       3.27e-02    0.199 8.95e+07   89.753   0.0
+  theHornerLoop/theAdder/myFP_Adder/add_1173 (NLC_1ch_DW01_add_4)
+                                          0.108    0.271 1.56e+08  156.194   0.0
+  theCenterScale3/theAdder/myFP_Adder/Abs_syn_block.Abs_syn/sub_1852 (NLC_1ch_DW01_sub_8)
+                                          0.477    1.915 2.38e+08  240.045   0.1
+  theHornerLoop/theAdder/myFP_Adder/Abs_syn_block.Abs_syn/sub_1852 (NLC_1ch_DW01_sub_7)
+                                          0.113    0.446 2.37e+08  237.953   0.1
+  theCenterScale3/theAdder/myFP_Adder/Convert7/Convert/add_388 (NLC_1ch_DW01_add_3)
+                                          0.105    0.883 1.98e+08  198.725   0.1
+  theCenterScale3/theAdder/myFP_Adder/Convert7/Convert/add_388_2 (NLC_1ch_DW01_add_2)
+                                       9.63e-02    0.887 1.99e+08  200.066   0.1
+  theHornerLoop/theAdder/myFP_Adder/Convert7/Convert/add_388 (NLC_1ch_DW01_add_1)
+                                       2.05e-02    0.193 1.97e+08  196.735   0.1
+  theHornerLoop/theAdder/myFP_Adder/Convert7/Convert/add_388_2 (NLC_1ch_DW01_add_0)
+                                       1.83e-02    0.193 1.98e+08  198.156   0.1
+  theCenterScale3/theAdder/myFP_Adder/Negate_block.Negate/sub_1945 (NLC_1ch_DW01_sub_6)
+                                          0.359    1.678 3.18e+08  319.554   0.1
+  theCenterScale3/theAdder/myFP_Adder/Negate1_block.Negate1/sub_1945 (NLC_1ch_DW01_sub_5)
+                                          0.415    1.946 3.18e+08  320.085   0.1
+  theHornerLoop/theAdder/myFP_Adder/Negate_block.Negate/sub_1945 (NLC_1ch_DW01_sub_4)
+                                       4.89e-02    0.212 3.17e+08  317.340   0.1
+  theHornerLoop/theAdder/myFP_Adder/Negate1_block.Negate1/sub_1945 (NLC_1ch_DW01_sub_3)
+                                          0.105    0.497 3.18e+08  318.673   0.1
+  theCenterScale3/theAdder/myFP_Adder/Shifter1_block.Shifter1/sra_1974 (NLC_1ch_DW_rightsh_4)
+                                          3.282   13.351 6.46e+08  662.190   0.2
+  theCenterScale3/theAdder/myFP_Adder/Shifter2_block.Shifter2/sra_1974 (NLC_1ch_DW_rightsh_3)
+                                          3.435   14.166 6.46e+08  663.926   0.2
+  theHornerLoop/theAdder/myFP_Adder/Shifter1_block.Shifter1/sra_1974 (NLC_1ch_DW_rightsh_2)
+                                          0.539    1.710 6.56e+08  658.711   0.2
+  theHornerLoop/theAdder/myFP_Adder/Shifter2_block.Shifter2/sra_1974 (NLC_1ch_DW_rightsh_1)
+                                          0.332    1.657 6.62e+08  663.928   0.2
+  theCenterScale3/theAdder/myFP_Adder/Shifter3_block.Shifter3/sla_1972 (NLC_1ch_DW_leftsh_2)
+                                          0.755    3.485 3.83e+08  387.238   0.1
+  theHornerLoop/theAdder/myFP_Adder/Shifter3_block.Shifter3/sla_1972 (NLC_1ch_DW_leftsh_1)
+                                          0.256    1.081 3.91e+08  391.889   0.1
+  theHornerLoop/smc2ieee/myFP_to_Fixed/Shifter2_block.Shifter2/sll_2002 (NLC_1ch_DW_leftsh_0)
+                                          0.428    1.003 7.08e+08  709.537   0.2
+1
