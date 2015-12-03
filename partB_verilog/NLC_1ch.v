@@ -3751,7 +3751,7 @@ wire [20:0] hl_x_lin;
 //  Modules
 x_adc_valid theX_adc_valid( 
 	.clk(clk),
-	.GlobalReset(GlobalReset),
+	.GlobalReset(reset),
 	.srdyi(srdyi),
     .x_adc_0(ch0_x_adc),
 	.x_adc_1(ch1_x_adc),
@@ -3821,7 +3821,7 @@ x_adc_valid theX_adc_valid(
 
 upper_mux_32 theUpper_mux_32(
 	.clk(clk),
-	.GlobalReset(GlobalReset),
+	.GlobalReset(reset),
 	.channel_select(c2_channel_select),
 	.x_adc_ch0(x_adc_valid0),
 	.x_adc_ch1(x_adc_valid1),
@@ -5609,7 +5609,7 @@ upper_mux_32 theUpper_mux_32(
 
 comparator theComparator( 
 	.clk(clk),
-	.GlobalReset(GlobalReset),
+	.GlobalReset(reset),
     .x_adc_valid(um32_x_adc),
 	.section_limit(um32_section_limit),
 	.coeff1_0(um32_coeff_1_0),
@@ -5681,20 +5681,20 @@ comparator theComparator(
 
 delay_Z1 mean_Z1(
 	.clk(clk),
-	.GlobalReset(GlobalReset),
+	.GlobalReset(reset),
 	.in(comp_mean),
 	.out(mean_Z1_o)
 	);
 	
 delay_Z1 std_Z1(
 	.clk(clk),
-	.GlobalReset(GlobalReset),
+	.GlobalReset(reset),
 	.in(comp_std),
 	.out(std_Z1_o)
 	);
 	
 centerScale3 theCenterScale3( 
-    .GlobalReset(GlobalReset),
+    .GlobalReset(reset),
 	.clk(clk),
 	.x_adc(um32_x_adc),
 	.srdyi(srdyi),
@@ -5705,7 +5705,7 @@ centerScale3 theCenterScale3(
     );
 
 control2 theControl2( 
-    .GlobalReset(GlobalReset),
+    .GlobalReset(reset),
 	.clk(clk),
 	.srdyi(srdyi),
 	.coeff_sel(c2_coeff_sel),
@@ -5719,7 +5719,7 @@ control2 theControl2(
 
 mux theMux( 
 	.clk(clk),
-	.GlobalReset(GlobalReset),
+	.GlobalReset(reset),
     .coeff0(comp_coeff0),
     .coeff1(comp_coeff1),
     .coeff2(comp_coeff2),
@@ -5737,13 +5737,13 @@ mux theMux(
 
 delay_Z21 theDelay_Z21( 
 	.clk(clk),
-	.GlobalReset(GlobalReset),
+	.GlobalReset(reset),
 	.in(mux_coeff),
 	.out(delay_coeff)
     );
 
 hornerLoop theHornerLoop( 
-    .GlobalReset(GlobalReset),
+    .GlobalReset(reset),
 	.clk(clk),
 	.x_adc_smc(cs3_x_centScale),
 	.srdyi_i(cs3_srdyo_o),
@@ -5755,7 +5755,7 @@ hornerLoop theHornerLoop(
 
 enable_reg_32 theOutputStorage( 
 	.clk(clk),
-	.GlobalReset(GlobalReset),
+	.GlobalReset(reset),
 	.enable(c2_enableRegControl),
 	.in(hl_x_lin),
 	.ch0_x_lin(ch0_x_lin),

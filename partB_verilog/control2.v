@@ -136,6 +136,7 @@ reg [8:0] cnt;
 reg [3:0] chSelState;
 
 wire [3:0] coeff_sel_w;
+reg [3:0] coeff_sel_reg;
 
 ////////////////////////////////////////////////////////////////
 //  Modules
@@ -150,222 +151,279 @@ always @(*) begin
 	
 		(mux_a10): begin
 			coeff_sel = 4'd10;
+			enableRegControl = 32'd0;
 		end
 		
 		(mux_a9): begin
 			coeff_sel = 4'd9;
+			enableRegControl = 32'd0;
 		end
 		
 		(mux_a8): begin
 			coeff_sel = 4'd8;
+			enableRegControl = 32'd0;
 		end
 		
 		(mux_a7): begin
 			coeff_sel = 4'd7;
+			enableRegControl = 32'd0;
 		end
 		
 		(mux_a6): begin
 			coeff_sel = 4'd6;
+			enableRegControl = 32'd0;
 		end
 		
 		(mux_a5): begin
 			coeff_sel = 4'd5;
+			enableRegControl = 32'd0;
 		end
 		
 		(mux_a4): begin
 			coeff_sel = 4'd4;
+			enableRegControl = 32'd0;
 		end
 		
 		(mux_a3): begin
 			coeff_sel = 4'd3;
+			enableRegControl = 32'd0;
 		end
 		
 		(mux_a2): begin
 			coeff_sel = 4'd2;
+			enableRegControl = 32'd0;
 		end
 		
 		(mux_a1): begin
 			coeff_sel = 4'd1;
+			enableRegControl = 32'd0;
 		end
 		
 		(mux_a0): begin
 			coeff_sel = 4'd0;
+			enableRegControl = 32'd0;
 		end
 	
 		(mux_b10): begin
 			coeff_sel = 4'd10;
+			enableRegControl = 32'd0;
 		end
 		
+		//mux_b9 == enableRegControl
 		(mux_b9): begin
 			coeff_sel = 4'd9;
+			enableRegControl = 32'd8192;
 		end
 		
 		(mux_b8): begin
 			coeff_sel = 4'd8;
+			enableRegControl = 32'd0;
 		end
 		
 		(mux_b7): begin
 			coeff_sel = 4'd7;
+			enableRegControl = 32'd0;
 		end
 		
 		(mux_b6): begin
 			coeff_sel = 4'd6;
+			enableRegControl = 32'd0;
 		end
 		
 		(mux_b5): begin
 			coeff_sel = 4'd5;
+			enableRegControl = 32'd0;
 		end
 		
 		(mux_b4): begin
 			coeff_sel = 4'd4;
+			enableRegControl = 32'd0;
 		end
 		
 		(mux_b3): begin
 			coeff_sel = 4'd3;
+			enableRegControl = 32'd0;
 		end
 		
 		(mux_b2): begin
 			coeff_sel = 4'd2;
+			enableRegControl = 32'd0;
 		end
 		
 		(mux_b1): begin
 			coeff_sel = 4'd1;
+			enableRegControl = 32'd0;
 		end
 		
 		(mux_b0): begin
 			coeff_sel = 4'd0;
+			enableRegControl = 32'd0;
 		end
 		
 		(enableReg0): begin
 			enableRegControl = 32'd1;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg1): begin
 			enableRegControl = 32'd2;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg2): begin
 			enableRegControl = 32'd4;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg3): begin
 			enableRegControl = 32'd8;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg4): begin
 			enableRegControl = 32'd16;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg5): begin
 			enableRegControl = 32'd32;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg6): begin
 			enableRegControl = 32'd64;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg7): begin
 			enableRegControl = 32'd128;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg8): begin
 			enableRegControl = 32'd256;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg9): begin
 			enableRegControl = 32'd512;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg10): begin
 			enableRegControl = 32'd1024;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg11): begin
 			enableRegControl = 32'd2048;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg12): begin
 			enableRegControl = 32'd4096;
+			coeff_sel = coeff_sel_reg;
 		end
-
+		
+		//enableReg13 unreachable since it equals mux_b9
+		/*
 		(enableReg13): begin
 			enableRegControl = 32'd8192;
+			coeff_sel = coeff_sel_reg;
 		end
-
+		*/
 		(enableReg14): begin
 			enableRegControl = 32'd16384;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg15): begin
 			enableRegControl = 32'd32768;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg16): begin
 			enableRegControl = 32'd65536;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg17): begin
 			enableRegControl = 32'd131072;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg18): begin
 			enableRegControl = 32'd262144;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg19): begin
 			enableRegControl = 32'd524288;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg20): begin
 			enableRegControl = 32'd1048576;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg21): begin
 			enableRegControl = 32'd2097152;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg22): begin
 			enableRegControl = 32'd4194304;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg23): begin
 			enableRegControl = 32'd8388608;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg24): begin
 			enableRegControl = 32'd16777216;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg25): begin
 			enableRegControl = 32'd33554432;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg26): begin
 			enableRegControl = 32'd67108864;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg27): begin
 			enableRegControl = 32'd134217728;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg28): begin
 			enableRegControl = 32'd268435456;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg29): begin
 			enableRegControl = 32'd536870912;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg30): begin
 			enableRegControl = 32'd1073741824;
+			coeff_sel = coeff_sel_reg;
 		end
 
 		(enableReg31): begin
 			enableRegControl = 32'hFFFFFFFF;
+			coeff_sel = coeff_sel_reg;
 		end
 		
 		default: begin
-			coeff_sel = coeff_sel_w;
+			coeff_sel = coeff_sel_reg;//coeff_sel_w;
 			enableRegControl = 32'd0;
 		end
 	
@@ -385,8 +443,14 @@ always @(posedge clk) begin
     if (GlobalReset == 1'b1) begin		
 		cnt <= 9'd0;
 		chSelState <= 4'd0;
+		
+		coeff_sel_reg <= 4'd0;
+		
     end
     else begin
+	
+		coeff_sel_reg <= coeff_sel;
+		
 		if (srdyi == 1'b1) begin
 			cnt <= 9'd1; //denotes # of cycles after srdyi asserted
 			chSelState <= 4'd0;
