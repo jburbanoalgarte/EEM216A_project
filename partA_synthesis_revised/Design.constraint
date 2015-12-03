@@ -1,0 +1,229 @@
+ 
+****************************************
+Report : constraint
+        -verbose
+Design : NLC_1ch
+Version: G-2012.06-SP1
+Date   : Thu Dec  3 05:25:14 2015
+****************************************
+
+
+  Startpoint: ch0/theCenterScale/theMult2/myFP_Multiplier/Delay_syn_block/GenBlock.theDelay/outreg_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ch0/theCenterScale/theMult2/myFP_Multiplier/Delay2_block/GenBlock.theDelay/delayline_reg[0][47]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  NLC_1ch            2000000               saed32rvt_ff1p16vn40c
+  NLC_1ch_DW_mult_uns_1
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ch0/theCenterScale/theMult2/myFP_Multiplier/Delay_syn_block/GenBlock.theDelay/outreg_reg[2]/CLK (DFFSSRX1_RVT)
+                                                          0.00 #     0.00 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/Delay_syn_block/GenBlock.theDelay/outreg_reg[2]/Q (DFFSSRX1_RVT)
+                                                          0.05       0.05 f
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U1351/Y (IBUFFX32_RVT)
+                                                          0.02       0.08 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U1346/Y (INVX0_RVT)
+                                                          0.03       0.11 f
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U1535/Y (XOR2X1_RVT)
+                                                          0.05       0.15 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U1354/Y (INVX2_RVT)
+                                                          0.01       0.16 f
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U1523/Y (NOR2X0_RVT)
+                                                          0.03       0.18 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U1196/Y (NBUFFX8_RVT)
+                                                          0.02       0.20 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U1454/Y (AO22X1_RVT)
+                                                          0.03       0.23 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U1453/Y (XOR2X1_RVT)
+                                                          0.03       0.26 f
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U380/SO (HADDX1_RVT)
+                                                          0.03       0.30 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U176/CO (FADDX1_RVT)
+                                                          0.03       0.32 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U175/CO (FADDX1_RVT)
+                                                          0.03       0.36 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U174/CO (FADDX1_RVT)
+                                                          0.03       0.39 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U173/CO (FADDX1_RVT)
+                                                          0.03       0.42 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U172/CO (FADDX1_RVT)
+                                                          0.03       0.45 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U171/CO (FADDX1_RVT)
+                                                          0.03       0.48 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U170/CO (FADDX1_RVT)
+                                                          0.03       0.51 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U169/CO (FADDX1_RVT)
+                                                          0.03       0.54 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U168/CO (FADDX1_RVT)
+                                                          0.03       0.57 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U167/CO (FADDX1_RVT)
+                                                          0.03       0.60 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U166/CO (FADDX1_RVT)
+                                                          0.03       0.63 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U165/CO (FADDX1_RVT)
+                                                          0.03       0.66 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U164/CO (FADDX1_RVT)
+                                                          0.03       0.69 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U163/CO (FADDX1_RVT)
+                                                          0.03       0.72 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U162/CO (FADDX1_RVT)
+                                                          0.03       0.75 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U161/CO (FADDX1_RVT)
+                                                          0.03       0.78 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U160/CO (FADDX1_RVT)
+                                                          0.03       0.81 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U159/CO (FADDX1_RVT)
+                                                          0.03       0.84 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U158/CO (FADDX1_RVT)
+                                                          0.03       0.87 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U157/CO (FADDX1_RVT)
+                                                          0.03       0.90 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U156/CO (FADDX1_RVT)
+                                                          0.03       0.93 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U155/CO (FADDX1_RVT)
+                                                          0.03       0.96 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U154/CO (FADDX1_RVT)
+                                                          0.03       0.99 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U153/CO (FADDX1_RVT)
+                                                          0.03       1.02 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U152/CO (FADDX1_RVT)
+                                                          0.03       1.05 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U151/CO (FADDX1_RVT)
+                                                          0.03       1.08 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U150/CO (FADDX1_RVT)
+                                                          0.03       1.11 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U149/CO (FADDX1_RVT)
+                                                          0.03       1.14 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U148/CO (FADDX1_RVT)
+                                                          0.03       1.17 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U147/CO (FADDX1_RVT)
+                                                          0.03       1.20 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U146/CO (FADDX1_RVT)
+                                                          0.03       1.23 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U145/CO (FADDX1_RVT)
+                                                          0.03       1.26 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U144/CO (FADDX1_RVT)
+                                                          0.03       1.29 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U143/CO (FADDX1_RVT)
+                                                          0.03       1.32 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U142/CO (FADDX1_RVT)
+                                                          0.03       1.35 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U141/CO (FADDX1_RVT)
+                                                          0.03       1.38 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U140/CO (FADDX1_RVT)
+                                                          0.03       1.41 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U139/CO (FADDX1_RVT)
+                                                          0.03       1.44 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U138/CO (FADDX1_RVT)
+                                                          0.03       1.47 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U137/CO (FADDX1_RVT)
+                                                          0.03       1.50 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U136/CO (FADDX1_RVT)
+                                                          0.03       1.53 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U135/CO (FADDX1_RVT)
+                                                          0.03       1.56 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U134/CO (FADDX1_RVT)
+                                                          0.03       1.59 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U133/CO (FADDX1_RVT)
+                                                          0.03       1.62 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U1370/Y (XNOR3X1_RVT)
+                                                          0.07       1.69 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/mult_492/U1369/Y (XOR3X1_RVT)
+                                                          0.02       1.71 r
+  ch0/theCenterScale/theMult2/myFP_Multiplier/Delay2_block/GenBlock.theDelay/delayline_reg[0][47]/RSTB (DFFSSRX1_RVT)
+                                                          0.00       1.71 r
+  data arrival time                                                  1.71
+
+  clock clk (rise edge)                                 162.80     162.80
+  clock network delay (ideal)                             0.00     162.80
+  clock uncertainty                                      -0.10     162.70
+  ch0/theCenterScale/theMult2/myFP_Multiplier/Delay2_block/GenBlock.theDelay/delayline_reg[0][47]/CLK (DFFSSRX1_RVT)
+                                                          0.00     162.70 r
+  library setup time                                     -0.04     162.66
+  data required time                                               162.66
+  --------------------------------------------------------------------------
+  data required time                                               162.66
+  data arrival time                                                 -1.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                      160.95
+
+
+  Startpoint: ch0/theCenterScale/ieee2smc/myFixed_to_FP/Delay2_block/GenBlock.theDelay/delayline_reg[0][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ch0/theCenterScale/ieee2smc/myFixed_to_FP/Delay2_block/GenBlock.theDelay/delayline_reg[1][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  NLC_1ch            2000000               saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ch0/theCenterScale/ieee2smc/myFixed_to_FP/Delay2_block/GenBlock.theDelay/delayline_reg[0][0]/CLK (DFFX1_RVT)
+                                                          0.00 #     0.00 r
+  ch0/theCenterScale/ieee2smc/myFixed_to_FP/Delay2_block/GenBlock.theDelay/delayline_reg[0][0]/Q (DFFX1_RVT)
+                                                          0.04       0.04 r
+  ch0/theCenterScale/ieee2smc/myFixed_to_FP/Delay2_block/GenBlock.theDelay/delayline_reg[1][0]/RSTB (DFFSSRX1_RVT)
+                                                          0.20       0.24 r
+  data arrival time                                                  0.24
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ch0/theCenterScale/ieee2smc/myFixed_to_FP/Delay2_block/GenBlock.theDelay/delayline_reg[1][0]/CLK (DFFSSRX1_RVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.16
+
+
+    Net: ch0/theCenterScale/theAdder/myFP_Adder/N5
+
+    max_transition         0.04
+  - Transition Time        0.04
+  ------------------------------
+    Slack                  0.01  (MET)
+
+
+    Net: ch0/theCenterScale/ieee2smc/myFixed_to_FP/mylog2/Add_block.tmp_N_11_8[0]
+
+    max_capacitance        8.00
+  - Capacitance            7.93
+  ------------------------------
+    Slack                  0.07  (MET)
+
+
+    Design: NLC_1ch
+
+    max_area               0.00
+  - Current Area       2400776.25
+  ------------------------------
+    Slack              -2400776.25  (VIOLATED)
+
+
+Min pulse width constraints
+
+                       Required      Actual
+  Pin                pulse width   pulse width   Slack           Scenario
+--------------------------------------------------------------------------------
+  ch0/theCenterScale/theAdder/myFP_Adder/Delay17_block/GenBlock.theDelay/outreg_reg[24]/CLK(high)
+                      0.03         81.40         81.37 (MET)
+
+1

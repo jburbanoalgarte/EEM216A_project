@@ -72,14 +72,13 @@ output reg srdyo;
 //  reg & wire declarations
 reg [7:0] cnt;
 
-wire [3:0] coeff_sel_w;
+reg [3:0] coeff_sel_reg;
 
 ////////////////////////////////////////////////////////////////
 //  Modules
 
 ////////////////////////////////////////////////////////////////
 //  Combinational Logic
-assign coeff_sel_w = coeff_sel;
 
 always @(*) begin
 	case(cnt)
@@ -129,7 +128,7 @@ always @(*) begin
 		end
 		
 		default: begin
-			coeff_sel = coeff_sel_w;
+			coeff_sel = coeff_sel_reg;
 		end
 	
 	endcase
@@ -149,10 +148,11 @@ always @(posedge clk) begin
 		sum_en <= 1'b0;
 		srdyo <= 1'b0;
 		*/
-		
+		coeff_sel_reg <= 4'd0;
 		cnt <= 8'd0; //used only for testbench
     end
     else begin
+		coeff_sel_reg <= coeff_sel;
 		if (srdyi == 1'b1) begin
 			cnt <= 8'd1; //denotes # of cycles after srdyi asserted
 		end
