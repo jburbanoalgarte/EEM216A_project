@@ -1,0 +1,43 @@
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+Warning: timing loops detected. (TIM-209)
+    #              loop breakpoint
+
+                 cell_arc                            lib cell
+--------------------------------------------------------------------------------
+U6375/A1                 -> U6375/Y                  saed32rvt_ff1p16vn40c/NAND2X0_RVT
+                                                                             #
+U6369/A1                 -> U6369/Y                  saed32rvt_ff1p16vn40c/NAND4X0_RVT
+                                                                              
+
+                 cell_arc                            lib cell
+--------------------------------------------------------------------------------
+U2701/A2                 -> U2701/Y                  saed32rvt_ff1p16vn40c/AOI221X2_RVT
+                                                                             #
+U6352/A4                 -> U6352/Y                  saed32rvt_ff1p16vn40c/NAND4X0_RVT
+                                                                              
+
+                 cell_arc                            lib cell
+--------------------------------------------------------------------------------
+U6358/A1                 -> U6358/Y                  saed32rvt_ff1p16vn40c/NAND2X0_RVT
+                                                                             #
+U6354/A3                 -> U6354/Y                  saed32rvt_ff1p16vn40c/NAND4X0_RVT
+                                                                              
+
+                 cell_arc                            lib cell
+--------------------------------------------------------------------------------
+U6362/A3                 -> U6362/Y                  saed32rvt_ff1p16vn40c/AO221X1_RVT
+                                                                             #
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1
