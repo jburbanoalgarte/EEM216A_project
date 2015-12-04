@@ -1,0 +1,2094 @@
+################################################################################
+# DESIGN COMPILER:  Logic Synthesis Tool                                       #
+################################################################################
+set hdlin_vrlg_std "2001"
+2001
+remove_design -all
+1
+# Add search paths for our technology libs.
+set search_path "$search_path . ./verilog /w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm" 
+. /w/apps3/Synopsys/Design_Complier/vG-2012.06-SP1/libraries/syn /w/apps3/Synopsys/Design_Complier/vG-2012.06-SP1/minpower/syn /w/apps3/Synopsys/Design_Complier/vG-2012.06-SP1/dw/syn_ver /w/apps3/Synopsys/Design_Complier/vG-2012.06-SP1/dw/sim_ver . ./verilog /w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm
+set target_library "saed32rvt_ff1p16vn40c.db saed32rvt_ss0p95v125c.db"
+saed32rvt_ff1p16vn40c.db saed32rvt_ss0p95v125c.db
+set link_library "* saed32rvt_ff1p16vn40c.db saed32rvt_ss0p95v125c.db dw_foundation.sldb"
+* saed32rvt_ff1p16vn40c.db saed32rvt_ss0p95v125c.db dw_foundation.sldb
+set synthetic_library "dw_foundation.sldb"
+dw_foundation.sldb
+# Define work path (note: The work path must exist, so you need to create a folder WORK first)
+define_design_lib WORK -path ./WORK
+1
+set alib_library_analysis_path “./alib-52/”
+“./alib-52/”
+# Read the gate-level verilog files
+analyze -format verilog {SynLib.v fp_to_smc_float.v smc_float_adder.v smc_float_multiplier.v smc_float_to_fp.v centerScale3.v comparator.v mux.v hornerLoop.v control2.v delay_Z1.v delay_Z21.v enable_reg.v enable_reg_32.v upper_mux_32.v x_adc_valid.v NLC_1ch.v}
+Running PRESTO HDLC
+Searching for ./SynLib.v
+Searching for ./fp_to_smc_float.v
+Searching for ./smc_float_adder.v
+Searching for ./smc_float_multiplier.v
+Searching for ./smc_float_to_fp.v
+Searching for ./centerScale3.v
+Searching for ./comparator.v
+Searching for ./mux.v
+Searching for ./hornerLoop.v
+Searching for ./control2.v
+Searching for ./delay_Z1.v
+Searching for ./delay_Z21.v
+Searching for ./enable_reg.v
+Searching for ./enable_reg_32.v
+Searching for ./upper_mux_32.v
+Searching for ./x_adc_valid.v
+Searching for ./NLC_1ch.v
+Compiling source file ./SynLib.v
+Opening include file define.h
+Compiling source file ./fp_to_smc_float.v
+Compiling source file ./smc_float_adder.v
+Compiling source file ./smc_float_multiplier.v
+Compiling source file ./smc_float_to_fp.v
+Compiling source file ./centerScale3.v
+Compiling source file ./comparator.v
+Compiling source file ./mux.v
+Compiling source file ./hornerLoop.v
+Compiling source file ./control2.v
+Compiling source file ./delay_Z1.v
+Compiling source file ./delay_Z21.v
+Compiling source file ./enable_reg.v
+Compiling source file ./enable_reg_32.v
+Compiling source file ./upper_mux_32.v
+Compiling source file ./x_adc_valid.v
+Compiling source file ./NLC_1ch.v
+Presto compilation completed successfully.
+Loading db file '/w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ff1p16vn40c.db'
+Loading db file '/w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db'
+Loading db file '/w/apps3/Synopsys/Design_Complier/vG-2012.06-SP1/libraries/syn/dw_foundation.sldb'
+1
+set DESIGN_NAME NLC_1ch
+NLC_1ch
+elaborate $DESIGN_NAME
+Loading db file '/w/apps3/Synopsys/Design_Complier/vG-2012.06-SP1/libraries/syn/gtech.db'
+Loading db file '/w/apps3/Synopsys/Design_Complier/vG-2012.06-SP1/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_ff1p16vn40c'
+  Loading link library 'saed32rvt_ss0p95v125c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'NLC_1ch'.
+Information: Building the design 'x_adc_valid'. (HDL-193)
+
+Inferred memory devices in process
+        in routine x_adc_valid line 201 in file
+                './x_adc_valid.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| x_adc_valid_31_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+|  x_adc_valid_0_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+|  x_adc_valid_1_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+|  x_adc_valid_2_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+|  x_adc_valid_3_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+|  x_adc_valid_4_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+|  x_adc_valid_5_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+|  x_adc_valid_6_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+|  x_adc_valid_7_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+|  x_adc_valid_8_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+|  x_adc_valid_9_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_10_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_11_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_12_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_13_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_14_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_15_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_16_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_17_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_18_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_19_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_20_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_21_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_22_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_23_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_24_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_25_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_26_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_27_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_28_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_29_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+| x_adc_valid_30_reg  | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'upper_mux_32'. (HDL-193)
+Warning:  ./upper_mux_32.v:3631: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 3630 in file
+        './upper_mux_32.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           3631           |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine upper_mux_32 line 5549 in file
+                './upper_mux_32.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      mean4_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      std4_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      x_adc_reg      | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+|  section_limit_reg  | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_1_0_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_1_1_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_1_2_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_1_3_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_1_4_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_1_5_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_1_6_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_1_7_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_1_8_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_1_9_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|   coeff_1_10_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      mean1_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      std1_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_2_0_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_2_1_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_2_2_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_2_3_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_2_4_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_2_5_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_2_6_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_2_7_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_2_8_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_2_9_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|   coeff_2_10_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      mean2_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      std2_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_3_0_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_3_1_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_3_2_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_3_3_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_3_4_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_3_5_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_3_6_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_3_7_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_3_8_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_3_9_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|   coeff_3_10_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      mean3_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      std3_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_4_0_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_4_1_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_4_2_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_4_3_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_4_4_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_4_5_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_4_6_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_4_7_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_4_8_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    coeff_4_9_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|   coeff_4_10_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'comparator'. (HDL-193)
+
+Inferred memory devices in process
+        in routine comparator line 283 in file
+                './comparator.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      mean_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       std_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|     coeff0_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|     coeff1_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|     coeff2_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|     coeff3_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|     coeff4_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|     coeff5_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|     coeff6_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|     coeff7_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|     coeff8_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|     coeff9_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|     coeff10_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'delay_Z1'. (HDL-193)
+
+Inferred memory devices in process
+        in routine delay_Z1 line 19 in file
+                './delay_Z1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       out_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'centerScale3'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'control2'. (HDL-193)
+
+Statistics for case statements in always block at line 148 in file
+        './control2.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           150            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine control2 line 442 in file
+                './control2.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       cnt_reg       | Flip-flop |   9   |  Y  | N  | N  | N  | N  | N  | N  |
+|   chSelState_reg    | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+|  coeff_sel_reg_reg  | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'mux'. (HDL-193)
+
+Statistics for case statements in always block at line 76 in file
+        './mux.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            77            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine mux line 131 in file
+                './mux.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      coeff_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'delay_Z21'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'hornerLoop'. (HDL-193)
+
+Inferred memory devices in process
+        in routine hornerLoop line 108 in file
+                './hornerLoop.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     theReg_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'enable_reg_32'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'fp_to_smc_float'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'smc_float_multiplier'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'smc_float_adder'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'smc_float_to_fp'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'enable_reg'. (HDL-193)
+
+Inferred memory devices in process
+        in routine enable_reg line 54 in file
+                './enable_reg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       out_reg       | Flip-flop |  21   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'y_o'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP'. (HDL-193)
+Warning:  ./fp_to_smc_float.v:1949: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./fp_to_smc_float.v:1951: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./fp_to_smc_float.v:2132: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./fp_to_smc_float.v:2149: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./fp_to_smc_float.v:2150: signed to unsigned assignment occurs. (VER-318)
+Statistics for MUX_OPs
+===========================================================
+| block name/line  | Inputs | Outputs | # sel inputs | MB |
+===========================================================
+| Fixed_to_FP/2139 |   2    |    6    |      1       | N  |
+| Fixed_to_FP/2157 |   2    |    9    |      1       | N  |
+===========================================================
+Presto compilation completed successfully.
+Information: Building the design 'synBusAdapter' instantiated from design 'fp_to_smc_float' with
+        the parameters "inp_width=21,out_width=32,datatype="signed",preshift=-11". (HDL-193)
+Warning:  ./SynLib.v:151: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:175: signed to unsigned assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'x1_i'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'z1_o'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FP_Multiplier'. (HDL-193)
+Warning:  ./smc_float_multiplier.v:141: signed to unsigned assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'x_i'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'z_o'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FP_Adder'. (HDL-193)
+Warning:  ./smc_float_adder.v:1145: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./smc_float_adder.v:1160: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./smc_float_adder.v:1173: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./smc_float_adder.v:1175: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./smc_float_adder.v:1192: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./smc_float_adder.v:1512: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./smc_float_adder.v:1530: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./smc_float_adder.v:1548: signed to unsigned assignment occurs. (VER-318)
+Statistics for MUX_OPs
+===========================================================
+| block name/line  | Inputs | Outputs | # sel inputs | MB |
+===========================================================
+|  FP_Adder/1519   |   2    |   34    |      1       | N  |
+|  FP_Adder/1537   |   2    |   34    |      1       | N  |
+|  FP_Adder/1556   |   2    |   10    |      1       | N  |
+===========================================================
+Presto compilation completed successfully.
+Information: Building the design 'x2_i'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FP_to_Fixed'. (HDL-193)
+Warning:  ./smc_float_to_fp.v:151: signed to unsigned assignment occurs. (VER-318)
+Statistics for MUX_OPs
+===========================================================
+| block name/line  | Inputs | Outputs | # sel inputs | MB |
+===========================================================
+| FP_to_Fixed/158  |   2    |   21    |      1       | N  |
+===========================================================
+Presto compilation completed successfully.
+Information: Building the design 'synAbs' instantiated from design 'Fixed_to_FP' with
+        the parameters "bitwidth=33". (HDL-193)
+Warning:  ./SynLib.v:1852: signed to unsigned assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synComparator' instantiated from design 'Fixed_to_FP' with
+        the parameters "bitwidth=32,datatype="signed",opr="les"". (HDL-193)
+Warning:  ./SynLib.v:1904: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1905: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1906: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1907: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1908: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1909: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1916: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1917: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1918: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1919: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1920: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1921: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1904: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1905: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1907: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1908: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1909: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1916: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1917: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1919: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1920: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1921: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1896: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1898: unsigned to signed assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synBusAdapter' instantiated from design 'Fixed_to_FP' with
+        the parameters "inp_width=32,out_width=33,datatype="unsign",preshift=0". (HDL-193)
+Warning:  ./SynLib.v:161: unsigned to signed assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synBusAdapter' instantiated from design 'Fixed_to_FP' with
+        the parameters "inp_width=9,out_width=8,datatype="signed",preshift=0". (HDL-193)
+Warning:  ./SynLib.v:151: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:175: signed to unsigned assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synBusAdapter' instantiated from design 'Fixed_to_FP' with
+        the parameters "inp_width=33,out_width=24,datatype="unsign",preshift=0,infrac=32,outfrac=23,sat=1,round=2,saType="UU"". (HDL-193)
+Warning:  ./SynLib.v:161: unsigned to signed assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synBusAdapter' instantiated from design 'Fixed_to_FP' with
+        the parameters "inp_width=33,out_width=33,datatype="unsign",preshift=0". (HDL-193)
+Warning:  ./SynLib.v:161: unsigned to signed assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'Fixed_to_FP' with
+        the parameters "bitwidth=5,preferRAMImpl=2,delaylength=2". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'Fixed_to_FP' with
+        the parameters "bitwidth=7,preferRAMImpl=2,delaylength=2". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'Fixed_to_FP' with
+        the parameters "bitwidth=1,preferRAMImpl=2,delaylength=2". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'Fixed_to_FP' with
+        the parameters "bitwidth=33,preferRAMImpl=2,delaylength=2". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synNegate' instantiated from design 'Fixed_to_FP' with
+        the parameters "bitwidth=6". (HDL-193)
+Warning:  ./SynLib.v:1945: signed to unsigned assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synShifter' instantiated from design 'Fixed_to_FP' with
+        the parameters "inpBitW=33,outBitW=33,shfBitW=7,datatype="unsign",opr="leftshift"". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synComparator' instantiated from design 'Fixed_to_FP' with
+        the parameters "bitwidth=33,datatype="unsign",opr="equ"". (HDL-193)
+Warning:  ./SynLib.v:1904: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1905: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1906: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1907: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1908: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1909: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1916: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1917: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1918: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1919: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1920: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1921: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1905: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1906: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1907: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1908: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1909: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1917: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1918: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1919: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1920: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1921: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1896: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1898: unsigned to signed assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synComparator' instantiated from design 'Fixed_to_FP' with
+        the parameters "bitwidth=22,datatype="unsign",opr="equ"". (HDL-193)
+Warning:  ./SynLib.v:1904: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1905: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1906: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1907: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1908: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1909: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1916: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1917: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1918: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1919: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1920: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1921: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1905: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1906: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1907: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1908: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1909: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1917: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1918: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1919: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1920: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1921: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1896: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1898: unsigned to signed assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_Leading_Zero_Counter1'. (HDL-193)
+Statistics for MUX_OPs
+=================================================================================
+|            block name/line             | Inputs | Outputs | # sel inputs | MB |
+=================================================================================
+| Fixed_to_FP_Leading_Zero_Counter1/1255 |   2    |    5    |      1       | N  |
+=================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_Leading_Zero_Counter2'. (HDL-193)
+Statistics for MUX_OPs
+=================================================================================
+|            block name/line             | Inputs | Outputs | # sel inputs | MB |
+=================================================================================
+| Fixed_to_FP_Leading_Zero_Counter2/1443 |   2    |    7    |      1       | N  |
+=================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_log2'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synBusSatRnd' instantiated from design 'FP_Multiplier' with
+        the parameters "inp_width=9,out_width=8,infrac=0,outfrac=0,round=0,sat=1,datatype="UU"". (HDL-193)
+Warning:  ./SynLib.v:423: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:430: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:438: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Presto compilation completed successfully.
+Information: Building the design 'synBusAdapter' instantiated from design 'FP_Multiplier' with
+        the parameters "inp_width=24,out_width=24,datatype="unsign",preshift=0". (HDL-193)
+Warning:  ./SynLib.v:161: unsigned to signed assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synBusAdapter' instantiated from design 'FP_Multiplier' with
+        the parameters "inp_width=48,out_width=49,datatype="unsign",preshift=0". (HDL-193)
+Warning:  ./SynLib.v:161: unsigned to signed assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synBusAdapter' instantiated from design 'FP_Multiplier' with
+        the parameters "inp_width=49,out_width=24,datatype="unsign",preshift=-1,infrac=48,outfrac=23,sat=1,round=2,saType="UU"". (HDL-193)
+Warning:  ./SynLib.v:161: unsigned to signed assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synBusAdapter' instantiated from design 'FP_Multiplier' with
+        the parameters "inp_width=10,out_width=8,datatype="signed",preshift=0,infrac=0,outfrac=0,sat=1,round=0,saType="SU"". (HDL-193)
+Warning:  ./SynLib.v:151: signed to unsigned assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'FP_Multiplier' with
+        the parameters "bitwidth=24,preferRAMImpl=2,delaylength=1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'FP_Multiplier' with
+        the parameters "bitwidth=1,preferRAMImpl=2,delaylength=1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'FP_Multiplier' with
+        the parameters "bitwidth=10,preferRAMImpl=2,delaylength=1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'FP_Multiplier' with
+        the parameters "bitwidth=23,preferRAMImpl=2,delaylength=1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'FP_Multiplier' with
+        the parameters "bitwidth=8,preferRAMImpl=2,delaylength=1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'FP_Multiplier' with
+        the parameters "bitwidth=48,preferRAMImpl=2,delaylength=3". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'FP_Multiplier' with
+        the parameters "bitwidth=48,preferRAMImpl=2,delaylength=1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'FP_Multiplier' with
+        the parameters "bitwidth=9,preferRAMImpl=2,delaylength=3". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'FP_Multiplier' with
+        the parameters "bitwidth=1,preferRAMImpl=2,delaylength=3". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'FP_Multiplier' with
+        the parameters "bitwidth=1,preferRAMImpl=2,delaylength=6". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synInverter' instantiated from design 'FP_Multiplier' with
+        the parameters "1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synAbs' instantiated from design 'FP_Adder' with
+        the parameters "bitwidth=27". (HDL-193)
+Warning:  ./SynLib.v:1852: signed to unsigned assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synComparator' instantiated from design 'FP_Adder' with
+        the parameters "bitwidth=26,datatype="signed",opr="les"". (HDL-193)
+Warning:  ./SynLib.v:1904: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1905: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1906: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1907: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1908: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1909: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1916: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1917: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1918: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1919: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1920: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1921: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1904: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1905: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1907: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1908: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1909: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1916: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1917: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1919: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1920: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1921: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1896: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1898: unsigned to signed assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synBusAdapter' instantiated from design 'FP_Adder' with
+        the parameters "inp_width=9,out_width=9,datatype="signed",preshift=0". (HDL-193)
+Warning:  ./SynLib.v:151: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:175: signed to unsigned assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synBusAdapter' instantiated from design 'FP_Adder' with
+        the parameters "inp_width=24,out_width=24,datatype="unsign",preshift=1". (HDL-193)
+Warning:  ./SynLib.v:161: unsigned to signed assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synBusAdapter' instantiated from design 'FP_Adder' with
+        the parameters "inp_width=35,out_width=26,datatype="signed",preshift=0,infrac=33,outfrac=23,sat=0,round=2,saType="SS"". (HDL-193)
+Warning:  ./SynLib.v:151: signed to unsigned assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'FP_Adder' with
+        the parameters "bitwidth=33,preferRAMImpl=2,delaylength=3". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'FP_Adder' with
+        the parameters "bitwidth=34,preferRAMImpl=2,delaylength=1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'FP_Adder' with
+        the parameters "bitwidth=8,preferRAMImpl=2,delaylength=6". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'FP_Adder' with
+        the parameters "bitwidth=26,preferRAMImpl=2,delaylength=1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'FP_Adder' with
+        the parameters "bitwidth=24,preferRAMImpl=2,delaylength=2". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'FP_Adder' with
+        the parameters "bitwidth=9,preferRAMImpl=2,delaylength=1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'FP_Adder' with
+        the parameters "bitwidth=1,preferRAMImpl=2,delaylength=9". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synNegate' instantiated from design 'FP_Adder' with
+        the parameters "bitwidth=34". (HDL-193)
+Warning:  ./SynLib.v:1945: signed to unsigned assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synShifter' instantiated from design 'FP_Adder' with
+        the parameters "inpBitW=33,outBitW=33,shfBitW=9,datatype="unsign",opr="rightshift"". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synShifter' instantiated from design 'FP_Adder' with
+        the parameters "inpBitW=24,outBitW=24,shfBitW=6,datatype="unsign",opr="leftshift"". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synComparator' instantiated from design 'FP_Adder' with
+        the parameters "bitwidth=8,datatype="unsign",opr="geq"". (HDL-193)
+Warning:  ./SynLib.v:1904: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1905: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1906: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1907: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1908: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1909: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1916: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1917: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1918: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1919: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1920: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1921: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1904: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1905: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1906: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1907: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1908: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1916: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1917: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1918: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1919: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1920: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1896: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1898: unsigned to signed assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'FP_Adder_getmsbpos1'. (HDL-193)
+Statistics for MUX_OPs
+==================================================================
+|    block name/line      | Inputs | Outputs | # sel inputs | MB |
+==================================================================
+| FP_Adder_getmsbpos1/852 |   2    |    6    |      1       | N  |
+==================================================================
+Presto compilation completed successfully.
+Information: Building the design 'synBusSatRnd' instantiated from design 'FP_to_Fixed' with
+        the parameters "inp_width=9,out_width=8,infrac=0,outfrac=0,round=0,sat=0,datatype="SS"". (HDL-193)
+Warning:  ./SynLib.v:354: signed to unsigned assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnable' instantiated from design 'FP_to_Fixed' with
+        the parameters "bitwidth=20,preferRAMImpl=2,delaylength=1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synNegate' instantiated from design 'FP_to_Fixed' with
+        the parameters "bitwidth=21". (HDL-193)
+Warning:  ./SynLib.v:1945: signed to unsigned assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synShifterR' instantiated from design 'FP_to_Fixed' with
+        the parameters "inpBitW=44,outBitW=44,shfBitW=8,datatype="unsign",opr="leftshift"". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synBusSatRnd' instantiated from design 'synBusAdapter_inp_width33_out_width24_datatypeunsign_preshift0_infrac32_outfrac23_round2_sat1_saTypeUU' with
+        the parameters "inp_width=33,out_width=24,infrac=32,outfrac=23,round=2,sat=1,datatype=16'h5555". (HDL-193)
+Warning:  ./SynLib.v:423: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:430: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:438: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth5_delaylength2' with
+        the parameters "bitwidth=5,delaylength=2,preferRAMImpl=2". (HDL-193)
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+
+Inferred memory devices in process
+        in routine synDelayWithEnableGeneric_preferRAMImpl2_bitwidth5_delaylength2 line 898 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    delayline_reg    | Flip-flop |  10   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth7_delaylength2' with
+        the parameters "bitwidth=7,delaylength=2,preferRAMImpl=2". (HDL-193)
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+
+Inferred memory devices in process
+        in routine synDelayWithEnableGeneric_preferRAMImpl2_bitwidth7_delaylength2 line 898 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    delayline_reg    | Flip-flop |  14   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength2' with
+        the parameters "bitwidth=1,delaylength=2,preferRAMImpl=2". (HDL-193)
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+
+Inferred memory devices in process
+        in routine synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength2 line 898 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    delayline_reg    | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth33_delaylength2' with
+        the parameters "bitwidth=33,delaylength=2,preferRAMImpl=2". (HDL-193)
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+
+Inferred memory devices in process
+        in routine synDelayWithEnableGeneric_preferRAMImpl2_bitwidth33_delaylength2 line 898 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    delayline_reg    | Flip-flop |  66   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'synComparator' instantiated from design 'Fixed_to_FP_Leading_Zero_Counter1' with
+        the parameters "bitwidth=11,datatype="unsign",opr="equ"". (HDL-193)
+Warning:  ./SynLib.v:1904: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1905: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1906: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1907: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1908: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1909: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1916: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1917: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1918: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1919: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1920: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1921: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1905: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1906: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1907: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1908: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1909: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1917: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1918: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1919: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1920: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1921: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1896: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1898: unsigned to signed assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1'. (HDL-193)
+Statistics for MUX_OPs
+==========================================================================================
+|                block name/line                  | Inputs | Outputs | # sel inputs | MB |
+==========================================================================================
+| Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1/63 |   2    |    3    |      1       | N  |
+==========================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_Leading_Zero_Counter1_LZDP1'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_Leading_Zero_Counter1_LZDP2'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_Leading_Zero_Counter1_LZDP3'. (HDL-193)
+Statistics for MUX_OPs
+======================================================================================
+|              block name/line                | Inputs | Outputs | # sel inputs | MB |
+======================================================================================
+| Fixed_to_FP_Leading_Zero_Counter1_LZDP3/283 |   4    |    4    |      2       | N  |
+======================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_Leading_Zero_Counter1_LZDPodd'. (HDL-193)
+Statistics for MUX_OPs
+========================================================================================
+|               block name/line                 | Inputs | Outputs | # sel inputs | MB |
+========================================================================================
+| Fixed_to_FP_Leading_Zero_Counter1_LZDPodd/347 |   2    |    5    |      1       | N  |
+========================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2'. (HDL-193)
+Statistics for MUX_OPs
+===========================================================================================
+|                 block name/line                  | Inputs | Outputs | # sel inputs | MB |
+===========================================================================================
+| Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2/395 |   2    |    4    |      1       | N  |
+===========================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'synBusAdapter' instantiated from design 'Fixed_to_FP_Leading_Zero_Counter2' with
+        the parameters "inp_width=6,out_width=7,datatype="unsign",preshift=0". (HDL-193)
+Warning:  ./SynLib.v:161: unsigned to signed assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1'. (HDL-193)
+Statistics for MUX_OPs
+===========================================================================================
+|                 block name/line                  | Inputs | Outputs | # sel inputs | MB |
+===========================================================================================
+| Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1/455 |   2    |    4    |      1       | N  |
+===========================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_Leading_Zero_Counter2_LZDP3'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_Leading_Zero_Counter2_LZDP4'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_Leading_Zero_Counter2_LZDP5'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_Leading_Zero_Counter2_LZDP6'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_Leading_Zero_Counter2_LZDP7'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_Leading_Zero_Counter2_LZDP8'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_Leading_Zero_Counter2_LZDPodd'. (HDL-193)
+Statistics for MUX_OPs
+=========================================================================================
+|                block name/line                 | Inputs | Outputs | # sel inputs | MB |
+=========================================================================================
+| Fixed_to_FP_Leading_Zero_Counter2_LZDPodd/1109 |   2    |    6    |      1       | N  |
+=========================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1'. (HDL-193)
+Statistics for MUX_OPs
+============================================================================================
+|                 block name/line                   | Inputs | Outputs | # sel inputs | MB |
+============================================================================================
+| Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1/1157 |   2    |    5    |      1       | N  |
+============================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'synBusSatRnd' instantiated from design 'synBusAdapter_inp_width49_out_width24_datatypeunsign_preshiftn1_infrac48_outfrac23_round2_sat1_saTypeUU' with
+        the parameters "inp_width=50,out_width=24,infrac=48,outfrac=23,round=2,sat=1,datatype=16'h5555". (HDL-193)
+Warning:  ./SynLib.v:423: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:430: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:438: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Presto compilation completed successfully.
+Information: Building the design 'synBusSatRnd' instantiated from design 'synBusAdapter_inp_width10_out_width8_datatypesigned_preshift0_infrac0_outfrac0_round0_sat1_saTypeSU' with
+        the parameters "inp_width=10,out_width=8,infrac=0,outfrac=0,round=0,sat=1,datatype=16'h5355". (HDL-193)
+Warning:  ./SynLib.v:354: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:423: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:436: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:438: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Presto compilation completed successfully.
+Information: Building the design 'singleDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth24_delaylength1' with
+        the parameters "bitwidth=24". (HDL-193)
+
+Inferred memory devices in process
+        in routine singleDelayWithEnableGeneric_bitwidth24 line 607 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     outreg_reg      | Flip-flop |  24   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'singleDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength1' with
+        the parameters "bitwidth=1". (HDL-193)
+
+Inferred memory devices in process
+        in routine singleDelayWithEnableGeneric_bitwidth1 line 607 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     outreg_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'singleDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth10_delaylength1' with
+        the parameters "bitwidth=10". (HDL-193)
+
+Inferred memory devices in process
+        in routine singleDelayWithEnableGeneric_bitwidth10 line 607 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     outreg_reg      | Flip-flop |  10   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'singleDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth23_delaylength1' with
+        the parameters "bitwidth=23". (HDL-193)
+
+Inferred memory devices in process
+        in routine singleDelayWithEnableGeneric_bitwidth23 line 607 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     outreg_reg      | Flip-flop |  23   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'singleDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' with
+        the parameters "bitwidth=8". (HDL-193)
+
+Inferred memory devices in process
+        in routine singleDelayWithEnableGeneric_bitwidth8 line 607 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     outreg_reg      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth48_delaylength3' with
+        the parameters "bitwidth=48,delaylength=3,preferRAMImpl=2". (HDL-193)
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+
+Inferred memory devices in process
+        in routine synDelayWithEnableGeneric_preferRAMImpl2_bitwidth48_delaylength3 line 898 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    delayline_reg    | Flip-flop |  144  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'singleDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth48_delaylength1' with
+        the parameters "bitwidth=48". (HDL-193)
+
+Inferred memory devices in process
+        in routine singleDelayWithEnableGeneric_bitwidth48 line 607 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     outreg_reg      | Flip-flop |  48   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth9_delaylength3' with
+        the parameters "bitwidth=9,delaylength=3,preferRAMImpl=2". (HDL-193)
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+
+Inferred memory devices in process
+        in routine synDelayWithEnableGeneric_preferRAMImpl2_bitwidth9_delaylength3 line 898 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    delayline_reg    | Flip-flop |  27   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength3' with
+        the parameters "bitwidth=1,delaylength=3,preferRAMImpl=2". (HDL-193)
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+
+Inferred memory devices in process
+        in routine synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength3 line 898 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    delayline_reg    | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength6' with
+        the parameters "bitwidth=1,delaylength=6,preferRAMImpl=2". (HDL-193)
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+
+Inferred memory devices in process
+        in routine synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength6 line 898 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    delayline_reg    | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'synBusSatRnd' instantiated from design 'synBusAdapter_inp_width35_out_width26_datatypesigned_preshift0_infrac33_outfrac23_round2_sat0_saTypeSS' with
+        the parameters "inp_width=35,out_width=26,infrac=33,outfrac=23,round=2,sat=0,datatype=16'h5353". (HDL-193)
+Warning:  ./SynLib.v:354: signed to unsigned assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth33_delaylength3' with
+        the parameters "bitwidth=33,delaylength=3,preferRAMImpl=2". (HDL-193)
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+
+Inferred memory devices in process
+        in routine synDelayWithEnableGeneric_preferRAMImpl2_bitwidth33_delaylength3 line 898 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    delayline_reg    | Flip-flop |  99   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'singleDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth34_delaylength1' with
+        the parameters "bitwidth=34". (HDL-193)
+
+Inferred memory devices in process
+        in routine singleDelayWithEnableGeneric_bitwidth34 line 607 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     outreg_reg      | Flip-flop |  34   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength6' with
+        the parameters "bitwidth=8,delaylength=6,preferRAMImpl=2". (HDL-193)
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+
+Inferred memory devices in process
+        in routine synDelayWithEnableGeneric_preferRAMImpl2_bitwidth8_delaylength6 line 898 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    delayline_reg    | Flip-flop |  48   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'singleDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth26_delaylength1' with
+        the parameters "bitwidth=26". (HDL-193)
+
+Inferred memory devices in process
+        in routine singleDelayWithEnableGeneric_bitwidth26 line 607 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     outreg_reg      | Flip-flop |  26   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth24_delaylength2' with
+        the parameters "bitwidth=24,delaylength=2,preferRAMImpl=2". (HDL-193)
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+
+Inferred memory devices in process
+        in routine synDelayWithEnableGeneric_preferRAMImpl2_bitwidth24_delaylength2 line 898 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    delayline_reg    | Flip-flop |  48   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'singleDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth9_delaylength1' with
+        the parameters "bitwidth=9". (HDL-193)
+
+Inferred memory devices in process
+        in routine singleDelayWithEnableGeneric_bitwidth9 line 607 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     outreg_reg      | Flip-flop |   9   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'synDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength9' with
+        the parameters "bitwidth=1,delaylength=9,preferRAMImpl=2". (HDL-193)
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+
+Inferred memory devices in process
+        in routine synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength9 line 898 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    delayline_reg    | Flip-flop |   9   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'synBusAdapter' instantiated from design 'FP_Adder_getmsbpos1' with
+        the parameters "inp_width=5,out_width=6,datatype="unsign",preshift=0". (HDL-193)
+Warning:  ./SynLib.v:161: unsigned to signed assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'synComparator' instantiated from design 'FP_Adder_getmsbpos1' with
+        the parameters "bitwidth=24,datatype="unsign",opr="equ"". (HDL-193)
+Warning:  ./SynLib.v:1904: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1905: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1906: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1907: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1908: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1909: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1916: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1917: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1918: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1919: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1920: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1921: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1905: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1906: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1907: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1908: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1909: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1917: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1918: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1919: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1920: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1921: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1896: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1898: unsigned to signed assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'FP_Adder_getmsbpos1_LZDPstg2_1'. (HDL-193)
+Statistics for MUX_OPs
+============================================================================
+|         block name/line           | Inputs | Outputs | # sel inputs | MB |
+============================================================================
+| FP_Adder_getmsbpos1_LZDPstg2_1/63 |   2    |    4    |      1       | N  |
+============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'FP_Adder_getmsbpos1_LZDPstg1_2'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FP_Adder_getmsbpos1_LZDPstg1_1'. (HDL-193)
+Statistics for MUX_OPs
+=============================================================================
+|          block name/line           | Inputs | Outputs | # sel inputs | MB |
+=============================================================================
+| FP_Adder_getmsbpos1_LZDPstg1_1/176 |   2    |    3    |      1       | N  |
+=============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'FP_Adder_getmsbpos1_LZDP1'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FP_Adder_getmsbpos1_LZDP2'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FP_Adder_getmsbpos1_LZDP3'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FP_Adder_getmsbpos1_LZDP4'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FP_Adder_getmsbpos1_LZDP5'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FP_Adder_getmsbpos1_LZDP6'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FP_Adder_getmsbpos1_LZDPstg2_2'. (HDL-193)
+Statistics for MUX_OPs
+=============================================================================
+|          block name/line           | Inputs | Outputs | # sel inputs | MB |
+=============================================================================
+| FP_Adder_getmsbpos1_LZDPstg2_2/719 |   2    |    5    |      1       | N  |
+=============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'FP_Adder_getmsbpos1_LZDPstg1_3'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'singleDelayWithEnableGeneric' instantiated from design 'synDelayWithEnable_preferRAMImpl2_bitwidth20_delaylength1' with
+        the parameters "bitwidth=20". (HDL-193)
+
+Inferred memory devices in process
+        in routine singleDelayWithEnableGeneric_bitwidth20 line 607 in file
+                './SynLib.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     outreg_reg      | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'synComparator' instantiated from design 'Fixed_to_FP_Leading_Zero_Counter1_LZDP1' with
+        the parameters "bitwidth=4,datatype="unsign",opr="neq"". (HDL-193)
+Warning:  ./SynLib.v:1904: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1905: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1906: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1907: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1908: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1909: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1916: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1917: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1918: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1919: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1920: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1921: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1904: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1906: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1907: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1908: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1909: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1916: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1918: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1919: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1920: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1921: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ./SynLib.v:1896: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./SynLib.v:1898: unsigned to signed assignment occurs. (VER-318)
+Presto compilation completed successfully.
+1
+current_design $DESIGN_NAME
+Current design is 'NLC_1ch'.
+{NLC_1ch}
+link
+
+  Linking design 'NLC_1ch'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (141 designs)             /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partB_log/NLC_1ch.db, etc
+  saed32rvt_ff1p16vn40c (library) /w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ff1p16vn40c.db
+  saed32rvt_ss0p95v125c (library) /w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db
+  dw_foundation.sldb (library) /w/apps3/Synopsys/Design_Complier/vG-2012.06-SP1/libraries/syn/dw_foundation.sldb
+
+1
+set_operating_conditions -min ff1p16vn40c -max ss0p95v125c
+Using operating conditions 'ss0p95v125c' found in library 'saed32rvt_ss0p95v125c'.
+Using operating conditions 'ff1p16vn40c' found in library 'saed32rvt_ff1p16vn40c'.
+1
+# Describe the clock waveform & setup operating conditions
+set Tclk 6.7
+6.7
+set TCU  0.1
+0.1
+set IN_DEL 0.6
+0.6
+set IN_DEL_MIN 0.3
+0.3
+set OUT_DEL 0.6
+0.6
+set OUT_DEL_MIN 0.3
+0.3
+set ALL_IN_BUT_CLK [remove_from_collection [all_inputs] "clk"]
+{reset srdyi ch31_x_adc[20] ch31_x_adc[19] ch31_x_adc[18] ch31_x_adc[17] ch31_x_adc[16] ch31_x_adc[15] ch31_x_adc[14] ch31_x_adc[13] ch31_x_adc[12] ch31_x_adc[11] ch31_x_adc[10] ch31_x_adc[9] ch31_x_adc[8] ch31_x_adc[7] ch31_x_adc[6] ch31_x_adc[5] ch31_x_adc[4] ch31_x_adc[3] ch31_x_adc[2] ch31_x_adc[1] ch31_x_adc[0] ch31_section_limit[19] ch31_section_limit[18] ch31_section_limit[17] ch31_section_limit[16] ch31_section_limit[15] ch31_section_limit[14] ch31_section_limit[13] ch31_section_limit[12] ch31_section_limit[11] ch31_section_limit[10] ch31_section_limit[9] ch31_section_limit[8] ch31_section_limit[7] ch31_section_limit[6] ch31_section_limit[5] ch31_section_limit[4] ch31_section_limit[3] ch31_section_limit[2] ch31_section_limit[1] ch31_section_limit[0] ch31_recip_stdev_4[31] ch31_recip_stdev_4[30] ch31_recip_stdev_4[29] ch31_recip_stdev_4[28] ch31_recip_stdev_4[27] ch31_recip_stdev_4[26] ch31_recip_stdev_4[25] ch31_recip_stdev_4[24] ch31_recip_stdev_4[23] ch31_recip_stdev_4[22] ch31_recip_stdev_4[21] ch31_recip_stdev_4[20] ch31_recip_stdev_4[19] ch31_recip_stdev_4[18] ch31_recip_stdev_4[17] ch31_recip_stdev_4[16] ch31_recip_stdev_4[15] ch31_recip_stdev_4[14] ch31_recip_stdev_4[13] ch31_recip_stdev_4[12] ch31_recip_stdev_4[11] ch31_recip_stdev_4[10] ch31_recip_stdev_4[9] ch31_recip_stdev_4[8] ch31_recip_stdev_4[7] ch31_recip_stdev_4[6] ch31_recip_stdev_4[5] ch31_recip_stdev_4[4] ch31_recip_stdev_4[3] ch31_recip_stdev_4[2] ch31_recip_stdev_4[1] ch31_recip_stdev_4[0] ch31_recip_stdev_3[31] ch31_recip_stdev_3[30] ch31_recip_stdev_3[29] ch31_recip_stdev_3[28] ch31_recip_stdev_3[27] ch31_recip_stdev_3[26] ch31_recip_stdev_3[25] ch31_recip_stdev_3[24] ch31_recip_stdev_3[23] ch31_recip_stdev_3[22] ch31_recip_stdev_3[21] ch31_recip_stdev_3[20] ch31_recip_stdev_3[19] ch31_recip_stdev_3[18] ch31_recip_stdev_3[17] ch31_recip_stdev_3[16] ch31_recip_stdev_3[15] ch31_recip_stdev_3[14] ch31_recip_stdev_3[13] ch31_recip_stdev_3[12] ch31_recip_stdev_3[11] ch31_recip_stdev_3[10] ch31_recip_stdev_3[9] ch31_recip_stdev_3[8] ch31_recip_stdev_3[7] ...}
+create_clock -name "clk" -period $Tclk [get_ports "clk"]
+1
+set_fix_hold clk
+1
+set_dont_touch_network [get_clocks "clk"]
+1
+set_clock_uncertainty $TCU [get_clocks "clk"]
+1
+set_input_delay $IN_DEL -clock "clk" $ALL_IN_BUT_CLK
+1
+set_input_delay -min $IN_DEL_MIN -clock "clk" $ALL_IN_BUT_CLK
+1
+set_output_delay $OUT_DEL -clock "clk" [all_outputs]
+1
+set_output_delay -min $OUT_DEL_MIN -clock "clk" [all_outputs]
+1
+set_max_area 0.0
+1
+ungroup -flatten -all
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'enable_reg_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synShifterR_inpBitW44_outBitW44_shfBitW8_datatypeunsign_oprleftshift' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synNegate_bitwidth21' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth20' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth20_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth20' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth20_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth20' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth20_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth24' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth24_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width24_out_width24_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusSatRnd_inp_width9_out_width8_infrac0_outfrac0_round0_sat0_datatypeSS' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_to_Fixed' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'x2_i' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'smc_float_to_fp' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDPstg1_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDPstg2_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDP6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth4_datatypeunsign_oprneq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDP5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth4_datatypeunsign_oprneq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDP4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth4_datatypeunsign_oprneq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDP3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth4_datatypeunsign_oprneq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDP2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth4_datatypeunsign_oprneq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDP1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDPstg1_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDPstg1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDPstg2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth24_datatypeunsign_oprequ' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width5_out_width6_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth8_datatypeunsign_oprgeq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synShifter_inpBitW24_outBitW24_shfBitW6_datatypeunsign_oprleftshift' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synShifter_inpBitW33_outBitW33_shfBitW9_datatypeunsign_oprrightshift' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synShifter_inpBitW33_outBitW33_shfBitW9_datatypeunsign_oprrightshift' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synNegate_bitwidth34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synNegate_bitwidth34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth26' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth26_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth9_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth9_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth24_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth24_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth24_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth24_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth23' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth23_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth26' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth26_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth26' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth26_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth8_delaylength6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth34_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth34_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth33_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth33_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth33_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth33_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width24_out_width24_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusSatRnd_35_26_33_23_2_0_5353' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width35_out_width26_datatypesigned_preshift0_infrac33_outfrac23_round2_sat0_saTypeSS' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width24_out_width24_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width24_out_width24_datatypeunsign_preshift1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width24_out_width24_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width24_out_width24_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width9_out_width9_datatypesigned_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width9_out_width9_datatypesigned_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusSatRnd_10_8_0_0_0_1_5355' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width10_out_width8_datatypesigned_preshift0_infrac0_outfrac0_round0_sat1_saTypeSU' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth26_datatypesigned_oprles' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synAbs_bitwidth27' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'z_o' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'x_i' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'x_i' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'smc_float_adder' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synInverter_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth9_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth9_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth48' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth48_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth48_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth48_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth23' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth23_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth10' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth10_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth24' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth24_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth24' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth24_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width24_out_width24_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusSatRnd_10_8_0_0_0_1_5355' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width10_out_width8_datatypesigned_preshift0_infrac0_outfrac0_round0_sat1_saTypeSU' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusSatRnd_50_24_48_23_2_1_5555' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width49_out_width24_datatypeunsign_preshiftn1_infrac48_outfrac23_round2_sat1_saTypeUU' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width48_out_width49_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width24_out_width24_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusSatRnd_inp_width9_out_width8_infrac0_outfrac0_round0_sat1_datatypeUU' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Multiplier' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'z1_o' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'x1_i' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'x1_i' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'smc_float_multiplier' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'hornerLoop' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z21' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mux' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'control2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDPstg1_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDPstg2_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDP6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth4_datatypeunsign_oprneq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDP5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth4_datatypeunsign_oprneq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDP4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth4_datatypeunsign_oprneq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDP3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth4_datatypeunsign_oprneq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDP2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth4_datatypeunsign_oprneq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDP1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDPstg1_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDPstg1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1_LZDPstg2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth24_datatypeunsign_oprequ' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width5_out_width6_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder_getmsbpos1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth8_datatypeunsign_oprgeq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synShifter_inpBitW24_outBitW24_shfBitW6_datatypeunsign_oprleftshift' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synShifter_inpBitW33_outBitW33_shfBitW9_datatypeunsign_oprrightshift' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synShifter_inpBitW33_outBitW33_shfBitW9_datatypeunsign_oprrightshift' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synNegate_bitwidth34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synNegate_bitwidth34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth26' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth26_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth9_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth9_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth24_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth24_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth24_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth24_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth23' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth23_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth26' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth26_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth26' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth26_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth8_delaylength6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth34_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth34_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth33_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth33_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth33_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth33_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width24_out_width24_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusSatRnd_35_26_33_23_2_0_5353' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width35_out_width26_datatypesigned_preshift0_infrac33_outfrac23_round2_sat0_saTypeSS' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width24_out_width24_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width24_out_width24_datatypeunsign_preshift1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width24_out_width24_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width24_out_width24_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width9_out_width9_datatypesigned_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width9_out_width9_datatypesigned_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusSatRnd_10_8_0_0_0_1_5355' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width10_out_width8_datatypesigned_preshift0_infrac0_outfrac0_round0_sat1_saTypeSU' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth26_datatypesigned_oprles' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synAbs_bitwidth27' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Adder' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'z_o' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'x_i' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'x_i' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'smc_float_adder' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synInverter_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth9_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth9_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth48' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth48_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth48_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth48_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth23' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth23_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth10' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth10_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth24' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth24_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth24' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth24_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width24_out_width24_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusSatRnd_10_8_0_0_0_1_5355' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width10_out_width8_datatypesigned_preshift0_infrac0_outfrac0_round0_sat1_saTypeSU' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusSatRnd_50_24_48_23_2_1_5555' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width49_out_width24_datatypeunsign_preshiftn1_infrac48_outfrac23_round2_sat1_saTypeUU' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width48_out_width49_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width24_out_width24_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusSatRnd_inp_width9_out_width8_infrac0_outfrac0_round0_sat1_datatypeUU' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Multiplier' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'z1_o' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'x1_i' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'x1_i' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'smc_float_multiplier' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synInverter_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth9_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth9_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth48' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth48_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth48_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth48_delaylength3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth8_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth23' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth23_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth10' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth10_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth24' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth24_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'singleDelayWithEnableGeneric_bitwidth24' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth24_delaylength1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width24_out_width24_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusSatRnd_10_8_0_0_0_1_5355' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width10_out_width8_datatypesigned_preshift0_infrac0_outfrac0_round0_sat1_saTypeSU' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusSatRnd_50_24_48_23_2_1_5555' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width49_out_width24_datatypeunsign_preshiftn1_infrac48_outfrac23_round2_sat1_saTypeUU' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width48_out_width49_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width24_out_width24_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusSatRnd_inp_width9_out_width8_infrac0_outfrac0_round0_sat1_datatypeUU' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'FP_Multiplier' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'z1_o' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'x1_i' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'x1_i' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'smc_float_multiplier' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width21_out_width32_datatypesigned_preshiftn11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_log2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter2_LZDPodd' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter2_LZDP8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth4_datatypeunsign_oprneq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter2_LZDP7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth4_datatypeunsign_oprneq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter2_LZDP6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth4_datatypeunsign_oprneq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter2_LZDP5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth4_datatypeunsign_oprneq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter2_LZDP4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth4_datatypeunsign_oprneq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter2_LZDP3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth4_datatypeunsign_oprneq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter1_LZDP2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth4_datatypeunsign_oprneq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter1_LZDP1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth33_datatypeunsign_oprequ' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width6_out_width7_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter1_LZDPodd' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter1_LZDP3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth4_datatypeunsign_oprneq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter1_LZDP2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth4_datatypeunsign_oprneq' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter1_LZDP1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth11_datatypeunsign_oprequ' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP_Leading_Zero_Counter1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth22_datatypeunsign_oprequ' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth33_datatypeunsign_oprequ' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synShifter_inpBitW33_outBitW33_shfBitW7_datatypeunsign_oprleftshift' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synNegate_bitwidth6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth5_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth5_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth33_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth33_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth1_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth1_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth7_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth7_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnableGeneric_preferRAMImpl2_bitwidth5_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synDelayWithEnable_preferRAMImpl2_bitwidth5_delaylength2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width33_out_width33_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusSatRnd_33_24_32_23_2_1_5555' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width33_out_width24_datatypeunsign_preshift0_infrac32_outfrac23_round2_sat1_saTypeUU' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width9_out_width8_datatypesigned_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synBusAdapter_inp_width32_out_width33_datatypeunsign_preshift0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synComparator_bitwidth32_datatypesigned_oprles' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'synAbs_bitwidth33' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'Fixed_to_FP' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'y_o' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'fp_to_smc_float' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'centerScale3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'delay_Z1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'comparator' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'upper_mux_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'x_adc_valid' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating graph... (UID-83)
+Warning: Design 'NLC_1ch' contains 8 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+1
+uniquify
+1
+compile -map_effort high -area_effort high
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | G-2012.06-DWBB_201206.1 |     *     |
+| Licensed DW Building Blocks        | G-2012.06-DWBB_201206.1 |     *     |
+============================================================================
+
+
+Information: There are 61 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Warning: Operating condition ss0p95v125c set on design NLC_1ch has different process,
+voltage and temperatures parameters than the parameters at which target library 
+saed32rvt_ff1p16vn40c is characterized. Delays may be inaccurate as a result. (OPT-998)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'NLC_1ch'
+Information: The register 'theHornerLoop/smc2ieee/myFP_to_Fixed/Delay6_block/GenBlock.theDelay/delayline_reg[0][0]' will be removed. (OPT-1207)
+Information: The register 'theHornerLoop/smc2ieee/myFP_to_Fixed/Delay6_block/GenBlock.theDelay/delayline_reg[1][0]' will be removed. (OPT-1207)
+Information: The register 'theHornerLoop/smc2ieee/myFP_to_Fixed/Delay6_block/GenBlock.theDelay/delayline_reg[2][0]' will be removed. (OPT-1207)
+Information: The register 'theHornerLoop/theAdder/myFP_Adder/Delaysrdy_block/GenBlock.theDelay/delayline_reg[0][0]' will be removed. (OPT-1207)
+Information: The register 'theHornerLoop/theAdder/myFP_Adder/Delaysrdy_block/GenBlock.theDelay/delayline_reg[1][0]' will be removed. (OPT-1207)
+Information: The register 'theHornerLoop/theAdder/myFP_Adder/Delaysrdy_block/GenBlock.theDelay/delayline_reg[2][0]' will be removed. (OPT-1207)
+Information: The register 'theHornerLoop/theAdder/myFP_Adder/Delaysrdy_block/GenBlock.theDelay/delayline_reg[3][0]' will be removed. (OPT-1207)
+Information: The register 'theHornerLoop/theAdder/myFP_Adder/Delaysrdy_block/GenBlock.theDelay/delayline_reg[4][0]' will be removed. (OPT-1207)
+Information: The register 'theHornerLoop/theAdder/myFP_Adder/Delaysrdy_block/GenBlock.theDelay/delayline_reg[5][0]' will be removed. (OPT-1207)
+Information: The register 'theHornerLoop/theAdder/myFP_Adder/Delaysrdy_block/GenBlock.theDelay/delayline_reg[6][0]' will be removed. (OPT-1207)
+Information: The register 'theHornerLoop/theAdder/myFP_Adder/Delaysrdy_block/GenBlock.theDelay/delayline_reg[7][0]' will be removed. (OPT-1207)
+Information: The register 'theHornerLoop/theAdder/myFP_Adder/Delaysrdy_block/GenBlock.theDelay/delayline_reg[8][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theAdder/myFP_Adder/Delaysrdy_block/GenBlock.theDelay/delayline_reg[0][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theAdder/myFP_Adder/Delaysrdy_block/GenBlock.theDelay/delayline_reg[1][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theAdder/myFP_Adder/Delaysrdy_block/GenBlock.theDelay/delayline_reg[2][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theAdder/myFP_Adder/Delaysrdy_block/GenBlock.theDelay/delayline_reg[3][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theAdder/myFP_Adder/Delaysrdy_block/GenBlock.theDelay/delayline_reg[4][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theAdder/myFP_Adder/Delaysrdy_block/GenBlock.theDelay/delayline_reg[5][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theAdder/myFP_Adder/Delaysrdy_block/GenBlock.theDelay/delayline_reg[6][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theAdder/myFP_Adder/Delaysrdy_block/GenBlock.theDelay/delayline_reg[7][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theAdder/myFP_Adder/Delaysrdy_block/GenBlock.theDelay/delayline_reg[8][0]' will be removed. (OPT-1207)
+Information: The register 'theHornerLoop/theAdder/myFP_Adder/Delay17_block/GenBlock.theDelay/outreg_reg[25]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theAdder/myFP_Adder/Delay17_block/GenBlock.theDelay/outreg_reg[25]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay6_block/GenBlock.theDelay/delayline_reg[0][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay6_block/GenBlock.theDelay/delayline_reg[1][0]' will be removed. (OPT-1207)
+Information: The register 'theHornerLoop/theMult/myFP_Multiplier/Delaysrdy_block/GenBlock.theDelay/delayline_reg[0][0]' will be removed. (OPT-1207)
+Information: The register 'theHornerLoop/theMult/myFP_Multiplier/Delaysrdy_block/GenBlock.theDelay/delayline_reg[1][0]' will be removed. (OPT-1207)
+Information: The register 'theHornerLoop/theMult/myFP_Multiplier/Delaysrdy_block/GenBlock.theDelay/delayline_reg[2][0]' will be removed. (OPT-1207)
+Information: The register 'theHornerLoop/theMult/myFP_Multiplier/Delaysrdy_block/GenBlock.theDelay/delayline_reg[3][0]' will be removed. (OPT-1207)
+Information: The register 'theHornerLoop/theMult/myFP_Multiplier/Delaysrdy_block/GenBlock.theDelay/delayline_reg[4][0]' will be removed. (OPT-1207)
+Information: The register 'theHornerLoop/theMult/myFP_Multiplier/Delaysrdy_block/GenBlock.theDelay/delayline_reg[5][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theMult2/myFP_Multiplier/Delaysrdy_block/GenBlock.theDelay/delayline_reg[0][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theMult2/myFP_Multiplier/Delaysrdy_block/GenBlock.theDelay/delayline_reg[1][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theMult2/myFP_Multiplier/Delaysrdy_block/GenBlock.theDelay/delayline_reg[2][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theMult2/myFP_Multiplier/Delaysrdy_block/GenBlock.theDelay/delayline_reg[3][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theMult2/myFP_Multiplier/Delaysrdy_block/GenBlock.theDelay/delayline_reg[4][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theMult2/myFP_Multiplier/Delaysrdy_block/GenBlock.theDelay/delayline_reg[5][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theMult1/myFP_Multiplier/Delaysrdy_block/GenBlock.theDelay/delayline_reg[0][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theMult1/myFP_Multiplier/Delaysrdy_block/GenBlock.theDelay/delayline_reg[1][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theMult1/myFP_Multiplier/Delaysrdy_block/GenBlock.theDelay/delayline_reg[2][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theMult1/myFP_Multiplier/Delaysrdy_block/GenBlock.theDelay/delayline_reg[3][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theMult1/myFP_Multiplier/Delaysrdy_block/GenBlock.theDelay/delayline_reg[4][0]' will be removed. (OPT-1207)
+Information: The register 'theCenterScale3/theMult1/myFP_Multiplier/Delaysrdy_block/GenBlock.theDelay/delayline_reg[5][0]' will be removed. (OPT-1207)
+Information: Added key list 'DesignWare' to design 'NLC_1ch'. (DDB-72)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay1_block/GenBlock.theDelay/delayline_reg[0][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay1_block/GenBlock.theDelay/delayline_reg[1][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[0][32]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[1][32]' is a constant and will be removed. (OPT-1206)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Mapping 'NLC_1ch_DW_leftsh_0'
+  Processing 'NLC_1ch_DW01_sub_1'
+  Processing 'NLC_1ch_DW01_sub_2'
+  Mapping 'NLC_1ch_DW_cmp_0'
+  Mapping 'NLC_1ch_DW_cmp_1'
+  Mapping 'NLC_1ch_DW_leftsh_1'
+  Mapping 'NLC_1ch_DW_leftsh_2'
+  Mapping 'NLC_1ch_DW_rightsh_1'
+  Mapping 'NLC_1ch_DW_rightsh_2'
+  Mapping 'NLC_1ch_DW_rightsh_3'
+  Mapping 'NLC_1ch_DW_rightsh_4'
+  Processing 'NLC_1ch_DW01_sub_3'
+  Processing 'NLC_1ch_DW01_sub_4'
+  Processing 'NLC_1ch_DW01_sub_5'
+  Processing 'NLC_1ch_DW01_sub_6'
+  Processing 'NLC_1ch_DW01_add_0'
+  Processing 'NLC_1ch_DW01_add_1'
+  Processing 'NLC_1ch_DW01_add_2'
+  Processing 'NLC_1ch_DW01_add_3'
+  Processing 'NLC_1ch_DW01_sub_7'
+  Processing 'NLC_1ch_DW01_sub_8'
+  Processing 'NLC_1ch_DW01_add_4'
+  Processing 'NLC_1ch_DW01_sub_9'
+  Processing 'NLC_1ch_DW01_sub_10'
+  Processing 'NLC_1ch_DW01_inc_0'
+  Processing 'NLC_1ch_DW01_add_5'
+  Processing 'NLC_1ch_DW01_sub_11'
+  Processing 'NLC_1ch_DW01_sub_12'
+  Processing 'NLC_1ch_DW01_inc_1'
+  Processing 'NLC_1ch_DW01_add_6'
+  Processing 'NLC_1ch_DW01_add_7'
+  Processing 'NLC_1ch_DW01_add_8'
+  Processing 'NLC_1ch_DW01_add_9'
+  Processing 'NLC_1ch_DW01_add_10'
+  Processing 'NLC_1ch_DW01_add_11'
+  Processing 'NLC_1ch_DW01_add_12'
+  Processing 'NLC_1ch_DW01_add_13'
+  Processing 'NLC_1ch_DW01_sub_13'
+  Processing 'NLC_1ch_DW01_add_14'
+  Processing 'NLC_1ch_DW01_add_15'
+  Processing 'NLC_1ch_DW01_sub_14'
+  Processing 'NLC_1ch_DW01_add_16'
+  Processing 'NLC_1ch_DW01_add_17'
+  Processing 'NLC_1ch_DW01_sub_15'
+  Mapping 'NLC_1ch_DW_cmp_6'
+  Mapping 'NLC_1ch_DW_cmp_7'
+  Mapping 'NLC_1ch_DW_cmp_8'
+  Mapping 'NLC_1ch_DW_cmp_9'
+  Processing 'NLC_1ch_DW01_inc_2'
+  Processing 'NLC_1ch_DW01_inc_3'
+  Processing 'NLC_1ch_DW01_add_18'
+  Processing 'NLC_1ch_DW01_add_19'
+  Mapping 'NLC_1ch_DW_leftsh_3'
+  Processing 'NLC_1ch_DW01_add_20'
+  Processing 'NLC_1ch_DW01_sub_16'
+  Processing 'NLC_1ch_DW01_inc_4'
+  Mapping 'NLC_1ch_DW_cmp_11'
+  Processing 'NLC_1ch_DW01_sub_17'
+  Processing 'NLC_1ch_DW01_cmp2_0'
+  Processing 'NLC_1ch_DW01_inc_5'
+  Mapping 'NLC_1ch_DW_mult_uns_0'
+  Mapping 'NLC_1ch_DW_mult_uns_1'
+  Mapping 'NLC_1ch_DW_mult_uns_2'
+  Processing 'NLC_1ch_DW01_inc_6'
+  Processing 'NLC_1ch_DW01_sub_18'
+  Processing 'NLC_1ch_DW01_inc_7'
+  Processing 'NLC_1ch_DW01_sub_19'
+  Processing 'NLC_1ch_DW01_add_21'
+  Processing 'NLC_1ch_DW01_add_22'
+  Processing 'NLC_1ch_DW01_add_23'
+  Processing 'NLC_1ch_DW01_add_24'
+  Processing 'NLC_1ch_DW01_add_25'
+  Processing 'NLC_1ch_DW01_add_26'
+  Processing 'NLC_1ch_DW01_add_27'
+  Processing 'NLC_1ch_DW01_add_28'
+  Processing 'NLC_1ch_DW01_add_29'
+  Processing 'NLC_1ch_DW01_add_30'
+  Processing 'DW01_add_width4'
+  Processing 'DW01_add_width3'
+  Processing 'DW01_add_width2'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:08:09  377400.0      0.00       0.0   44797.9                                0.00
+    0:08:09  377400.0      0.00       0.0   44797.9                                0.00
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[0][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[1][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[0][9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[1][9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[0][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[1][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[0][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[1][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[0][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[1][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[0][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[1][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[0][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[1][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[0][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[1][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[0][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[1][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[0][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[1][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[0][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay3_block/GenBlock.theDelay/delayline_reg[1][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay5_block/GenBlock.theDelay/delayline_reg[0][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay5_block/GenBlock.theDelay/delayline_reg[1][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay5_block/GenBlock.theDelay/delayline_reg[0][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'theCenterScale3/ieee2smc/myFixed_to_FP/Delay5_block/GenBlock.theDelay/delayline_reg[1][2]' is a constant and will be removed. (OPT-1206)
+    0:09:05  293040.9      0.00       0.0    2940.8                                0.00
+    0:09:06  293040.9      0.00       0.0    2940.8                                0.00
+    0:09:06  293040.9      0.00       0.0    2940.8                                0.00
+    0:09:06  293040.9      0.00       0.0    2940.8                                0.00
+    0:09:06  293040.9      0.00       0.0    2940.8                                0.00
+    0:09:08  293040.9      0.00       0.0    2940.8                                0.00
+    0:09:19  275449.9      0.00       0.0     802.9                                0.00
+    0:09:21  275444.0      0.00       0.0     800.5                                0.00
+    0:09:27  275444.0      0.00       0.0     799.8                                0.00
+    0:09:29  275444.0      0.00       0.0     799.8                                0.00
+    0:09:30  275444.0      0.00       0.0     799.8                                0.00
+    0:09:31  275444.0      0.00       0.0     799.8                                0.00
+    0:09:31  275444.0      0.00       0.0     799.8                                0.00
+    0:09:32  275377.2      0.00       0.0     570.2                                0.00
+    0:09:34  275321.3      0.00       0.0     383.9                                0.00
+    0:09:35  275283.1      0.00       0.0     267.6                                0.00
+    0:09:36  275242.9      0.00       0.0     155.2                                0.00
+    0:09:37  275243.2      0.00       0.0     149.0                                0.00
+    0:09:45  275242.9      0.00       0.0     148.2                                0.00
+    0:09:53  275242.2      0.00       0.0     147.4                                0.00
+    0:09:54  275242.2      0.00       0.0     147.4                                0.00
+    0:09:54  275242.2      0.00       0.0     147.4                                0.00
+    0:09:54  275242.2      0.00       0.0     147.4                                0.00
+    0:09:54  275242.2      0.00       0.0     147.4                                0.00
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:09:54  275242.2      0.00       0.0     147.4                                0.00
+    0:09:54  275242.2      0.00       0.0     147.4                                0.00
+    0:09:59  275145.0      0.00       0.0     147.4                                0.00
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:10:07  275145.0      0.00       0.0     147.4                                0.00
+    0:10:11  275342.3      0.00       0.0      69.5 net156894                      0.00
+    0:10:15  275560.2      0.00       0.0       0.0                                0.00
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:10:15  275560.2      0.00       0.0       0.0                                0.00
+    0:10:15  275560.2      0.00       0.0       0.0                                0.00
+    0:10:16  275560.2      0.00       0.0       0.0                                0.00
+    0:10:26  275349.4      0.00       0.0       0.0                                0.00
+    0:10:36  275278.2      0.00       0.0       0.0                                0.00
+    0:10:46  275237.1      0.00       0.0       0.0                                0.00
+    0:10:55  275193.0      0.00       0.0       0.0                                0.00
+    0:11:05  275150.9      0.00       0.0       0.0                                0.00
+    0:11:29  275118.9      0.00       0.0       0.0                                0.00
+    0:11:53  275053.3      0.00       0.0       0.0                                0.00
+    0:12:12  274999.3      0.00       0.0       0.0                                0.00
+    0:12:41  274972.5      0.00       0.0       0.0                                0.00
+    0:12:58  274921.4      0.00       0.0       0.0                                0.00
+    0:14:21  274900.2      0.00       0.0       0.0                                0.00
+    0:14:25  274880.0      0.00       0.0       0.0                                0.00
+    0:14:34  274864.6      0.00       0.0       0.0                                0.00
+    0:14:45  274851.7      0.00       0.0       0.0                                0.00
+    0:14:48  274835.3      0.00       0.0       0.0                                0.00
+    0:14:57  274822.2      0.00       0.0       0.0                                0.00
+    0:14:57  274822.2      0.00       0.0       0.0                                0.00
+    0:14:57  274822.2      0.00       0.0       0.0                                0.00
+    0:14:57  274822.2      0.00       0.0       0.0                                0.00
+    0:14:58  274822.2      0.00       0.0       0.0                                0.00
+    0:14:59  274810.0      0.00       0.0       0.0                                0.00
+    0:14:59  274810.0      0.00       0.0       0.0                                0.00
+    0:14:59  274810.0      0.00       0.0       0.0                                0.00
+    0:14:59  274810.0      0.00       0.0       0.0                                0.00
+    0:14:59  274810.0      0.00       0.0       0.0                                0.00
+    0:14:59  274810.0      0.00       0.0       0.0                                0.00
+    0:15:00  274810.0      0.00       0.0       0.0                                0.00
+    0:15:08  274802.5      0.00       0.0       0.0                                0.00
+    0:15:15  274796.7      0.00       0.0       0.0                                0.00
+    0:15:21  274796.6      0.00       0.0       0.0                                0.00
+    0:15:28  274790.8      0.00       0.0       0.0                                0.00
+    0:15:35  274788.7      0.00       0.0       0.0                                0.00
+    0:15:43  274787.3      0.00       0.0       0.0                                0.00
+    0:15:57  274786.0      0.00       0.0       0.0                                0.00
+    0:16:06  274784.1      0.00       0.0       0.0                                0.00
+    0:16:14  274777.9      0.00       0.0       0.0                                0.00
+    0:16:21  274774.6      0.00       0.0       0.0                                0.00
+    0:16:31  274767.9      0.00       0.0       0.0                                0.00
+    0:16:41  274762.2      0.00       0.0       0.0                                0.00
+    0:16:54  274761.8      0.00       0.0       0.0                                0.00
+    0:17:00  274761.6      0.00       0.0       0.0                                0.00
+    0:17:08  274754.6      0.00       0.0       0.0                                0.00
+    0:17:15  274748.2      0.00       0.0       0.0                                0.00
+    0:17:31  274745.2      0.00       0.0       0.0                                0.00
+    0:17:50  274743.9      0.00       0.0       0.0                                0.00
+    0:17:56  274699.9      0.00       0.0       0.0                                0.00
+    0:17:59  274695.6      0.00       0.0       0.0                                0.00
+    0:18:00  274667.5      0.00       0.0       0.0                                0.00
+    0:18:01  274619.8      0.00       0.0       0.0                                0.00
+    0:18:03  274561.3      0.00       0.0       0.0                                0.00
+    0:18:11  274560.9      0.00       0.0       0.0                                0.00
+    0:19:23  274560.8      0.00       0.0       0.0                                0.00
+    0:20:37  274559.5      0.00       0.0       0.0                                0.00
+    0:20:40  274559.5      0.00       0.0       0.0                                0.00
+    0:20:41  274559.5      0.00       0.0       0.0                                0.00
+    0:20:42  274558.4      0.00       0.0       0.0                                0.00
+    0:20:42  274558.4      0.00       0.0       0.0                                0.00
+    0:20:42  274558.4      0.00       0.0       0.0                                0.00
+    0:20:42  274558.4      0.00       0.0       0.0                                0.00
+    0:20:42  274558.4      0.00       0.0       0.0                                0.00
+    0:20:42  274558.4      0.00       0.0       0.0                                0.00
+    0:20:42  274558.4      0.00       0.0       0.0                                0.00
+    0:20:42  274558.4      0.00       0.0       0.0                                0.00
+    0:20:44  274558.4      0.00       0.0       0.0                                0.00
+    0:21:06  274353.5      0.00       0.0       0.0                                0.00
+    0:21:16  274165.1      0.00       0.0       0.0                                0.00
+    0:21:24  274008.4      0.00       0.0       0.0                                0.00
+    0:21:31  273882.9      0.00       0.0       0.0                                0.00
+    0:21:40  273781.7      0.00       0.0       0.0                                0.00
+    0:21:47  273680.3      0.00       0.0       0.0                                0.00
+    0:21:56  273589.6      0.00       0.0       0.0                                0.00
+    0:22:05  273513.6      0.00       0.0       0.0                                0.00
+    0:22:14  273430.8      0.00       0.0       0.0                                0.00
+    0:22:21  273364.7      0.00       0.0       0.0                                0.00
+    0:22:31  273305.9      0.00       0.0       0.0                                0.00
+    0:22:42  273257.6      0.00       0.0       0.0                                0.00
+    0:23:02  273230.3      0.00       0.0       0.0                                0.00
+    0:23:19  273210.9      0.00       0.0       0.0                                0.00
+    0:23:36  273198.0      0.00       0.0       0.0                                0.00
+    0:23:50  273190.6      0.00       0.0       0.0                                0.00
+    0:23:51  273190.6      0.00       0.0       0.0                                0.00
+    0:23:51  273190.6      0.00       0.0       0.0                                0.00
+    0:23:51  273189.8      0.00       0.0       0.0                                0.00
+    0:23:52  273189.8      0.00       0.0       0.0                                0.00
+    0:23:52  273189.8      0.00       0.0       0.0                                0.00
+    0:23:52  273189.8      0.00       0.0       0.0                                0.00
+    0:23:52  273189.8      0.00       0.0       0.0                                0.00
+    0:23:52  273189.8      0.00       0.0       0.0                                0.00
+    0:23:52  273189.8      0.00       0.0       0.0                                0.00
+    0:23:56  272554.9      0.00       0.0       0.0                                0.00
+Loading db file '/w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ff1p16vn40c.db'
+Loading db file '/w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db'
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'NLC_1ch' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'clk': 6554 load(s), 1 driver(s)
+1
+report_timing -path full -delay min -max_paths 10 -nworst 2 > Design.holdtiming
+report_timing -path full -delay max -max_paths 10 -nworst 2 > Design.setuptiming
+report_area -hierarchy > Design.area
+report_power -hier -hier_level 2 > Design.power
+report_resources > Design.resources
+report_constraint -verbose > Design.constraint
+check_design > Design.check_design
+check_timing > Design.check_timing
+write -hierarchy -format verilog -output $DESIGN_NAME.vg
+Writing verilog file '/w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partB_log/NLC_1ch.vg'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 250 nets to module NLC_1ch using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
+write_sdf -version 1.0 -context verilog $DESIGN_NAME.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partB_log/NLC_1ch.sdf'. (WT-3)
+1
+set_propagated_clock [all_clocks]
+Information: set_input_delay values are added to the propagated clock skew. (TIM-113)
+1
+write_sdc $DESIGN_NAME.sdc
+1
+1
+dc_shell> 
+Thank you...

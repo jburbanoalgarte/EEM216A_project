@@ -1,0 +1,174 @@
+# //  ModelSim SE-64 10.1c Jul 27 2012 Linux 2.6.18-406.el5
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Project file /w/home.02/ee/grad/jordi/ee216a/F15-Lab3_new/lab3.mpf was not found.
+# Unable to open project.
+# Loading project partA_rtl_sim
+# Compile of centerScale2.v was successful.
+# Compile of comparator.v was successful.
+# Compile of control.v was successful.
+# Compile of fp_to_smc_float.v was successful.
+# Compile of hornerLoop.v was successful.
+# Compile of mux.v was successful.
+# Compile of NLC_1ch.v was successful.
+# Compile of NLC_1ch_1.v was successful.
+# Compile of NLC_4sec_10th_order_32ch_v0.v was successful.
+# Compile of NLC_4sec_10th_order_32ch_v0_Test.v was successful.
+# Compile of saed32nm.v was successful.
+# Compile of smc_float_adder.v was successful.
+# Compile of smc_float_multiplier.v was successful.
+# Compile of smc_float_to_fp.v was successful.
+# Compile of SynLib.v was successful.
+# 15 compiles, 0 failed with no errors. 
+vsim -novopt work.test_NLC_4sec_10th_order_32ch_v0
+# vsim -novopt work.test_NLC_4sec_10th_order_32ch_v0 
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.test_NLC_4sec_10th_order_32ch_v0
+# Loading work.test_NLC_4sec_10th_order_32ch_v0
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.NLC_4sec_10th_order_32ch_v0
+# Loading work.NLC_4sec_10th_order_32ch_v0
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.NLC_1ch
+# Loading work.NLC_1ch
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.NLC_1ch_1
+# Loading work.NLC_1ch_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.centerScale2
+# Loading work.centerScale2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.fp_to_smc_float
+# Loading work.fp_to_smc_float
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.y_o
+# Loading work.y_o
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP
+# Loading work.Fixed_to_FP
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.synAbs
+# Loading work.synAbs
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.synComparator
+# Loading work.synComparator
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.synBusAdapter
+# Loading work.synBusAdapter
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.synDelayWithEnable
+# Loading work.synDelayWithEnable
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.synNegate
+# Loading work.synNegate
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.synShifter
+# Loading work.synShifter
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_Leading_Zero_Counter1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPodd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter1_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_Leading_Zero_Counter2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg2_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP5
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP6
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP7
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDP8
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPodd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg3_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
+# Loading work.Fixed_to_FP_Leading_Zero_Counter2_LZDPstg1_4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.Fixed_to_FP_log2
+# Loading work.Fixed_to_FP_log2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.smc_float_multiplier
+# Loading work.smc_float_multiplier
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.x1_i
+# Loading work.x1_i
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.z1_o
+# Loading work.z1_o
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.FP_Multiplier
+# Loading work.FP_Multiplier
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.synBusSatRnd
+# Loading work.synBusSatRnd
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.synInverter
+# Loading work.synInverter
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.smc_float_adder
+# Loading work.smc_float_adder
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.x_i
+# Loading work.x_i
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.z_o
+# Loading work.z_o
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.FP_Adder
+# Loading work.FP_Adder
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.FP_Adder_getmsbpos1
+# Loading work.FP_Adder_getmsbpos1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.FP_Adder_getmsbpos1_LZDPstg2_1
+# Loading work.FP_Adder_getmsbpos1_LZDPstg2_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.FP_Adder_getmsbpos1_LZDPstg1_2
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.FP_Adder_getmsbpos1_LZDPstg1_1
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.FP_Adder_getmsbpos1_LZDP1
+# Loading work.FP_Adder_getmsbpos1_LZDP1
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.FP_Adder_getmsbpos1_LZDP2
+# Loading work.FP_Adder_getmsbpos1_LZDP2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.FP_Adder_getmsbpos1_LZDP3
+# Loading work.FP_Adder_getmsbpos1_LZDP3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.FP_Adder_getmsbpos1_LZDP4
+# Loading work.FP_Adder_getmsbpos1_LZDP4
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.FP_Adder_getmsbpos1_LZDP5
+# Loading work.FP_Adder_getmsbpos1_LZDP5
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.FP_Adder_getmsbpos1_LZDP6
+# Loading work.FP_Adder_getmsbpos1_LZDP6
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.FP_Adder_getmsbpos1_LZDPstg2_2
+# Loading work.FP_Adder_getmsbpos1_LZDPstg2_2
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.FP_Adder_getmsbpos1_LZDPstg1_3
+# Loading work.FP_Adder_getmsbpos1_LZDPstg1_3
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.comparator
+# Loading work.comparator
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.mux
+# Loading work.mux
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.hornerLoop
+# Loading work.hornerLoop
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.smc_float_to_fp
+# Loading work.smc_float_to_fp
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.x2_i
+# Loading work.x2_i
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.FP_to_Fixed
+# Loading work.FP_to_Fixed
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.synShifterR
+# Loading work.synShifterR
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.control
+# Loading work.control
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.clocks
+# Loading work.clocks
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.clock_gen
+# Loading work.clock_gen
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.synDelayWithEnableGeneric
+# Loading work.synDelayWithEnableGeneric
+# Refreshing /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/work.singleDelayWithEnableGeneric
+# Loading work.singleDelayWithEnableGeneric
+restart; run -all
+# End Simulation
+# *******  Verilog Verification Successful! *******
+# No extra latency 
+# ** Note: $finish    : /w/home.02/ee/grad/jordi/ee216a/EEM216A_project/partA/NLC_4sec_10th_order_32ch_v0_Test.v(3665)
+#    Time: 6998972004 ns  Iteration: 2  Instance: /test_NLC_4sec_10th_order_32ch_v0
